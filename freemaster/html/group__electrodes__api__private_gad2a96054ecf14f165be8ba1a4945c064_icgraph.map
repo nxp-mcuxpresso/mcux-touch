@@ -1,0 +1,10 @@
+<map id="_nt_electrode_get_raw_signal" name="_nt_electrode_get_raw_signal">
+<area shape="rect" id="node2" href="$group__electrodes__api.html#gaa73853fe07878aa1ce673c2d65209f2d" title="Get the raw electrode signal. " alt="" coords="205,15,351,57"/>
+<area shape="rect" id="node3" href="$group__modules__api__private.html#gaea043c79022434be96eacd08f39739e4" title="Process the module. " alt="" coords="207,81,349,108"/>
+<area shape="rect" id="node4" href="$group__system__api__private.html#gaab014d1ba447cc0bfa94fb7860f9606c" title="Invoke the module function based on the option parameter. " alt="" coords="399,81,589,108"/>
+<area shape="rect" id="node5" href="$group__system__api.html#gae50df373022cdf199c235f19baff02ff" title="NXP Touch Library initialization. " alt="" coords="682,5,739,32"/>
+<area shape="rect" id="node6" href="$group__system__api.html#ga79bb046f88b50bca26e3b20991fb1787" title="Main Trigger function to acquire the touch&#45;sensing data. " alt="" coords="673,56,749,83"/>
+<area shape="rect" id="node7" href="$group__system__api.html#gab7f8ce7df0895777cc3b95837d651844" title="NXP Touch Main processing entry point. " alt="" coords="678,107,743,133"/>
+<area shape="rect" id="node8" href="$group__system__api__private.html#ga1f456757ae5d14cb8567395656a2fe29" title="Function used internally to detect, whether new Modules data are available and to set the same flag f..." alt="" coords="637,158,784,199"/>
+<area shape="rect" id="node9" href="$group__gpioint.html#gad1521767d9b9cf3c2c1da2ef74abc465" title="This interrupt handler must be invoked from the user&#39;s port interrupt ISR. There can be other pins on..." alt="" coords="832,165,980,192"/>
+</map>

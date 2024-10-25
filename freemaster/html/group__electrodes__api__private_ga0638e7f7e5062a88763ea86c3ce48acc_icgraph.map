@@ -1,0 +1,26 @@
+<map id="_nt_electrode_get_data" name="_nt_electrode_get_data">
+<area shape="rect" id="node2" href="$group__gcontrols__api__private.html#gacd5b54e40cb072849b8efaf644ba87cc" title="Initialize the control object. " alt="" coords="260,120,371,147"/>
+<area shape="rect" id="node9" href="$group__electrodes__api.html#gad5f6387ec7c8a5fc8f06e8a646ed1e23" title="Get electrode data structure pointer. " alt="" coords="240,171,391,197"/>
+<area shape="rect" id="node10" href="$group__electrodes__api__private.html#gad0df2e07e650c48549a12d863678888d" title="Process shielding if it is enabled, otherwise it returns the same value. " alt="" coords="236,222,395,263"/>
+<area shape="rect" id="node11" href="$group__electrodes__api.html#ga713c8df50b094774920c606bc6c53109" title="Enable the electrode. The function is used to enable the electrode; it should be used after the NT in..." alt="" coords="246,288,385,315"/>
+<area shape="rect" id="node12" href="$group__electrodes__api.html#ga6bc8d5e594457b1ad1fdb5b18a8a1cc6" title="Resume the electrode after the Suspending (temp.disabled), without reseting the keydetector. " alt="" coords="244,339,387,365"/>
+<area shape="rect" id="node13" href="$group__electrodes__api.html#ga7ed17629f1ddf788ec65edc88accd5ed" title="Disable the electrode. " alt="" coords="245,389,386,416"/>
+<area shape="rect" id="node15" href="$group__electrodes__api.html#gac9a4336c7a86d7c18981c61861ce29ad" title="Reset the electrode to the current state. " alt="" coords="251,440,380,467"/>
+<area shape="rect" id="node16" href="$group__electrodes__api.html#ga27082b7ce39ff31bbd19987305517837" title="Get electrode enabled status. " alt="" coords="234,491,397,517"/>
+<area shape="rect" id="node17" href="$group__electrodes__api.html#ga3a40ea273637482cd97223ea4e37969a" title="Get the normalized and processed electrode signal. " alt="" coords="236,541,395,568"/>
+<area shape="rect" id="node18" href="$group__electrodes__api__private.html#ga1ecd4adf99a65dbdf165a1f340017bf5" title="Get the delta signal. " alt="" coords="239,592,392,619"/>
+<area shape="rect" id="node19" href="$group__electrodes__api__private.html#ga286107f3ae1c3b1054e081ae4dd63b59" title="Get the xtalk reduced delta signal. " alt="" coords="226,643,405,669"/>
+<area shape="rect" id="node20" href="$group__electrodes__api.html#ga101ad0801646f581dd6a3c81a54ec5e2" title="Get the last known electrode status. " alt="" coords="242,694,389,735"/>
+<area shape="rect" id="node21" href="$group__electrodes__api.html#ga8cc274664131183b1a7b1096abe2d6f8" title="Get the time from the last electrode event. " alt="" coords="240,759,391,801"/>
+<area shape="rect" id="node22" href="$group__electrodes__api.html#ga161da7008a7c1b64e6658e33ab1d1d78" title="Get the last known electrode time stamp. " alt="" coords="242,825,389,866"/>
+<area shape="rect" id="node23" href="$group__electrodes__api.html#gaa73853fe07878aa1ce673c2d65209f2d" title="Get the raw electrode signal. " alt="" coords="243,890,388,931"/>
+<area shape="rect" id="node24" href="$group__gxtalk__private.html#ga587485a2ae7322afc8d67960223d70c8" title="Init the cross&#45;talk electrode for cross&#45;talk processes. " alt="" coords="211,65,420,92"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga36d40a0805142a11347f0fd1df887fec" title="Invoke the control function based on the option parameter. " alt="" coords="495,115,631,157"/>
+<area shape="rect" id="node4" href="$group__system__api.html#gae50df373022cdf199c235f19baff02ff" title="NXP Touch Library initialization. " alt="" coords="751,123,809,149"/>
+<area shape="rect" id="node5" href="$group__system__api.html#ga79bb046f88b50bca26e3b20991fb1787" title="Main Trigger function to acquire the touch&#45;sensing data. " alt="" coords="742,173,818,200"/>
+<area shape="rect" id="node6" href="$group__system__api.html#gab7f8ce7df0895777cc3b95837d651844" title="NXP Touch Main processing entry point. " alt="" coords="747,5,813,32"/>
+<area shape="rect" id="node7" href="$group__system__api__private.html#ga1f456757ae5d14cb8567395656a2fe29" title="Function used internally to detect, whether new Modules data are available and to set the same flag f..." alt="" coords="707,57,853,98"/>
+<area shape="rect" id="node8" href="$group__gpioint.html#gad1521767d9b9cf3c2c1da2ef74abc465" title="This interrupt handler must be invoked from the user&#39;s port interrupt ISR. There can be other pins on..." alt="" coords="901,64,1049,91"/>
+<area shape="rect" id="node14" href="$group__electrodes__api.html#ga1dc91e614acf6720a6b7f93f459c5643" title="Suspend (temporary disable) the electrode. " alt="" coords="489,389,638,416"/>
+<area shape="rect" id="node25" href="$group__system__api__private.html#gaab014d1ba447cc0bfa94fb7860f9606c" title="Invoke the module function based on the option parameter. " alt="" coords="468,64,659,91"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="_nt_electrode_clear_flag" name="_nt_electrode_clear_flag">
+<area shape="rect" id="node2" href="$group__gcontrols__api__private.html#ga560c3ddba959316d71b47529b90940d8" title="_nt_control_clear_flag\l_all_elec" alt="" coords="216,5,364,47"/>
+<area shape="rect" id="node3" href="$group__electrodes__api.html#ga7ed17629f1ddf788ec65edc88accd5ed" title="Disable the electrode. " alt="" coords="219,71,361,98"/>
+<area shape="rect" id="node4" href="$group__electrodes__api.html#ga1dc91e614acf6720a6b7f93f459c5643" title="Suspend (temporary disable) the electrode. " alt="" coords="412,71,561,98"/>
+</map>

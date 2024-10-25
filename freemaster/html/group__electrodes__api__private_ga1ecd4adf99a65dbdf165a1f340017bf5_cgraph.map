@@ -1,0 +1,6 @@
+<map id="nt_electrode_get_delta" name="nt_electrode_get_delta">
+<area shape="rect" id="node2" href="$group__electrodes__api__private.html#ga0638e7f7e5062a88763ea86c3ce48acc" title="Get electrode data structure pointer. " alt="" coords="208,35,365,61"/>
+<area shape="rect" id="node5" href="$group__electrodes__api__private.html#gaaa440631fbceba6ba3e2af1458c4aa6e" title="Return difference between the signal and its baseline. " alt="" coords="207,85,367,112"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga66506bf9a380e50a3df9ea745a868b33" title="Obtain a pointer to the system. " alt="" coords="439,5,553,32"/>
+<area shape="rect" id="node4" href="$group__electrodes__api__private.html#ga79ee21d51e46449f2b52160d1f410464" title="Get the electrode index in the module electrode array structure pointer. " alt="" coords="415,57,577,98"/>
+</map>

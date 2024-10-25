@@ -1,0 +1,32 @@
+<map id="nt_trigger" name="nt_trigger">
+<area shape="rect" id="node2" href="$group__system__api__private.html#ga36e488dc92e791225363b2a90b3ac5bf" title="Increments the system counter. " alt="" coords="147,259,302,301"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#gaab014d1ba447cc0bfa94fb7860f9606c" title="Invoke the module function based on the option parameter. " alt="" coords="129,325,320,352"/>
+<area shape="rect" id="node21" href="$group__system__api__private.html#ga36d40a0805142a11347f0fd1df887fec" title="Invoke the control function based on the option parameter. " alt="" coords="157,562,293,603"/>
+<area shape="rect" id="node31" href="$group__system__api__private.html#ga6c8acded9082b2fd8db4d024afc0c7bf" title="System callback invocation. " alt="" coords="131,765,319,792"/>
+<area shape="rect" id="node4" href="$group__modules__api__private.html#ga03136c3b942f34f2eb494bd80dcff500" title="Init module. " alt="" coords="416,351,529,377"/>
+<area shape="rect" id="node12" href="$group__modules__api__private.html#ga7b3cbdf0779221762d158978055a1c76" title="Trigger the start of measure event of the module. " alt="" coords="407,81,539,108"/>
+<area shape="rect" id="node13" href="$group__modules__api__private.html#gae556dd44a12efb01dd6ab938ed0eb05d" title="Return the flag of the module. " alt="" coords="652,107,793,133"/>
+<area shape="rect" id="node16" href="$group__modules__api__private.html#gaea043c79022434be96eacd08f39739e4" title="Process the module. " alt="" coords="401,136,544,163"/>
+<area shape="rect" id="node18" href="$group__modules__api__private.html#ga73e3976881de03c5f9f9cfee409278c8" title="Process module Safety tests. " alt="" coords="401,234,544,275"/>
+<area shape="rect" id="node19" href="$group__gxtalk__private.html#ga587485a2ae7322afc8d67960223d70c8" title="Init the cross&#45;talk electrode for cross&#45;talk processes. " alt="" coords="368,435,577,461"/>
+<area shape="rect" id="node5" href="$group__memory__api__private.html#ga993132b829f9af17646ff4e83ced17b1" title="Allocation of memory from the memory pool. " alt="" coords="667,427,778,453"/>
+<area shape="rect" id="node7" href="$group__modules__api__private.html#gaebb6560d1eae7c55abd6164842b6f03d" title="_nt_module_count_electrodes" alt="" coords="625,325,820,352"/>
+<area shape="rect" id="node8" href="$group__modules__api__private.html#ga9ab0f0a084307697f55235ea7bf8f628" title="Set the module&#39;s mode. " alt="" coords="646,376,799,403"/>
+<area shape="rect" id="node9" href="$group__electrodes__api__private.html#ga266dd7e680d903f89ca957e414f22b95" title="Get the shielding electrode. " alt="" coords="639,224,806,251"/>
+<area shape="rect" id="node10" href="$group__electrodes__api__private.html#ga79ee21d51e46449f2b52160d1f410464" title="Get the electrode index in the module electrode array structure pointer. " alt="" coords="868,373,1031,414"/>
+<area shape="rect" id="node11" href="$group__freemaster__api__private.html#ga10a5c589685e2b8e3d673db45aa43ec6" title="This function adds a dynamic variable into the FreeMASTER TSA table. " alt="" coords="655,478,791,519"/>
+<area shape="rect" id="node6" href="$group__system__api__private.html#ga66506bf9a380e50a3df9ea745a868b33" title="Obtain a pointer to the system. " alt="" coords="892,544,1007,571"/>
+<area shape="rect" id="node14" href="$group__modules__api__private.html#gabc1e6674399906d8297dc4a5332ef5fb" title="Reset the flag of the module. " alt="" coords="647,56,798,83"/>
+<area shape="rect" id="node15" href="$group__modules__api__private.html#ga7e17bbf914fd8a1842c3c0792ab26971" title="Set the flag of the module. " alt="" coords="652,5,793,32"/>
+<area shape="rect" id="node17" href="$group__electrodes__api__private.html#gad2a96054ecf14f165be8ba1a4945c064" title="Get the raw electrode signal. " alt="" coords="647,158,799,199"/>
+<area shape="rect" id="node20" href="$group__electrodes__api__private.html#ga0638e7f7e5062a88763ea86c3ce48acc" title="Get electrode data structure pointer. " alt="" coords="644,544,801,571"/>
+<area shape="rect" id="node22" href="$group__gcontrols__api__private.html#gacd5b54e40cb072849b8efaf644ba87cc" title="Initialize the control object. " alt="" coords="417,595,528,621"/>
+<area shape="rect" id="node27" href="$group__gcontrols__api__private.html#ga9385d51e0abed17597fa7d2a90f653c4" title="_nt_control_overrun" alt="" coords="405,827,540,853"/>
+<area shape="rect" id="node30" href="$group__gcontrols__api__private.html#ga28228132cadac47591979ebcd21f9dc2" title="_nt_control_set_flag" alt="" coords="403,544,542,571"/>
+<area shape="rect" id="node23" href="$group__gcontrols__api.html#ga311cc829ccad6b705f87a2ab18c331d2" title="nt_control_count_electrodes" alt="" coords="630,696,815,723"/>
+<area shape="rect" id="node24" href="$group__gsafety.html#ga378a580f67169505ce29e731335a5bed" title="Function change electrode pin mode from TSI to GPIO and set pin level to low. " alt="" coords="635,747,810,803"/>
+<area shape="rect" id="node25" href="$group__electrodes__api__private.html#gabaf99d5a20e6fd075ed2717c8c5d4efe" title="_nt_electrode_set_flag" alt="" coords="647,595,799,621"/>
+<area shape="rect" id="node26" href="$group__gcontrols__api__private.html#ga28c3cf5b13152c17370d66064bfca33d" title="Validate control data. " alt="" coords="643,645,803,672"/>
+<area shape="rect" id="node28" href="$group__gcontrols__api__private.html#gafcf8c2dd0be698d1e90065b344cb1964" title="_nt_control_get_flag" alt="" coords="653,827,792,853"/>
+<area shape="rect" id="node29" href="$group__gcontrols__api__private.html#ga985c5eaf9f820ed00e4a0f1eaeb4246d" title="_nt_control_clear_flag" alt="" coords="649,877,797,904"/>
+</map>

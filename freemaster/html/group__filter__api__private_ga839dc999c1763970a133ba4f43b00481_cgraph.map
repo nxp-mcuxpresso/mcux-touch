@@ -1,0 +1,4 @@
+<map id="_nt_filter_deadrange_u" name="_nt_filter_deadrange_u">
+<area shape="rect" id="node2" href="$group__filter__api__private.html#ga43d02fe11009a5966d96abd673303b7c" title="This function checks if input value is inside of the deadband range (16&#45;bit version). " alt="" coords="205,5,375,32"/>
+<area shape="rect" id="node3" href="$group__filter__api__private.html#gab7b4626e97f3b874dcd0255cd919245e" title="This function limit the input value in allowed range (16&#45;bit version). " alt="" coords="232,56,348,83"/>
+</map>

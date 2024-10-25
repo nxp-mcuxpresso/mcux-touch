@@ -1,0 +1,5 @@
+<map id="_nt_electrode_is_touched" name="_nt_electrode_is_touched">
+<area shape="rect" id="node2" href="$group__gcontrols__api__private.html#gace9ddc7c4d19b814c54ae3b475587712" title="Get the state of all control electrodes. " alt="" coords="225,5,404,47"/>
+<area shape="rect" id="node4" href="$group__modules__api__private.html#ga2b45d4d3a28416fc9fbdd988e65f310e" title="Get the module electrodes state. " alt="" coords="224,71,405,112"/>
+<area shape="rect" id="node3" href="$group__gcontrols__api.html#gacbdfaee17bc24b9e117822198b557818" title="Get the state of all control electrodes. " alt="" coords="453,5,624,47"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="nt_module_params" name="nt_module_params">
+<area shape="rect" id="node2" href="$group__cs.html#structnt__module__cs__params" title="{nt_module_cs_params\n|+ config\l|}" alt="" coords="5,520,159,597"/>
+<area shape="rect" id="node3" href="$group__gpio.html#structnt__module__gpio__params" title="{nt_module_gpio_params\n||}" alt="" coords="183,520,346,597"/>
+<area shape="rect" id="node4" href="$group__gpio.html#structnt__module__gpio__user__interface" title="{nt_module_gpio_user\l_interface\n|+ set_pin_output_ptr\l+ set_pin_input_ptr\l+ set_pin_low_ptr\l+ set_pin_high_ptr\l+ get_pin_value_ptr\l+ set_pin_default_state_ptr\l+ init_timer_ptr\l+ start_timer_ptr\l+ stop_timer_ptr\l+ timer_reset_counter_ptr\l+ timer_get_counter_ptr\l+ timer_get_overrun_ptr\l+ set_pin_pull_up_ptr\l+ set_pin_pull_down_ptr\l+ set_pin_tsi_mode_ptr\l+ set_pin_gpio_mode_ptr\l|}" alt="" coords="91,145,270,457"/>
+<area shape="rect" id="node5" href="$group__tsi.html#structnt__module__tsi__params" title="{nt_module_tsi_params\n||}" alt="" coords="371,520,524,597"/>
+<area shape="rect" id="node6" href="$namespace_3global_scope_4.html#structtsi__config__t" title="{tsi_config_t\n|+ configSelfCap\l+ configMutual\l+ thresl\l+ thresh\l+ newCalc\l|}" alt="" coords="295,233,408,369"/>
+<area shape="rect" id="node7" href="$group__tsi.html#structnt__module__tsi__noise" title="{nt_module_tsi_noise\n|+ update_rate\l+ noise_mode_timeout\l|}" alt="" coords="433,255,587,347"/>
+<area shape="rect" id="node8" href="$group__filter.html#structnt__filter__iir" title="{nt_filter_iir\n|+ coef1\l|}" alt="" coords="469,5,551,83"/>
+<area shape="rect" id="node9" href="$group__gpioint.html#structnt__module__gpioint__params" title="{nt_module_gpioint_params\n||}" alt="" coords="588,520,765,597"/>
+<area shape="rect" id="node10" href="$group__gpioint.html#structnt__module__gpioint__user__interface" title="{nt_module_gpioint_user\l_interface\n|+ set_pin_output_ptr\l+ set_pin_input_ptr\l+ set_pin_low_ptr\l+ set_pin_high_ptr\l+ init_pin_ptr\l+ set_pin_interrupt_ptr\l+ clear_pin_interrupt_ptr\l+ init_timer_ptr\l+ start_timer_ptr\l+ stop_timer_ptr\l+ timer_reset_counter_ptr\l+ timer_get_counter_ptr\l|}" alt="" coords="611,175,782,428"/>
+</map>

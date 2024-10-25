@@ -1,0 +1,5 @@
+<map id="nt_control_arotary_get_direction" name="nt_control_arotary_get_direction">
+<area shape="rect" id="node2" href="$group__gcontrols__api__private.html#ga71a7560dce7c13f702d6adc95d7e37b3" title="Array of port clocks. " alt="" coords="180,5,323,32"/>
+<area shape="rect" id="node4" href="$group__gcontrols__api__private.html#gafcf8c2dd0be698d1e90065b344cb1964" title="_nt_control_get_flag" alt="" coords="182,56,321,83"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga66506bf9a380e50a3df9ea745a868b33" title="Obtain a pointer to the system. " alt="" coords="371,5,485,32"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="_nt_control_init" name="_nt_control_init">
+<area shape="rect" id="node2" href="$group__memory__api__private.html#ga993132b829f9af17646ff4e83ced17b1" title="Allocation of memory from the memory pool. " alt="" coords="201,5,312,32"/>
+<area shape="rect" id="node4" href="$group__gcontrols__api.html#ga311cc829ccad6b705f87a2ab18c331d2" title="nt_control_count_electrodes" alt="" coords="164,56,349,83"/>
+<area shape="rect" id="node5" href="$group__electrodes__api__private.html#ga0638e7f7e5062a88763ea86c3ce48acc" title="Get electrode data structure pointer. " alt="" coords="178,107,335,133"/>
+<area shape="rect" id="node7" href="$group__gsafety.html#ga378a580f67169505ce29e731335a5bed" title="Function change electrode pin mode from TSI to GPIO and set pin level to low. " alt="" coords="169,157,344,213"/>
+<area shape="rect" id="node8" href="$group__electrodes__api__private.html#gabaf99d5a20e6fd075ed2717c8c5d4efe" title="_nt_electrode_set_flag" alt="" coords="181,237,333,264"/>
+<area shape="rect" id="node9" href="$group__gcontrols__api__private.html#ga28c3cf5b13152c17370d66064bfca33d" title="Validate control data. " alt="" coords="177,288,337,315"/>
+<area shape="rect" id="node10" href="$group__freemaster__api__private.html#ga10a5c589685e2b8e3d673db45aa43ec6" title="This function adds a dynamic variable into the FreeMASTER TSA table. " alt="" coords="189,339,325,381"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga66506bf9a380e50a3df9ea745a868b33" title="Obtain a pointer to the system. " alt="" coords="421,27,536,53"/>
+<area shape="rect" id="node6" href="$group__electrodes__api__private.html#ga79ee21d51e46449f2b52160d1f410464" title="Get the electrode index in the module electrode array structure pointer. " alt="" coords="397,99,560,141"/>
+</map>

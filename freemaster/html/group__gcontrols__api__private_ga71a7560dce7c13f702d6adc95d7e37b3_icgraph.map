@@ -1,0 +1,40 @@
+<map id="_nt_control_get_data" name="_nt_control_get_data">
+<area shape="rect" id="node2" href="$group__arotary__api.html#gaf83452e2dd888da8952b331933c4c58c" title="Registers the Analog Rotary events handler function. " alt="" coords="225,5,352,47"/>
+<area shape="rect" id="node3" href="$group__arotary__api.html#ga7869e1c4913193aa27400f6ba51e5878" title="Get the Analog Rotary &#39;Position&#39; value. " alt="" coords="225,71,352,112"/>
+<area shape="rect" id="node4" href="$group__arotary__api.html#gadb3b766c304c0c0b9e1c19a7f98f6e5e" title="Get &#39;Touched&#39; state. " alt="" coords="225,136,352,177"/>
+<area shape="rect" id="node5" href="$group__arotary__api.html#ga2ba93a3084915f295801351a90725c06" title="Get &#39;Movement&#39; flag. " alt="" coords="216,201,361,243"/>
+<area shape="rect" id="node6" href="$group__arotary__api.html#ga473c839aca8919b2aaeaa0c991894df0" title="Get &#39;Direction&#39; flag. " alt="" coords="225,267,352,308"/>
+<area shape="rect" id="node7" href="$group__arotary__api.html#ga6d6a7709e2d562f7d4d99cc0d66ecaa5" title="Returns invalid position flag. " alt="" coords="218,332,359,373"/>
+<area shape="rect" id="node8" href="$group__aslider__api.html#ga9caeec57ab5ff734b2daab9837457437" title="Registers the Analog Slider events handler function. " alt="" coords="225,397,352,439"/>
+<area shape="rect" id="node9" href="$group__aslider__api.html#gab6c8188b1b08a1279b95f27956a8d4ad" title="Get the Analog Slider &#39;Position&#39; value. " alt="" coords="227,463,351,504"/>
+<area shape="rect" id="node10" href="$group__aslider__api.html#ga07ef7606ba14ebe19e1482515261a8de" title="Get &#39;Touched&#39; state. " alt="" coords="227,528,351,569"/>
+<area shape="rect" id="node11" href="$group__aslider__api.html#ga05a8ef86f78e333b1ce1320258de6d0b" title="Get &#39;Movement&#39; flag. " alt="" coords="216,593,361,635"/>
+<area shape="rect" id="node12" href="$group__aslider__api.html#ga7234ff593fe6769fa8d70802a1f476be" title="Get &#39;Direction&#39; flag. " alt="" coords="227,659,351,700"/>
+<area shape="rect" id="node13" href="$group__aslider__api.html#gabca8d08531cb5cc3935dc11ff06211d8" title="Returns invalid position flag. " alt="" coords="218,724,359,765"/>
+<area shape="rect" id="node14" href="$group__keypad__api.html#ga5d76858144f4e451e12ff89ad4c7b1d6" title="Enable or disable the functionality that only one key press is valid. " alt="" coords="209,789,368,831"/>
+<area shape="rect" id="node15" href="$group__keypad__api.html#gaaca95dda5da72919b578cfe101a9d0a4" title="Registers the Keypad event handler function. " alt="" coords="199,855,378,896"/>
+<area shape="rect" id="node16" href="$group__keypad__api.html#ga576e3d641a0e65b56590b0520de32ef9" title="Set the auto&#45;repeat rate. " alt="" coords="212,920,365,961"/>
+<area shape="rect" id="node17" href="$group__keypad__api.html#ga3511e0c4d26bf85a4cf6c83d393781e2" title="Get the auto&#45;repeat rate. " alt="" coords="212,985,365,1027"/>
+<area shape="rect" id="node18" href="$group__keypad__api.html#ga60db7bc4ed43a7c9ac862ac6f1c5f897" title="Get the button touch status. " alt="" coords="216,1051,361,1092"/>
+<area shape="rect" id="node19" href="$group__matrix__api.html#ga034e7a7ebf19726e2cfa408c8021ed0d" title="Registers the Matrix event handler function. " alt="" coords="203,1116,375,1157"/>
+<area shape="rect" id="node20" href="$group__matrix__api.html#gaf4bc7467fa3981489d055ce4d0af8226" title="Enable matrix control to store unlock gesture. " alt="" coords="215,1181,362,1223"/>
+<area shape="rect" id="node21" href="$group__proxi__api.html#ga3ec5b555d577c28991c57ff6bd69246c" title="Registers the Proxi event handler function. " alt="" coords="207,1247,371,1288"/>
+<area shape="rect" id="node22" href="$group__proxi__api.html#gaeef46af47669d9f2672a2c24e041b8c1" title="Enable proxi control to store unlock gesture. " alt="" coords="219,1312,358,1353"/>
+<area shape="rect" id="node23" href="$group__rotary__api.html#gad98b4a1eff3d188b6b7572b3771fb53e" title="Registers the events handler function. " alt="" coords="204,1377,373,1419"/>
+<area shape="rect" id="node24" href="$group__rotary__api.html#ga4d3952082e34d04aad543576221bc187" title="Get the Rotary &#39;Position&#39; value. " alt="" coords="217,1443,361,1484"/>
+<area shape="rect" id="node25" href="$group__rotary__api.html#ga02ac467401c3d1163ddd79ee154b42e3" title="Get &#39;Touched&#39; state. " alt="" coords="221,1508,357,1549"/>
+<area shape="rect" id="node26" href="$group__rotary__api.html#ga64dfadd79f66f61abb1f3445a3f99cce" title="Get &#39;Movement&#39; flag. " alt="" coords="196,1573,381,1615"/>
+<area shape="rect" id="node27" href="$group__rotary__api.html#ga1f6900080c51bddcd27c975fc346bb17" title="Get &#39;Direction&#39; flag. " alt="" coords="217,1639,361,1680"/>
+<area shape="rect" id="node28" href="$group__rotary__api.html#ga2509b98008209ac065aae6672079bd27" title="Get &#39;Invalid&#39; flag. " alt="" coords="217,1704,361,1745"/>
+<area shape="rect" id="node29" href="$group__slider__api.html#ga08cd7eaa6c5ed81e19c7c0b02c6d1977" title="Registers the events handler function. " alt="" coords="205,1769,372,1811"/>
+<area shape="rect" id="node30" href="$group__slider__api.html#gad959c54b1cb3d029e1cdb3a977769c48" title="Get the Slider &#39;Position&#39; value. " alt="" coords="217,1835,360,1876"/>
+<area shape="rect" id="node31" href="$group__slider__api.html#ga031ad8cfe12d23f19eeb59a561476ff8" title="Get &#39;Touched&#39; state. " alt="" coords="221,1900,356,1941"/>
+<area shape="rect" id="node32" href="$group__slider__api.html#gad04125c4a7e3702436418d4f3031031b" title="Get &#39;Movement&#39; flag. " alt="" coords="197,1965,380,2007"/>
+<area shape="rect" id="node33" href="$group__slider__api.html#ga237089b1eb953bf96dd18be0f1893537" title="Get &#39;Direction&#39; flag. " alt="" coords="217,2031,360,2072"/>
+<area shape="rect" id="node34" href="$group__slider__api.html#gae83e15d80080cca480de6dbd9d64e420" title="Get &#39;Invalid&#39; flag. " alt="" coords="217,2096,360,2137"/>
+<area shape="rect" id="node35" href="$group__gcontrols__api.html#gabf5c2e6d53db52f1cc86120037104372" title="Enable control. " alt="" coords="227,2162,351,2189"/>
+<area shape="rect" id="node36" href="$group__gcontrols__api.html#ga4bb012775999f718025daa12ced89c6c" title="Disable control. " alt="" coords="225,2213,352,2239"/>
+<area shape="rect" id="node37" href="$group__gcontrols__api.html#gaeda5b5f0591cd332190fc06935bbb096" title="Get touched electrode. " alt="" coords="217,2264,360,2305"/>
+<area shape="rect" id="node38" href="$group__gcontrols__api.html#gacbdfaee17bc24b9e117822198b557818" title="Get the state of all control electrodes. " alt="" coords="203,2329,374,2371"/>
+<area shape="rect" id="node39" href="$group__gcontrols__api.html#ga71251616eba50a5fca338d110cd599ac" title="Return the electrode by index. " alt="" coords="207,2395,371,2422"/>
+</map>

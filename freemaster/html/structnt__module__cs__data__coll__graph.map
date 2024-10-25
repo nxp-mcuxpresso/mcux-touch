@@ -1,0 +1,4 @@
+<map id="nt_module_cs_data" name="nt_module_cs_data">
+<area shape="rect" id="node2" href="$group__cs__drivers.html#structnt__cs__state__t" title="{nt_cs_state_t\n|+ status\l+ pCallBackFunc\l+ usrData\l+ lock\l+ lockChangeMode\l+ opMode\l+ counters\l|}" alt="" coords="20,160,155,325"/>
+<area shape="rect" id="node3" href="$group__cs__drivers.html#structnt__cs__operation__mode__t" title="{nt_cs_operation_mode_t\n|+ enabledElectrodes\l+ config\l|}" alt="" coords="5,5,169,97"/>
+</map>

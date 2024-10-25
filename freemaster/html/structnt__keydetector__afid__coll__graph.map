@@ -1,0 +1,6 @@
+<map id="nt_keydetector_afid" name="nt_keydetector_afid">
+<area shape="rect" id="node2" href="$group__filter.html#structnt__filter__iir" title="{nt_filter_iir\n|+ coef1\l|}" alt="" coords="5,20,87,97"/>
+<area shape="rect" id="node3" href="$group__filter.html#structnt__filter__fbutt" title="{nt_filter_fbutt\n|+ cutoff\l|}" alt="" coords="111,20,207,97"/>
+<area shape="rect" id="node4" href="$group__afid.html#structnt__keydetector__afid__asc" title="{nt_keydetector_afid_asc\n|+ touch_threshold_fall_rate\l+ noise_resets_minimum\l+ resets_for_touch\l|}" alt="" coords="231,5,410,112"/>
+<area shape="rect" id="node5" href="$group__filter.html#structnt__filter__moving__average" title="{nt_filter_moving_average\n|+ n2_order\l|}" alt="" coords="434,20,597,97"/>
+</map>

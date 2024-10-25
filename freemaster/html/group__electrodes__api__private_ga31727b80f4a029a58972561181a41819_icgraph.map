@@ -1,0 +1,7 @@
+<map id="_nt_electrode_get_time_stamp" name="_nt_electrode_get_time_stamp">
+<area shape="rect" id="node2" href="$group__electrodes__api__private.html#gadd3eebf3e4ade50ab5ef4e40972f9995" title="Get the last known electrode time&#45;stamp. " alt="" coords="211,39,364,80"/>
+<area shape="rect" id="node3" href="$group__electrodes__api.html#ga161da7008a7c1b64e6658e33ab1d1d78" title="Get the last known electrode time stamp. " alt="" coords="417,5,564,47"/>
+<area shape="rect" id="node4" href="$group__electrodes__api__private.html#gaa742be52fe935433013698a4bf53d886" title="Get the time since the last electrode event. " alt="" coords="412,71,569,112"/>
+<area shape="rect" id="node5" href="$group__electrodes__api.html#ga8cc274664131183b1a7b1096abe2d6f8" title="Get the time from the last electrode event. " alt="" coords="621,37,771,79"/>
+<area shape="rect" id="node6" href="$group__electrodes__api__private.html#ga63abeb18e20cfca79c1fd520119af2b0" title="Determine, whether the specified time (or its multiples) has elapsed since the last electrode event..." alt="" coords="617,103,775,144"/>
+</map>

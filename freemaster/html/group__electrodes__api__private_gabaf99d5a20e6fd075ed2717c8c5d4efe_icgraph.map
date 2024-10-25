@@ -1,0 +1,12 @@
+<map id="_nt_electrode_set_flag" name="_nt_electrode_set_flag">
+<area shape="rect" id="node2" href="$group__gcontrols__api__private.html#gacd5b54e40cb072849b8efaf644ba87cc" title="Initialize the control object. " alt="" coords="221,81,332,108"/>
+<area shape="rect" id="node9" href="$group__gcontrols__api__private.html#ga4eb30e3ec48baef2033c9f89358dd082" title="_nt_control_set_flag\l_all_elec" alt="" coords="207,133,346,174"/>
+<area shape="rect" id="node10" href="$group__electrodes__api.html#ga713c8df50b094774920c606bc6c53109" title="Enable the electrode. The function is used to enable the electrode; it should be used after the NT in..." alt="" coords="207,199,346,225"/>
+<area shape="rect" id="node11" href="$group__electrodes__api.html#ga6bc8d5e594457b1ad1fdb5b18a8a1cc6" title="Resume the electrode after the Suspending (temp.disabled), without reseting the keydetector. " alt="" coords="205,249,348,276"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga36d40a0805142a11347f0fd1df887fec" title="Invoke the control function based on the option parameter. " alt="" coords="396,74,532,115"/>
+<area shape="rect" id="node4" href="$group__system__api.html#gae50df373022cdf199c235f19baff02ff" title="NXP Touch Library initialization. " alt="" coords="625,5,682,32"/>
+<area shape="rect" id="node5" href="$group__system__api.html#ga79bb046f88b50bca26e3b20991fb1787" title="Main Trigger function to acquire the touch&#45;sensing data. " alt="" coords="615,56,691,83"/>
+<area shape="rect" id="node6" href="$group__system__api.html#gab7f8ce7df0895777cc3b95837d651844" title="NXP Touch Main processing entry point. " alt="" coords="621,107,686,133"/>
+<area shape="rect" id="node7" href="$group__system__api__private.html#ga1f456757ae5d14cb8567395656a2fe29" title="Function used internally to detect, whether new Modules data are available and to set the same flag f..." alt="" coords="580,158,727,199"/>
+<area shape="rect" id="node8" href="$group__gpioint.html#gad1521767d9b9cf3c2c1da2ef74abc465" title="This interrupt handler must be invoked from the user&#39;s port interrupt ISR. There can be other pins on..." alt="" coords="775,165,923,192"/>
+</map>

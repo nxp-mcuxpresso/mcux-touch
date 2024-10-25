@@ -1,0 +1,6 @@
+<map id="_nt_electrode_get_last_status" name="_nt_electrode_get_last_status">
+<area shape="rect" id="node2" href="$group__gcontrols__api.html#gaeda5b5f0591cd332190fc06935bbb096" title="Get touched electrode. " alt="" coords="210,5,353,47"/>
+<area shape="rect" id="node3" href="$group__electrodes__api.html#ga101ad0801646f581dd6a3c81a54ec5e2" title="Get the last known electrode status. " alt="" coords="208,71,355,112"/>
+<area shape="rect" id="node4" href="$group__gxtalk.html#gad985e22a4fc0ad682eb4b683e340b7ac" title="Main process of adaptation of actMat. " alt="" coords="207,136,356,177"/>
+<area shape="rect" id="node5" href="$group__gxtalk__private.html#gac77b471b0f4b015c1382d6afc4a43b88" title="Process the cross&#45;talk on the system. " alt="" coords="404,143,583,170"/>
+</map>

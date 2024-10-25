@@ -1,0 +1,5 @@
+<map id="NT_TSI_DRV_InitSpecific" name="NT_TSI_DRV_InitSpecific">
+<area shape="rect" id="node2" href="$group__tsi__drivers__api.html#gaefd1a4cfedcdc5fd26b9314fd26794e8" title="Changes the current working operation mode. " alt="" coords="235,5,416,32"/>
+<area shape="rect" id="node4" href="$group__tsi__drivers__api.html#ga7616d06d9ed4ea386056aa60cea1d739" title="Loads the new configuration into a specific mode. " alt="" coords="221,56,429,83"/>
+<area shape="rect" id="node3" href="$group__tsi__drivers__api.html#ga0aa2f8b9c8eded94f7cc8e35f51d0309" title="Enters the low&#45;power mode of the TSI driver. " alt="" coords="477,5,681,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="nt_module_tsi_params" name="nt_module_tsi_params">
+<area shape="rect" id="node2" href="$namespace_3global_scope_4.html#structtsi__config__t" title="{tsi_config_t\n|+ configSelfCap\l+ configMutual\l+ thresl\l+ thresh\l+ newCalc\l|}" alt="" coords="5,145,119,281"/>
+<area shape="rect" id="node3" href="$group__tsi.html#structnt__module__tsi__noise" title="{nt_module_tsi_noise\n|+ update_rate\l+ noise_mode_timeout\l|}" alt="" coords="143,167,298,259"/>
+<area shape="rect" id="node4" href="$group__filter.html#structnt__filter__iir" title="{nt_filter_iir\n|+ coef1\l|}" alt="" coords="180,5,261,83"/>
+</map>

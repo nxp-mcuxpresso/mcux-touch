@@ -1,0 +1,4 @@
+<map id="_nt_module_get_instance" name="_nt_module_get_instance">
+<area shape="rect" id="node2" href="$group__system__api__private.html#ga1f456757ae5d14cb8567395656a2fe29" title="Function used internally to detect, whether new Modules data are available and to set the same flag f..." alt="" coords="224,5,371,47"/>
+<area shape="rect" id="node3" href="$group__gpioint.html#gad1521767d9b9cf3c2c1da2ef74abc465" title="This interrupt handler must be invoked from the user&#39;s port interrupt ISR. There can be other pins on..." alt="" coords="419,13,567,39"/>
+</map>

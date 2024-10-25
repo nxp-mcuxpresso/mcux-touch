@@ -1,0 +1,14 @@
+<map id="_nt_mem_alloc" name="_nt_mem_alloc">
+<area shape="rect" id="node2" href="$group__gcontrols__api__private.html#gacd5b54e40cb072849b8efaf644ba87cc" title="Initialize the control object. " alt="" coords="183,107,294,133"/>
+<area shape="rect" id="node9" href="$group__electrodes__api__private.html#ga3f001f2f8f52ae4838d0c6743ae9faaa" title="Initialize an electrode object. " alt="" coords="177,157,301,184"/>
+<area shape="rect" id="node10" href="$group__modules__api__private.html#ga03136c3b942f34f2eb494bd80dcff500" title="Init module. " alt="" coords="182,56,295,83"/>
+<area shape="rect" id="node12" href="$group__system__api__private.html#gad4602aab842736f0c26ad1894877e31f" title="Initialize system. " alt="" coords="399,5,514,32"/>
+<area shape="rect" id="node13" href="$group__gxtalk__private.html#ga868083c2625bf5c4a8144328ca4f9b21" title="Init the cross&#45;talk electrode for cross&#45;talk processes. " alt="" coords="164,208,313,235"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga36d40a0805142a11347f0fd1df887fec" title="Invoke the control function based on the option parameter. " alt="" coords="389,107,525,149"/>
+<area shape="rect" id="node4" href="$group__system__api.html#gae50df373022cdf199c235f19baff02ff" title="NXP Touch Library initialization. " alt="" coords="645,5,702,32"/>
+<area shape="rect" id="node5" href="$group__system__api.html#ga79bb046f88b50bca26e3b20991fb1787" title="Main Trigger function to acquire the touch&#45;sensing data. " alt="" coords="635,56,711,83"/>
+<area shape="rect" id="node6" href="$group__system__api.html#gab7f8ce7df0895777cc3b95837d651844" title="NXP Touch Main processing entry point. " alt="" coords="641,107,706,133"/>
+<area shape="rect" id="node7" href="$group__system__api__private.html#ga1f456757ae5d14cb8567395656a2fe29" title="Function used internally to detect, whether new Modules data are available and to set the same flag f..." alt="" coords="600,158,747,199"/>
+<area shape="rect" id="node8" href="$group__gpioint.html#gad1521767d9b9cf3c2c1da2ef74abc465" title="This interrupt handler must be invoked from the user&#39;s port interrupt ISR. There can be other pins on..." alt="" coords="795,165,943,192"/>
+<area shape="rect" id="node11" href="$group__system__api__private.html#gaab014d1ba447cc0bfa94fb7860f9606c" title="Invoke the module function based on the option parameter. " alt="" coords="361,56,552,83"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="nt_system_get_time_counter" name="nt_system_get_time_counter">
+<area shape="rect" id="node2" href="$group__electrodes__api__private.html#ga6c458ebb1ee54759d40e6199daec1f5a" title="Set the status of the electrode. " alt="" coords="193,5,361,32"/>
+<area shape="rect" id="node4" href="$group__system__api.html#gaea19c8020bca5d6ab99f97debc82fdd1" title="Returns the system time counter offset. " alt="" coords="207,57,347,98"/>
+<area shape="rect" id="node8" href="$group__system__api__private.html#ga19dfb62e2ad4b04d8020efeb1a8f8c8d" title="Time offset by a defined period. " alt="" coords="204,122,351,163"/>
+<area shape="rect" id="node3" href="$group__electrodes__api__private.html#ga3f001f2f8f52ae4838d0c6743ae9faaa" title="Initialize an electrode object. " alt="" coords="426,5,550,32"/>
+<area shape="rect" id="node5" href="$group__electrodes__api__private.html#gaa742be52fe935433013698a4bf53d886" title="Get the time since the last electrode event. " alt="" coords="409,57,567,98"/>
+<area shape="rect" id="node6" href="$group__electrodes__api.html#ga8cc274664131183b1a7b1096abe2d6f8" title="Get the time from the last electrode event. " alt="" coords="618,23,769,65"/>
+<area shape="rect" id="node7" href="$group__electrodes__api__private.html#ga63abeb18e20cfca79c1fd520119af2b0" title="Determine, whether the specified time (or its multiples) has elapsed since the last electrode event..." alt="" coords="615,89,772,130"/>
+</map>

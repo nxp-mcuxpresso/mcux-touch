@@ -1,0 +1,9 @@
+<map id="_nt_system_xtalk_process" name="_nt_system_xtalk_process">
+<area shape="rect" id="node2" href="$group__electrodes__api__private.html#gaaa440631fbceba6ba3e2af1458c4aa6e" title="Return difference between the signal and its baseline. " alt="" coords="465,5,625,32"/>
+<area shape="rect" id="node3" href="$group__gxtalk.html#gad985e22a4fc0ad682eb4b683e340b7ac" title="Main process of adaptation of actMat. " alt="" coords="250,57,399,98"/>
+<area shape="rect" id="node6" href="$group__gxtalk.html#gaede0d2de54a276828192085b36dbe1da" title="Full transformation matrix calculation. " alt="" coords="232,123,417,149"/>
+<area shape="rect" id="node7" href="$group__gxtalk.html#ga9bd9869f37484e1718ed203678d9798c" title="Calculate improved activation level for given sensor based on measured activation vector..." alt="" coords="261,173,389,200"/>
+<area shape="rect" id="node8" href="$group__electrodes__api__private.html#ga493874ff1aa30147171333f06cd4a051" title="Set the xtalk reduced delta signal for the electrode. " alt="" coords="232,224,417,251"/>
+<area shape="rect" id="node4" href="$group__electrodes__api__private.html#ga0052bb918c9f3c8a391ad8d58a94e9f3" title="Get the last known electrode status. " alt="" coords="469,57,622,98"/>
+<area shape="rect" id="node5" href="$group__electrodes__api__private.html#gabf7d471a084fd4eb4613e77e9847abc6" title="Get the electrode status by specifying the history buffer index. " alt="" coords="673,64,841,91"/>
+</map>

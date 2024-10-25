@@ -1,0 +1,12 @@
+<map id="NXP Touch Private API" name="NXP Touch Private API">
+<area shape="rect" id="node1" href="$group__electrodes__private.html" title="Electrodes" alt="" coords="241,5,325,32"/>
+<area shape="rect" id="node2" href="$group__xtalk__private.html" title="Crosstalk" alt="" coords="244,56,321,83"/>
+<area shape="rect" id="node3" href="$group__controls__private.html" title="Controls" alt="" coords="247,107,318,133"/>
+<area shape="rect" id="node4" href="$group__freemaster__private.html" title="FreeMASTER support" alt="" coords="208,157,357,184"/>
+<area shape="rect" id="node5" href="$group__safety__private.html" title="safety" alt="" coords="254,208,311,235"/>
+<area shape="rect" id="node6" href="$group__detectors__private.html" title="Key Detectors" alt="" coords="230,259,335,285"/>
+<area shape="rect" id="node7" href="$group__modules__private.html" title="Modules" alt="" coords="247,309,318,336"/>
+<area shape="rect" id="node8" href="$group__filter__private.html" title="Filters" alt="" coords="253,360,312,387"/>
+<area shape="rect" id="node9" href="$group__system__private.html" title="System" alt="" coords="249,411,316,437"/>
+<area shape="rect" id="node10" href="$group__memory__private.html" title="Memory Management" alt="" coords="209,461,357,488"/>
+</map>

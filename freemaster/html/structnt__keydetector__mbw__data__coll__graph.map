@@ -1,0 +1,6 @@
+<map id="nt_keydetector_mbw_data" name="nt_keydetector_mbw_data">
+<area shape="rect" id="node2" href="$group__filter.html#structnt__filter__asym__smooth" title="{nt_filter_asym_smooth\n|+ alpha_up\l+ alpha_up1\l+ alpha_down\l+ alpha_down1\l|}" alt="" coords="5,5,159,127"/>
+<area shape="rect" id="node3" href="$group__filter__private.html#structnt__filter__moving__average__data" title="{nt_filter_moving_average_data\n|+ sum\l|}" alt="" coords="183,27,378,105"/>
+<area shape="rect" id="node4" href="$group__filter.html#structnt__filter__smooth" title="{nt_filter_smooth\n|+ alpha\l+ alpha1\l|}" alt="" coords="402,20,517,112"/>
+<area shape="rect" id="node5" href="$group__filter.html#structnt__filter__moving__average" title="{nt_filter_moving_average\n|+ n2_order\l|}" alt="" coords="545,27,707,105"/>
+</map>

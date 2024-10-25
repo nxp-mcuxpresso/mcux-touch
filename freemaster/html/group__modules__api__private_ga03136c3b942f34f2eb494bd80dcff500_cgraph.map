@@ -1,0 +1,9 @@
+<map id="_nt_module_init" name="_nt_module_init">
+<area shape="rect" id="node2" href="$group__memory__api__private.html#ga993132b829f9af17646ff4e83ced17b1" title="Allocation of memory from the memory pool. " alt="" coords="209,5,319,32"/>
+<area shape="rect" id="node4" href="$group__modules__api__private.html#gaebb6560d1eae7c55abd6164842b6f03d" title="_nt_module_count_electrodes" alt="" coords="167,56,361,83"/>
+<area shape="rect" id="node5" href="$group__modules__api__private.html#ga9ab0f0a084307697f55235ea7bf8f628" title="Set the module&#39;s mode. " alt="" coords="187,107,341,133"/>
+<area shape="rect" id="node6" href="$group__electrodes__api__private.html#ga266dd7e680d903f89ca957e414f22b95" title="Get the shielding electrode. " alt="" coords="181,157,347,184"/>
+<area shape="rect" id="node7" href="$group__electrodes__api__private.html#ga79ee21d51e46449f2b52160d1f410464" title="Get the electrode index in the module electrode array structure pointer. " alt="" coords="183,209,345,250"/>
+<area shape="rect" id="node8" href="$group__freemaster__api__private.html#ga10a5c589685e2b8e3d673db45aa43ec6" title="This function adds a dynamic variable into the FreeMASTER TSA table. " alt="" coords="196,274,332,315"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga66506bf9a380e50a3df9ea745a868b33" title="Obtain a pointer to the system. " alt="" coords="409,5,524,32"/>
+</map>

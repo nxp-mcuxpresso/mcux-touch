@@ -1,0 +1,5 @@
+<map id="nt_electrode_get_module_data" name="nt_electrode_get_module_data">
+<area shape="rect" id="node2" href="$group__electrodes__api.html#ga6bc8d5e594457b1ad1fdb5b18a8a1cc6" title="Resume the electrode after the Suspending (temp.disabled), without reseting the keydetector. " alt="" coords="252,5,395,32"/>
+<area shape="rect" id="node3" href="$group__electrodes__api.html#ga7ed17629f1ddf788ec65edc88accd5ed" title="Disable the electrode. " alt="" coords="253,56,394,83"/>
+<area shape="rect" id="node4" href="$group__electrodes__api.html#ga1dc91e614acf6720a6b7f93f459c5643" title="Suspend (temporary disable) the electrode. " alt="" coords="443,56,592,83"/>
+</map>

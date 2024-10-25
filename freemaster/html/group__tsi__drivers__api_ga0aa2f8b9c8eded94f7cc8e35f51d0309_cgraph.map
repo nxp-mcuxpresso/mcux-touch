@@ -1,0 +1,5 @@
+<map id="NT_TSI_DRV_EnableLowPower" name="NT_TSI_DRV_EnableLowPower">
+<area shape="rect" id="node2" href="$group__tsi__drivers__api.html#gaefd1a4cfedcdc5fd26b9314fd26794e8" title="Changes the current working operation mode. " alt="" coords="257,56,439,83"/>
+<area shape="rect" id="node3" href="$group__nt__osa.html#ga5575d2a4ed17feae3d509ddca322e875" title="NT_OSA_MutexUnlock" alt="" coords="493,5,649,32"/>
+<area shape="rect" id="node4" href="$group__tsi__drivers__api.html#gae219897e89bd6b96978aad53ed3c2cd0" title="Initializes TSI v5 in both modes (self cap, mutual). " alt="" coords="487,56,655,83"/>
+</map>

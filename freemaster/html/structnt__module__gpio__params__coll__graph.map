@@ -1,0 +1,3 @@
+<map id="nt_module_gpio_params" name="nt_module_gpio_params">
+<area shape="rect" id="node2" href="$group__gpio.html#structnt__module__gpio__user__interface" title="{nt_module_gpio_user\l_interface\n|+ set_pin_output_ptr\l+ set_pin_input_ptr\l+ set_pin_low_ptr\l+ set_pin_high_ptr\l+ get_pin_value_ptr\l+ set_pin_default_state_ptr\l+ init_timer_ptr\l+ start_timer_ptr\l+ stop_timer_ptr\l+ timer_reset_counter_ptr\l+ timer_get_counter_ptr\l+ timer_get_overrun_ptr\l+ set_pin_pull_up_ptr\l+ set_pin_pull_down_ptr\l+ set_pin_tsi_mode_ptr\l+ set_pin_gpio_mode_ptr\l|}" alt="" coords="5,5,184,317"/>
+</map>

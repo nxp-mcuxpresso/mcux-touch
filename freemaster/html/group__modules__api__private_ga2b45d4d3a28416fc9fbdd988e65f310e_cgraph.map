@@ -1,0 +1,4 @@
+<map id="_nt_module_get_electrodes_state" name="_nt_module_get_electrodes_state">
+<area shape="rect" id="node2" href="$group__electrodes__api__private.html#ga580d5264988af81ce680f08154486939" title="Get the state of the electrode. " alt="" coords="235,13,405,39"/>
+<area shape="rect" id="node3" href="$group__electrodes__api__private.html#gabf7d471a084fd4eb4613e77e9847abc6" title="Get the electrode status by specifying the history buffer index. " alt="" coords="453,13,621,39"/>
+</map>

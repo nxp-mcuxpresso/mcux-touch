@@ -1,0 +1,3 @@
+<map id="nt_module_gpioint_params" name="nt_module_gpioint_params">
+<area shape="rect" id="node2" href="$group__gpioint.html#structnt__module__gpioint__user__interface" title="{nt_module_gpioint_user\l_interface\n|+ set_pin_output_ptr\l+ set_pin_input_ptr\l+ set_pin_low_ptr\l+ set_pin_high_ptr\l+ init_pin_ptr\l+ set_pin_interrupt_ptr\l+ clear_pin_interrupt_ptr\l+ init_timer_ptr\l+ start_timer_ptr\l+ stop_timer_ptr\l+ timer_reset_counter_ptr\l+ timer_get_counter_ptr\l|}" alt="" coords="9,5,179,259"/>
+</map>

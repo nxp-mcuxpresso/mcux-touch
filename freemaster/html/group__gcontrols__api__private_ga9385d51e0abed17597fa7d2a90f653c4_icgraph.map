@@ -1,0 +1,8 @@
+<map id="_nt_control_overrun" name="_nt_control_overrun">
+<area shape="rect" id="node2" href="$group__system__api__private.html#ga36d40a0805142a11347f0fd1df887fec" title="Invoke the control function based on the option parameter. " alt="" coords="188,74,324,115"/>
+<area shape="rect" id="node3" href="$group__system__api.html#gae50df373022cdf199c235f19baff02ff" title="NXP Touch Library initialization. " alt="" coords="417,5,474,32"/>
+<area shape="rect" id="node4" href="$group__system__api.html#ga79bb046f88b50bca26e3b20991fb1787" title="Main Trigger function to acquire the touch&#45;sensing data. " alt="" coords="407,56,483,83"/>
+<area shape="rect" id="node5" href="$group__system__api.html#gab7f8ce7df0895777cc3b95837d651844" title="NXP Touch Main processing entry point. " alt="" coords="413,107,478,133"/>
+<area shape="rect" id="node6" href="$group__system__api__private.html#ga1f456757ae5d14cb8567395656a2fe29" title="Function used internally to detect, whether new Modules data are available and to set the same flag f..." alt="" coords="372,158,519,199"/>
+<area shape="rect" id="node7" href="$group__gpioint.html#gad1521767d9b9cf3c2c1da2ef74abc465" title="This interrupt handler must be invoked from the user&#39;s port interrupt ISR. There can be other pins on..." alt="" coords="567,165,715,192"/>
+</map>

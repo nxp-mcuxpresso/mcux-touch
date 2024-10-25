@@ -1,0 +1,4 @@
+<map id="nt_keydetector_safa" name="nt_keydetector_safa">
+<area shape="rect" id="node2" href="$group__filter.html#structnt__filter__iir" title="{nt_filter_iir\n|+ coef1\l|}" alt="" coords="5,5,87,83"/>
+<area shape="rect" id="node3" href="$group__filter.html#structnt__filter__moving__average" title="{nt_filter_moving_average\n|+ n2_order\l|}" alt="" coords="111,5,274,83"/>
+</map>

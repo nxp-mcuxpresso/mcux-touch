@@ -1,0 +1,8 @@
+<map id="nt_electrode_suspend" name="nt_electrode_suspend">
+<area shape="rect" id="node2" href="$group__electrodes__api.html#ga7ed17629f1ddf788ec65edc88accd5ed" title="Disable the electrode. " alt="" coords="203,56,344,83"/>
+<area shape="rect" id="node3" href="$group__electrodes__api.html#ga45cf24933127ce72fcda34a3e8527442" title="Get module data structure pointer. " alt="" coords="392,5,591,32"/>
+<area shape="rect" id="node5" href="$group__electrodes__api__private.html#ga0638e7f7e5062a88763ea86c3ce48acc" title="Get electrode data structure pointer. " alt="" coords="413,56,570,83"/>
+<area shape="rect" id="node7" href="$group__electrodes__api__private.html#ga829a2f11bdde85dfd318eac539f78fc6" title="_nt_electrode_clear_flag" alt="" coords="410,107,573,133"/>
+<area shape="rect" id="node4" href="$group__system__api__private.html#ga66506bf9a380e50a3df9ea745a868b33" title="Obtain a pointer to the system. " alt="" coords="663,5,777,32"/>
+<area shape="rect" id="node6" href="$group__electrodes__api__private.html#ga79ee21d51e46449f2b52160d1f410464" title="Get the electrode index in the module electrode array structure pointer. " alt="" coords="639,57,801,98"/>
+</map>

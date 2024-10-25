@@ -1,0 +1,11 @@
+<map id="nt_module_special_data" name="nt_module_special_data">
+<area shape="rect" id="node2" href="$group__gpioint__private.html#structnt__module__gpioint__data" title="{nt_module_gpioint_data\n|+ pen\l+ measured_pin\l+ scan_status\l|}" alt="" coords="5,587,164,693"/>
+<area shape="rect" id="node3" href="$group__gpio__private.html#structnt__module__gpio__data" title="{nt_module_gpio_data\n|+ pen\l|}" alt="" coords="188,601,333,679"/>
+<area shape="rect" id="node4" href="$group__cs__private.html#structnt__module__cs__data" title="{nt_module_cs_data\n||}" alt="" coords="357,601,492,679"/>
+<area shape="rect" id="node5" href="$group__cs__drivers.html#structnt__cs__state__t" title="{nt_cs_state_t\n|+ status\l+ pCallBackFunc\l+ usrData\l+ lock\l+ lockChangeMode\l+ opMode\l+ counters\l|}" alt="" coords="356,359,491,524"/>
+<area shape="rect" id="node6" href="$group__cs__drivers.html#structnt__cs__operation__mode__t" title="{nt_cs_operation_mode_t\n|+ enabledElectrodes\l+ config\l|}" alt="" coords="335,204,499,296"/>
+<area shape="rect" id="node7" href="$group__tsi__private.html#structnt__module__tsi__data" title="{nt_module_tsi_data\n|+ noise_timestamp\l|}" alt="" coords="516,601,651,679"/>
+<area shape="rect" id="node8" href="$group__tsi__drivers.html#structnt__tsi__state__t" title="{nt_tsi_state_t\n|+ status\l+ opSatus\l+ pCallBackFunc\l+ usrData\l+ lock\l+ lockChangeMode\l+ opMode\l|}" alt="" coords="519,359,653,524"/>
+<area shape="rect" id="node9" href="$group__tsi__drivers.html#structnt__tsi__operation__mode__t" title="{nt_tsi_operation_mode_t\n|+ enabledElectrodes\l|}" alt="" coords="523,211,687,289"/>
+<area shape="rect" id="node10" href="$namespace_3global_scope_4.html#structtsi__config__t" title="{tsi_config_t\n|+ configSelfCap\l+ configMutual\l+ thresl\l+ thresh\l+ newCalc\l|}" alt="" coords="548,5,661,141"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="_nt_system_get_time_period" name="_nt_system_get_time_period">
+<area shape="rect" id="node2" href="$group__electrodes__api__private.html#ga63abeb18e20cfca79c1fd520119af2b0" title="Determine, whether the specified time (or its multiples) has elapsed since the last electrode event..." alt="" coords="200,5,357,47"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga19dfb62e2ad4b04d8020efeb1a8f8c8d" title="Time offset by a defined period. " alt="" coords="205,71,352,112"/>
+</map>

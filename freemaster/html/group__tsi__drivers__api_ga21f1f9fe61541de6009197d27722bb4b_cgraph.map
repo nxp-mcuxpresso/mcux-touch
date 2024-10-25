@@ -1,0 +1,7 @@
+<map id="NT_TSI_DRV_Measure" name="NT_TSI_DRV_Measure">
+<area shape="rect" id="node2" href="$group__modules__api__private.html#ga3865829edd775673d7f030b0711ead18" title="Get the module data structure pointer. " alt="" coords="217,5,363,32"/>
+<area shape="rect" id="node4" href="$group__system__api__private.html#ga440a1f77f7421da1452cb7c53698c2f3" title="Find the n&#45;th instance of a module of a specified type. " alt="" coords="208,56,372,83"/>
+<area shape="rect" id="node5" href="$group__nt__osa.html#ga5575d2a4ed17feae3d509ddca322e875" title="NT_OSA_MutexUnlock" alt="" coords="212,107,368,133"/>
+<area shape="rect" id="node6" href="$group__electrodes__api__private.html#ga834afaa303a6fa7ad0f4f39274ad2bba" title="_nt_electrode_get_flag" alt="" coords="214,157,366,184"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga66506bf9a380e50a3df9ea745a868b33" title="Obtain a pointer to the system. " alt="" coords="420,5,535,32"/>
+</map>

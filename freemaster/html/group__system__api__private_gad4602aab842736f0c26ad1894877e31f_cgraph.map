@@ -1,0 +1,6 @@
+<map id="_nt_system_init" name="_nt_system_init">
+<area shape="rect" id="node2" href="$group__system__api__private.html#ga30851f4f4bfaffd5cf1e8dcede0dbf58" title="_nt_system_check_data" alt="" coords="173,5,337,32"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga798b79aa3067fa1d129574629a13e638" title="_nt_system_count_pointer\l_array" alt="" coords="168,57,343,98"/>
+<area shape="rect" id="node4" href="$group__memory__api__private.html#ga993132b829f9af17646ff4e83ced17b1" title="Allocation of memory from the memory pool. " alt="" coords="200,123,311,149"/>
+<area shape="rect" id="node5" href="$group__system__api__private.html#ga66506bf9a380e50a3df9ea745a868b33" title="Obtain a pointer to the system. " alt="" coords="391,123,505,149"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="Controls" name="Controls">
+<area shape="rect" id="node1" href="$group__ntapi.html" title="NXP Touch User API" alt="" coords="5,183,148,209"/>
+<area shape="rect" id="node2" href="$group__arotary.html" title="Analog Rotary Control" alt="" coords="315,5,464,32"/>
+<area shape="rect" id="node3" href="$group__matrix.html" title="Matrix Control" alt="" coords="338,56,441,83"/>
+<area shape="rect" id="node4" href="$group__keypad.html" title="Keypad Control" alt="" coords="334,107,445,133"/>
+<area shape="rect" id="node5" href="$group__aslider.html" title="Analog Slider Control" alt="" coords="317,157,461,184"/>
+<area shape="rect" id="node6" href="$group__gcontrols.html" title="General API" alt="" coords="343,208,435,235"/>
+<area shape="rect" id="node7" href="$group__rotary.html" title="Rotary Control" alt="" coords="337,259,442,285"/>
+<area shape="rect" id="node8" href="$group__proxi.html" title="Proxi Control" alt="" coords="341,309,438,336"/>
+<area shape="rect" id="node10" href="$group__slider.html" title="Slider control" alt="" coords="340,360,439,387"/>
+</map>

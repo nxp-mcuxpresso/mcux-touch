@@ -1,0 +1,7 @@
+<map id="Key Detectors" name="Key Detectors">
+<area shape="rect" id="node1" href="$group__usafa__prv.html" title="uSafa Detector" alt="" coords="393,5,501,32"/>
+<area shape="rect" id="node2" href="$group__afid__private.html" title="Advanced Filtering\l and Integrating Detection" alt="" coords="361,57,532,98"/>
+<area shape="rect" id="node3" href="$group__mbw__prv.html" title="mbw Detector" alt="" coords="395,123,498,149"/>
+<area shape="rect" id="node5" href="$group__safa__prv.html" title="Safa Detector" alt="" coords="396,173,497,200"/>
+<area shape="rect" id="node6" href="$group__ntapi__private.html" title="NXP Touch Private API" alt="" coords="5,93,160,120"/>
+</map>

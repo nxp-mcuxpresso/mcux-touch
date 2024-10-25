@@ -1,0 +1,5 @@
+<map id="nt_keydetector_afid_data" name="nt_keydetector_afid_data">
+<area shape="rect" id="node2" href="$group__afid__private.html#structnt__keydetector__afid__asc__data" title="{nt_keydetector_afid\l_asc_data\n|+ max_resets\l|}" alt="" coords="5,13,140,105"/>
+<area shape="rect" id="node3" href="$group__filter__private.html#structnt__filter__moving__average__data" title="{nt_filter_moving_average_data\n|+ sum\l|}" alt="" coords="165,20,359,97"/>
+<area shape="rect" id="node4" href="$group__filter__private.html#structnt__filter__fbutt__data" title="{nt_filter_fbutt_data\n|+ y\l+ x\l+ coeficient\l|}" alt="" coords="383,5,511,112"/>
+</map>

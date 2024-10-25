@@ -1,0 +1,3 @@
+The NXP Touch Library Reference Manual is loacated in touch middleware, 
+to open it go to:
+..\freemaster\html\index.html

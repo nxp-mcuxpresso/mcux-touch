@@ -1,0 +1,11 @@
+<map id="_nt_electrode_get_status" name="_nt_electrode_get_status">
+<area shape="rect" id="node2" href="$group__electrodes__api__private.html#ga0052bb918c9f3c8a391ad8d58a94e9f3" title="Get the last known electrode status. " alt="" coords="230,104,383,145"/>
+<area shape="rect" id="node7" href="$group__electrodes__api__private.html#ga580d5264988af81ce680f08154486939" title="Get the state of the electrode. " alt="" coords="221,209,392,235"/>
+<area shape="rect" id="node3" href="$group__gcontrols__api.html#gaeda5b5f0591cd332190fc06935bbb096" title="Get touched electrode. " alt="" coords="459,5,602,47"/>
+<area shape="rect" id="node4" href="$group__electrodes__api.html#ga101ad0801646f581dd6a3c81a54ec5e2" title="Get the last known electrode status. " alt="" coords="457,71,604,112"/>
+<area shape="rect" id="node5" href="$group__gxtalk.html#gad985e22a4fc0ad682eb4b683e340b7ac" title="Main process of adaptation of actMat. " alt="" coords="456,136,605,177"/>
+<area shape="rect" id="node6" href="$group__gxtalk__private.html#gac77b471b0f4b015c1382d6afc4a43b88" title="Process the cross&#45;talk on the system. " alt="" coords="669,143,848,170"/>
+<area shape="rect" id="node8" href="$group__gcontrols__api__private.html#gace9ddc7c4d19b814c54ae3b475587712" title="Get the state of all control electrodes. " alt="" coords="441,201,620,243"/>
+<area shape="rect" id="node10" href="$group__modules__api__private.html#ga2b45d4d3a28416fc9fbdd988e65f310e" title="Get the module electrodes state. " alt="" coords="440,267,621,308"/>
+<area shape="rect" id="node9" href="$group__gcontrols__api.html#gacbdfaee17bc24b9e117822198b557818" title="Get the state of all control electrodes. " alt="" coords="673,201,844,243"/>
+</map>

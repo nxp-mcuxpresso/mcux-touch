@@ -1,0 +1,6 @@
+<map id="_nt_system_invoke_callback" name="_nt_system_invoke_callback">
+<area shape="rect" id="node2" href="$group__system__api.html#ga79bb046f88b50bca26e3b20991fb1787" title="Main Trigger function to acquire the touch&#45;sensing data. " alt="" coords="289,5,365,32"/>
+<area shape="rect" id="node3" href="$group__modules__api__private.html#ga8a612b3be48401d0e38f7d4cfc2ffba2" title="Check the module electrodes signal levels. " alt="" coords="241,57,413,98"/>
+<area shape="rect" id="node4" href="$group__system__api__private.html#ga1f456757ae5d14cb8567395656a2fe29" title="Function used internally to detect, whether new Modules data are available and to set the same flag f..." alt="" coords="254,122,401,163"/>
+<area shape="rect" id="node5" href="$group__gpioint.html#gad1521767d9b9cf3c2c1da2ef74abc465" title="This interrupt handler must be invoked from the user&#39;s port interrupt ISR. There can be other pins on..." alt="" coords="461,129,609,156"/>
+</map>

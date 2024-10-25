@@ -1,0 +1,9 @@
+<map id="_nt_module_get_data" name="_nt_module_get_data">
+<area shape="rect" id="node2" href="$group__tsi__drivers__api.html#ga21f1f9fe61541de6009197d27722bb4b" title="Starts the measure cycle of the enabled electrodes. " alt="" coords="223,5,377,32"/>
+<area shape="rect" id="node3" href="$group__gpioint.html#gad1521767d9b9cf3c2c1da2ef74abc465" title="This interrupt handler must be invoked from the user&#39;s port interrupt ISR. There can be other pins on..." alt="" coords="226,56,374,83"/>
+<area shape="rect" id="node4" href="$group__gpioint.html#gaffa05c80e78767aca24c89099da4bd07" title="This interrupt handler should be invoked from the user&#39;s timer interrupt ISR. It is not mandatory to ..." alt="" coords="200,107,400,133"/>
+<area shape="rect" id="node5" href="$group__gmodules__api.html#gadc53ee388ed66d22327ec324be403798" title="Recalibrate the module. The function forces the recalibration process of the module to get optimized ..." alt="" coords="225,157,375,184"/>
+<area shape="rect" id="node6" href="$group__gmodules__api.html#ga60c22b7ed71929d002fddde431edd38b" title="Changes the module mode of the operation. " alt="" coords="215,208,385,235"/>
+<area shape="rect" id="node7" href="$group__gmodules__api.html#ga2a1ec98098baeb2a2e165f7f94f17c84" title="Load module configuration for the selected mode. The function loads the new configuration to the modu..." alt="" coords="203,259,397,285"/>
+<area shape="rect" id="node8" href="$group__gmodules__api.html#ga0ea441c50199a8a21ab2db843036346d" title="Saves the module configuration for the selected mode. The function saves the configuration from the m..." alt="" coords="203,309,397,336"/>
+</map>

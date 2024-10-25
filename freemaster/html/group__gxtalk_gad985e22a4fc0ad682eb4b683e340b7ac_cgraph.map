@@ -1,0 +1,5 @@
+<map id="nt_xtalk_adapt_model_process" name="nt_xtalk_adapt_model_process">
+<area shape="rect" id="node2" href="$group__electrodes__api__private.html#ga0052bb918c9f3c8a391ad8d58a94e9f3" title="Get the last known electrode status. " alt="" coords="206,5,359,47"/>
+<area shape="rect" id="node4" href="$group__electrodes__api__private.html#gaaa440631fbceba6ba3e2af1458c4aa6e" title="Return difference between the signal and its baseline. " alt="" coords="203,71,363,98"/>
+<area shape="rect" id="node3" href="$group__electrodes__api__private.html#gabf7d471a084fd4eb4613e77e9847abc6" title="Get the electrode status by specifying the history buffer index. " alt="" coords="411,13,579,39"/>
+</map>

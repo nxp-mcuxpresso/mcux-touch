@@ -1,0 +1,8 @@
+<map id="Modules" name="Modules">
+<area shape="rect" id="node1" href="$group__tsi__private.html" title="TSI module" alt="" coords="359,5,445,32"/>
+<area shape="rect" id="node2" href="$group__gpioint__private.html" title="GPIO interrupt module" alt="" coords="327,56,477,83"/>
+<area shape="rect" id="node3" href="$group__cs__private.html" title="CS module" alt="" coords="359,107,445,133"/>
+<area shape="rect" id="node6" href="$group__gmodules__private.html" title="General API" alt="" coords="356,157,448,184"/>
+<area shape="rect" id="node7" href="$group__gpio__private.html" title="GPIO module" alt="" coords="352,208,452,235"/>
+<area shape="rect" id="node5" href="$group__ntapi__private.html" title="NXP Touch Private API" alt="" coords="5,107,160,133"/>
+</map>

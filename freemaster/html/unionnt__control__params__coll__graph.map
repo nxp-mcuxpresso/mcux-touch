@@ -1,0 +1,7 @@
+<map id="nt_control_params" name="nt_control_params">
+<area shape="rect" id="node2" href="$group__arotary.html#structnt__control__arotary" title="{nt_control_arotary\n|+ range\l|}" alt="" coords="5,49,132,127"/>
+<area shape="rect" id="node3" href="$group__keypad.html#structnt__control__keypad" title="{nt_control_keypad\n|+ groups\l+ multi_touch\l+ groups_size\l+ multi_touch_size\l|}" alt="" coords="156,27,288,149"/>
+<area shape="rect" id="node4" href="$group__matrix.html#structnt__control__matrix" title="{nt_control_matrix\n|+ double_tap_interval\l+ dissimilarity_max\l+ touchpad_size_horizontal\l+ touchpad_size_vertical\l+ sensing_mode\l+ increase_resolution\l+ gesture\l|}" alt="" coords="313,5,494,171"/>
+<area shape="rect" id="node5" href="$group__proxi.html#structnt__control__proxi" title="{nt_control_proxi\n|+ gesture\l+ scale\l+ range\l+ insensitivity\l+ threshold\l|}" alt="" coords="518,20,633,156"/>
+<area shape="rect" id="node6" href="$group__aslider.html#structnt__control__aslider" title="{nt_control_aslider\n|+ range\l+ insensitivity\l|}" alt="" coords="657,42,781,134"/>
+</map>

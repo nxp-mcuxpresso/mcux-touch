@@ -1,0 +1,8 @@
+<map id="nt_module_change_mode" name="nt_module_change_mode">
+<area shape="rect" id="node2" href="$group__modules__api__private.html#ga3865829edd775673d7f030b0711ead18" title="Get the module data structure pointer. " alt="" coords="228,5,375,32"/>
+<area shape="rect" id="node4" href="$group__modules__api__private.html#ga7e17bbf914fd8a1842c3c0792ab26971" title="Set the flag of the module. " alt="" coords="231,56,372,83"/>
+<area shape="rect" id="node5" href="$group__modules__api__private.html#gabc1e6674399906d8297dc4a5332ef5fb" title="Reset the flag of the module. " alt="" coords="226,107,377,133"/>
+<area shape="rect" id="node6" href="$group__system__api__private.html#ga36e488dc92e791225363b2a90b3ac5bf" title="Increments the system counter. " alt="" coords="224,158,379,199"/>
+<area shape="rect" id="node7" href="$group__modules__api__private.html#ga9ab0f0a084307697f55235ea7bf8f628" title="Set the module&#39;s mode. " alt="" coords="225,224,378,251"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga66506bf9a380e50a3df9ea745a868b33" title="Obtain a pointer to the system. " alt="" coords="427,5,541,32"/>
+</map>

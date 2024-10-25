@@ -1,0 +1,7 @@
+<map id="NT_OSA_MutexUnlock" name="NT_OSA_MutexUnlock">
+<area shape="rect" id="node2" href="$group__tsi__drivers__api.html#gab24a9ae246ef9eae21eac681616e3f6e" title="Enables/disables one electrode of the TSI module. " alt="" coords="213,5,413,32"/>
+<area shape="rect" id="node3" href="$group__tsi__drivers__api.html#ga21f1f9fe61541de6009197d27722bb4b" title="Starts the measure cycle of the enabled electrodes. " alt="" coords="236,56,391,83"/>
+<area shape="rect" id="node4" href="$group__tsi__drivers__api.html#ga0aa2f8b9c8eded94f7cc8e35f51d0309" title="Enters the low&#45;power mode of the TSI driver. " alt="" coords="465,132,669,159"/>
+<area shape="rect" id="node5" href="$group__tsi__drivers__api.html#gaefd1a4cfedcdc5fd26b9314fd26794e8" title="Changes the current working operation mode. " alt="" coords="223,157,404,184"/>
+<area shape="rect" id="node6" href="$group__tsi__drivers__api.html#ga7616d06d9ed4ea386056aa60cea1d739" title="Loads the new configuration into a specific mode. " alt="" coords="209,208,417,235"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="_nt_module_set_flag" name="_nt_module_set_flag">
+<area shape="rect" id="node2" href="$group__gpioint.html#gad1521767d9b9cf3c2c1da2ef74abc465" title="This interrupt handler must be invoked from the user&#39;s port interrupt ISR. There can be other pins on..." alt="" coords="847,104,995,130"/>
+<area shape="rect" id="node3" href="$group__modules__api__private.html#ga7b3cbdf0779221762d158978055a1c76" title="Trigger the start of measure event of the module. " alt="" coords="214,74,346,101"/>
+<area shape="rect" id="node9" href="$group__gmodules__api.html#ga60c22b7ed71929d002fddde431edd38b" title="Changes the module mode of the operation. " alt="" coords="195,125,365,152"/>
+<area shape="rect" id="node4" href="$group__system__api__private.html#gaab014d1ba447cc0bfa94fb7860f9606c" title="Invoke the module function based on the option parameter. " alt="" coords="413,100,604,126"/>
+<area shape="rect" id="node5" href="$group__system__api.html#gae50df373022cdf199c235f19baff02ff" title="NXP Touch Library initialization. " alt="" coords="697,49,754,76"/>
+<area shape="rect" id="node6" href="$group__system__api.html#ga79bb046f88b50bca26e3b20991fb1787" title="Main Trigger function to acquire the touch&#45;sensing data. " alt="" coords="687,100,763,126"/>
+<area shape="rect" id="node7" href="$group__system__api.html#gab7f8ce7df0895777cc3b95837d651844" title="NXP Touch Main processing entry point. " alt="" coords="693,150,758,177"/>
+<area shape="rect" id="node8" href="$group__system__api__private.html#ga1f456757ae5d14cb8567395656a2fe29" title="Function used internally to detect, whether new Modules data are available and to set the same flag f..." alt="" coords="652,202,799,243"/>
+</map>

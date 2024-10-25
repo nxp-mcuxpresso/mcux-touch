@@ -1,0 +1,7 @@
+<map id="Key Detectors" name="Key Detectors">
+<area shape="rect" id="node1" href="$group__ntapi.html" title="NXP Touch User API" alt="" coords="5,85,148,112"/>
+<area shape="rect" id="node2" href="$group__safa.html" title="Safa Detector" alt="" coords="384,5,485,32"/>
+<area shape="rect" id="node3" href="$group__mbw.html" title="mbw Detector" alt="" coords="383,56,486,83"/>
+<area shape="rect" id="node4" href="$group__afid.html" title="Advanced Filtering\l and Integrating Detection" alt="" coords="349,107,520,149"/>
+<area shape="rect" id="node5" href="$group__usafa.html" title="Usafa Detector" alt="" coords="381,173,489,200"/>
+</map>

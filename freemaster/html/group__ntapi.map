@@ -1,0 +1,14 @@
+<map id="NXP Touch User API" name="NXP Touch User API">
+<area shape="rect" id="node2" href="$group__electrodes.html" title="Electrodes" alt="" coords="207,5,291,32"/>
+<area shape="rect" id="node3" href="$group__filter.html" title="Filters" alt="" coords="220,56,279,83"/>
+<area shape="rect" id="node4" href="$group__modules.html" title="Modules" alt="" coords="214,107,285,133"/>
+<area shape="rect" id="node5" href="$group__xtalk.html" title="Crosstalk" alt="" coords="211,157,288,184"/>
+<area shape="rect" id="node6" href="$group__tsi__drivers.html" title="TSI Drivers" alt="" coords="207,208,291,235"/>
+<area shape="rect" id="node7" href="$group__detectors.html" title="Key Detectors" alt="" coords="197,259,302,285"/>
+<area shape="rect" id="node8" href="$group__safety.html" title="Safety" alt="" coords="220,309,279,336"/>
+<area shape="rect" id="node9" href="$group__controls.html" title="Controls" alt="" coords="214,360,285,387"/>
+<area shape="rect" id="node10" href="$group__types.html" title="General Types" alt="" coords="196,411,303,437"/>
+<area shape="rect" id="node11" href="$group__system.html" title="System" alt="" coords="216,461,283,488"/>
+<area shape="rect" id="node12" href="$group__cs__drivers.html" title="CS Drivers" alt="" coords="208,512,291,539"/>
+<area shape="rect" id="node13" href="$group__safety_g_p_i_o.html" title="SafetyGPIO" alt="" coords="204,563,295,589"/>
+</map>

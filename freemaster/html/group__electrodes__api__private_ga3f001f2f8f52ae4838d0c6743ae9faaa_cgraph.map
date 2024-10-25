@@ -1,0 +1,7 @@
+<map id="_nt_electrode_init" name="_nt_electrode_init">
+<area shape="rect" id="node2" href="$group__memory__api__private.html#ga993132b829f9af17646ff4e83ced17b1" title="Allocation of memory from the memory pool. " alt="" coords="206,8,317,35"/>
+<area shape="rect" id="node4" href="$group__electrodes__api__private.html#ga6c458ebb1ee54759d40e6199daec1f5a" title="Set the status of the electrode. " alt="" coords="177,60,345,87"/>
+<area shape="rect" id="node6" href="$group__electrodes__api__private.html#ga79ee21d51e46449f2b52160d1f410464" title="Get the electrode index in the module electrode array structure pointer. " alt="" coords="180,111,343,153"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga66506bf9a380e50a3df9ea745a868b33" title="Obtain a pointer to the system. " alt="" coords="406,5,521,32"/>
+<area shape="rect" id="node5" href="$group__system__api.html#ga4fe220d4ddaf55c5e9515643a459683a" title="Returns the system time counter. " alt="" coords="393,57,533,98"/>
+</map>

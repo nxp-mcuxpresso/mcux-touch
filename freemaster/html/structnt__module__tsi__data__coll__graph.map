@@ -1,0 +1,5 @@
+<map id="nt_module_tsi_data" name="nt_module_tsi_data">
+<area shape="rect" id="node2" href="$group__tsi__drivers.html#structnt__tsi__state__t" title="{nt_tsi_state_t\n|+ status\l+ opSatus\l+ pCallBackFunc\l+ usrData\l+ lock\l+ lockChangeMode\l+ opMode\l|}" alt="" coords="20,344,155,509"/>
+<area shape="rect" id="node3" href="$group__tsi__drivers.html#structnt__tsi__operation__mode__t" title="{nt_tsi_operation_mode_t\n|+ enabledElectrodes\l|}" alt="" coords="5,204,169,281"/>
+<area shape="rect" id="node4" href="$namespace_3global_scope_4.html#structtsi__config__t" title="{tsi_config_t\n|+ configSelfCap\l+ configMutual\l+ thresl\l+ thresh\l+ newCalc\l|}" alt="" coords="31,5,144,141"/>
+</map>

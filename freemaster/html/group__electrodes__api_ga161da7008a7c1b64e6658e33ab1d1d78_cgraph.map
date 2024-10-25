@@ -1,0 +1,7 @@
+<map id="nt_electrode_get_last_time_stamp" name="nt_electrode_get_last_time_stamp">
+<area shape="rect" id="node2" href="$group__electrodes__api__private.html#ga0638e7f7e5062a88763ea86c3ce48acc" title="Get electrode data structure pointer. " alt="" coords="200,64,357,91"/>
+<area shape="rect" id="node5" href="$group__electrodes__api__private.html#gadd3eebf3e4ade50ab5ef4e40972f9995" title="Get the last known electrode time&#45;stamp. " alt="" coords="202,118,355,159"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga66506bf9a380e50a3df9ea745a868b33" title="Obtain a pointer to the system. " alt="" coords="429,5,544,32"/>
+<area shape="rect" id="node4" href="$group__electrodes__api__private.html#ga79ee21d51e46449f2b52160d1f410464" title="Get the electrode index in the module electrode array structure pointer. " alt="" coords="405,57,568,98"/>
+<area shape="rect" id="node6" href="$group__electrodes__api__private.html#ga31727b80f4a029a58972561181a41819" title="Get the electrode status time&#45;stamp by specifying the history buffer index. " alt="" coords="408,122,565,163"/>
+</map>

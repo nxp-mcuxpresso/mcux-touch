@@ -1,0 +1,44 @@
+NXP Software Content Register
+
+Package: touch
+Version: 24.12.00
+Outgoing License: LA_OPT_Online_Code_Hosting
+License File: LICENSE
+Type of content: source code
+Description and comments: NXP Touch Library
+Release Location: https://github.com/nxp-mcuxpresso/touch
+Origin:
+      NXP (Proprietary)
+
+
+Package: touch_json
+Version: NA
+Outgoing License: MIT
+License File: freemaster/src/MIT_LICENSE.txt
+Type of content: source code
+Description and comments: JSON Library used for communication between FreeMASTER and JavaScript.
+Release Location: https://github.com/nxp-mcuxpresso/touch
+Origin: 
+      NA
+
+
+Package: toch_gui_mustache
+Version: NA
+Outgoing License: MIT
+License File: freemaster/src/MIT_LICENSE.txt
+Type of content: source code
+Description and comments: mustache javaScript file for Touch GUI Tool
+Release Location: https://github.com/nxp-mcuxpresso/touch
+Origin: 
+      NXP (MIT)
+
+
+Package: toch_gui_jquery
+Version: NA
+Outgoing License: MIT
+License File: https://jquery.org/license
+Type of content: source code
+Description and comments: jQuery javaScript file for Touch GUI Tool graphics
+Release Location: https://github.com/nxp-mcuxpresso/touch
+Origin: 
+      jQuery Foundation

@@ -1,0 +1,5 @@
+<map id="_nt_electrode_get_delta" name="_nt_electrode_get_delta">
+<area shape="rect" id="node2" href="$group__electrodes__api__private.html#ga1ecd4adf99a65dbdf165a1f340017bf5" title="Get the delta signal. " alt="" coords="213,5,367,32"/>
+<area shape="rect" id="node3" href="$group__gxtalk__private.html#gac77b471b0f4b015c1382d6afc4a43b88" title="Process the cross&#45;talk on the system. " alt="" coords="415,85,593,112"/>
+<area shape="rect" id="node4" href="$group__gxtalk.html#gad985e22a4fc0ad682eb4b683e340b7ac" title="Main process of adaptation of actMat. " alt="" coords="215,107,365,149"/>
+</map>

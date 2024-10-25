@@ -1,0 +1,5 @@
+<map id="nt_system_get_time_offset" name="nt_system_get_time_offset">
+<area shape="rect" id="node2" href="$group__electrodes__api__private.html#gaa742be52fe935433013698a4bf53d886" title="Get the time since the last electrode event. " alt="" coords="193,39,351,80"/>
+<area shape="rect" id="node3" href="$group__electrodes__api.html#ga8cc274664131183b1a7b1096abe2d6f8" title="Get the time from the last electrode event. " alt="" coords="402,5,553,47"/>
+<area shape="rect" id="node4" href="$group__electrodes__api__private.html#ga63abeb18e20cfca79c1fd520119af2b0" title="Determine, whether the specified time (or its multiples) has elapsed since the last electrode event..." alt="" coords="399,71,556,112"/>
+</map>

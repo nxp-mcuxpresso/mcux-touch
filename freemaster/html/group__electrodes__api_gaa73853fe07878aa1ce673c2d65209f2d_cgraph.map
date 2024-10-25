@@ -1,0 +1,6 @@
+<map id="nt_electrode_get_raw_signal" name="nt_electrode_get_raw_signal">
+<area shape="rect" id="node2" href="$group__electrodes__api__private.html#ga0638e7f7e5062a88763ea86c3ce48acc" title="Get electrode data structure pointer. " alt="" coords="199,35,356,61"/>
+<area shape="rect" id="node5" href="$group__electrodes__api__private.html#gad2a96054ecf14f165be8ba1a4945c064" title="Get the raw electrode signal. " alt="" coords="201,86,353,127"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga66506bf9a380e50a3df9ea745a868b33" title="Obtain a pointer to the system. " alt="" coords="428,5,543,32"/>
+<area shape="rect" id="node4" href="$group__electrodes__api__private.html#ga79ee21d51e46449f2b52160d1f410464" title="Get the electrode index in the module electrode array structure pointer. " alt="" coords="404,57,567,98"/>
+</map>

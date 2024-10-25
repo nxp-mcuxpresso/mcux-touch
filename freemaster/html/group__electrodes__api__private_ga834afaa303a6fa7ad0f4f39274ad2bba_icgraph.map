@@ -1,0 +1,5 @@
+<map id="_nt_electrode_get_flag" name="_nt_electrode_get_flag">
+<area shape="rect" id="node2" href="$group__gcontrols__api__private.html#ga1781f052c5aeb3cfdcd401025b6daf7a" title="Get the digital state of all control electrodes. " alt="" coords="205,5,384,47"/>
+<area shape="rect" id="node3" href="$group__tsi__drivers__api.html#ga21f1f9fe61541de6009197d27722bb4b" title="Starts the measure cycle of the enabled electrodes. " alt="" coords="217,71,372,98"/>
+<area shape="rect" id="node4" href="$group__electrodes__api.html#ga27082b7ce39ff31bbd19987305517837" title="Get electrode enabled status. " alt="" coords="213,122,376,149"/>
+</map>

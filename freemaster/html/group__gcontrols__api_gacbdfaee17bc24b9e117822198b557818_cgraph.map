@@ -1,0 +1,7 @@
+<map id="nt_control_get_electrodes_state" name="nt_control_get_electrodes_state">
+<area shape="rect" id="node2" href="$group__gcontrols__api__private.html#ga71a7560dce7c13f702d6adc95d7e37b3" title="Array of port clocks. " alt="" coords="242,5,385,32"/>
+<area shape="rect" id="node4" href="$group__gcontrols__api__private.html#gace9ddc7c4d19b814c54ae3b475587712" title="Get the state of all control electrodes. " alt="" coords="224,57,403,98"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga66506bf9a380e50a3df9ea745a868b33" title="Obtain a pointer to the system. " alt="" coords="479,5,593,32"/>
+<area shape="rect" id="node5" href="$group__electrodes__api__private.html#ga580d5264988af81ce680f08154486939" title="Get the state of the electrode. " alt="" coords="451,64,621,91"/>
+<area shape="rect" id="node6" href="$group__electrodes__api__private.html#gabf7d471a084fd4eb4613e77e9847abc6" title="Get the electrode status by specifying the history buffer index. " alt="" coords="669,64,837,91"/>
+</map>

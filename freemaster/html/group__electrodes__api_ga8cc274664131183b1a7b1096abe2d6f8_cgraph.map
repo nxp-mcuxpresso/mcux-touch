@@ -1,0 +1,10 @@
+<map id="nt_electrode_get_time_offset" name="nt_electrode_get_time_offset">
+<area shape="rect" id="node2" href="$group__electrodes__api__private.html#ga0638e7f7e5062a88763ea86c3ce48acc" title="Get electrode data structure pointer. " alt="" coords="204,64,361,91"/>
+<area shape="rect" id="node5" href="$group__electrodes__api__private.html#gaa742be52fe935433013698a4bf53d886" title="Get the time since the last electrode event. " alt="" coords="204,122,361,163"/>
+<area shape="rect" id="node3" href="$group__system__api__private.html#ga66506bf9a380e50a3df9ea745a868b33" title="Obtain a pointer to the system. " alt="" coords="433,5,548,32"/>
+<area shape="rect" id="node4" href="$group__electrodes__api__private.html#ga79ee21d51e46449f2b52160d1f410464" title="Get the electrode index in the module electrode array structure pointer. " alt="" coords="409,57,572,98"/>
+<area shape="rect" id="node6" href="$group__system__api.html#gaea19c8020bca5d6ab99f97debc82fdd1" title="Returns the system time counter offset. " alt="" coords="421,122,561,163"/>
+<area shape="rect" id="node8" href="$group__electrodes__api__private.html#gadd3eebf3e4ade50ab5ef4e40972f9995" title="Get the last known electrode time&#45;stamp. " alt="" coords="414,187,567,229"/>
+<area shape="rect" id="node7" href="$group__system__api.html#ga4fe220d4ddaf55c5e9515643a459683a" title="Returns the system time counter. " alt="" coords="629,122,769,163"/>
+<area shape="rect" id="node9" href="$group__electrodes__api__private.html#ga31727b80f4a029a58972561181a41819" title="Get the electrode status time&#45;stamp by specifying the history buffer index. " alt="" coords="620,187,777,229"/>
+</map>
