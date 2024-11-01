@@ -14,5 +14,4 @@ Release Location: https://github.com/nxp-mcuxpresso/touch
 Origin:
       NXP (Proprietary)
 	  NXP (MIT)
-	  NXP (MIT)
 	  jQuery Foundation (MIT) - https://jquery.org/
