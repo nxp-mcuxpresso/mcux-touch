@@ -1,6 +1,6 @@
 NXP Software Content Register
 
-Package: touch
+Package: mcux-touch
 Version: 24.12.00
 Outgoing License: LA_OPT_Online_Code_Hosting
 License File: LICENSE.txt
@@ -10,7 +10,7 @@ Description and comments:
 	  JSON Library used for communication between FreeMASTER and JavaScript
 	  mustache javaScript file for Touch GUI Tool
 	  jQuery javaScript file for Touch GUI Tool graphics
-Release Location: https://github.com/nxp-mcuxpresso/touch
+Release Location: https://github.com/nxp-mcuxpresso/mcux-touch
 Origin:
       NXP (Proprietary)
 	  jQuery Foundation (MIT) - https://jquery.org/
