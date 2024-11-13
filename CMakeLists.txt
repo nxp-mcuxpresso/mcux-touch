@@ -1,6 +1,6 @@
 # touch
 if (CONFIG_MCUX_COMPONENT_middleware.touch)
-	mcux_component_version(1.0.0)
+	mcux_component_version(2.12)
     mcux_add_include(
         INCLUDES
             source/controls
@@ -1819,7 +1819,7 @@ endif()
 
 # Touch - FRDM_KE1xZ sources
 if (CONFIG_MCUX_COMPONENT_middleware.touch.sources_frdmke1xz)
-	mcux_component_version(1.0.0)
+	mcux_component_version(2.12)
     mcux_add_include(
         BASE_PATH ${SdkRootDirPath}
         INCLUDES
@@ -1848,7 +1848,7 @@ endif()
 
 # Touch - FRDM_K32L2A4S sources
 if (CONFIG_MCUX_COMPONENT_middleware.touch.sources_frdmk32l2a4s)
-	mcux_component_version(1.0.0)
+	mcux_component_version(2.12)
     mcux_add_include(
         BASE_PATH ${SdkRootDirPath}
         INCLUDES
@@ -1872,7 +1872,7 @@ endif()
 
 # Touch - FRDM_MCXN sources
 if (CONFIG_MCUX_COMPONENT_middleware.touch.sources_frdmmcxn)
-	mcux_component_version(1.0.0)
+	mcux_component_version(2.12)
     mcux_add_include(
         BASE_PATH ${SdkRootDirPath}
         INCLUDES
