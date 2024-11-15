@@ -1784,7 +1784,7 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/src/freemaster-client.js
 			freemaster/src/gui.js
 			freemaster/src/html_templates.js
-			freemaster/src/MIT_LICENSE.txt
+			licenses/MIT_LICENSE.txt
 			freemaster/src/mustache.js
 			freemaster/src/nt_average_matrix.js
 			freemaster/src/nt_control.js
