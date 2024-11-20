@@ -21,7 +21,7 @@
 // SOFTWARE.
 
 /*
- * Copyright 2022-2024 NXP
+ * Copyright 2022 NXP
  * Modifications for use in NXP FreeMASTER project:
  * - 2022/10 Minor modifications of error handling code and reporting.
  */
