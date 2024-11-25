@@ -1775,15 +1775,14 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/src/js/animations.js
 			freemaster/src/js/jquery.min.js
 			freemaster/src/js/jquery-ui.min.js
-			freemaster/src/json/cycle.js
-			freemaster/src/json/json.js
-			freemaster/src/json/json_parse.js
-			freemaster/src/json/json_parse_state.js
-			freemaster/src/json/json2.js
 			freemaster/src/cmdhandler.js
 			freemaster/src/freemaster-client.js
 			freemaster/src/gui.js
 			freemaster/src/html_templates.js
+			freemaster/NXPTouch.pmpx
+			freemaster/frdm_ke15z.xml
+			freemaster/frdm_ke16z.xml
+			freemaster/frdm_ke17z.xml
 			licenses/MIT_LICENSE.txt
 			freemaster/src/mustache.js
 			freemaster/src/nt_average_matrix.js
