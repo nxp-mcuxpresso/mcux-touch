@@ -7,12 +7,10 @@ License File: LICENSE.txt
 Type of content: source code
 Description and comments:
 	  NXP Touch Library
-	  JSON Library used for communication between FreeMASTER and JavaScript
 	  mustache javaScript file for Touch GUI Tool
 	  jQuery javaScript file for Touch GUI Tool graphics
 Release Location: https://github.com/nxp-mcuxpresso/mcux-touch
 Origin:
       NXP (Proprietary)
-	  JSON Library (Public Domain) - http://www.JSON.org
       mustache.js (MIT) - https://github.com/janl/mustache.js
 	  jQuery Foundation (MIT) - https://jquery.org/
