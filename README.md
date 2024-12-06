@@ -13,7 +13,8 @@ The NXP Touch Library Reference Manual is located in touch middleware, to open i
 This repository is under **LA_OPT_Online Code Hosting NXP_Software_License**.
 
 ## Examples
-The best examples of the RTCESL functions usage are the Motor Control examples, that are placed on the repository [mcux-sdk-examples](https://github.com/nxp-mcuxpresso/mcux-sdk-examples).
+The examples are placed on the repository [mcux-sdk-examples](https://github.com/nxp-mcuxpresso/mcux-sdk-examples).
+The example list with description:
 
 - **touch_sensing**
   - Example demonstrates the Touch library features enabling to control the RGB LED using touch buttons, slider or rotary elements designed ideally for the FRDM-TOUCH plug-in board together with FRDM-KE15Z, FRDM-KE16Z, FRDM-KE17Z or FRDM-KE17Z512 baseboards.
