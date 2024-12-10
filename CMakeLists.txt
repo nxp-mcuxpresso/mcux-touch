@@ -1813,10 +1813,6 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/src/touch.min.css
 			freemaster/src/xml_converter.js
 			freemaster/values.txt
-			freemaster/frdm_ke15z.xml
-			freemaster/frdm_ke16z.xml
-			freemaster/frdm_ke17z.xml
-			freemaster/NXPTouch.pmpx
     )
 endif()
 
