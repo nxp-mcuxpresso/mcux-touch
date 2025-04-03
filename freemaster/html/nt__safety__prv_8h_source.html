@@ -103,45 +103,51 @@ $(document).ready(function(){initNavTree('nt__safety__prv_8h_source.html','');})
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright 2013 - 2016, Freescale Semiconductor, Inc.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2016-2021 NXP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * All rights reserved.</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _NT_SAFETY_PRV_H_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _NT_SAFETY_PRV_H_</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;nt_types.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="group__gsafety__private.html">   43</a></span>&#160;<span class="keyword">struct </span><a class="code" href="group__gsafety__private.html#structnt__module__safety__interface">nt_module_safety_interface</a></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group__gsafety__private.html#a599f7b4ad2c5b2a5bf383c8345bad592">   45</a></span>&#160;    int32_t (*<a class="code" href="group__gsafety__private.html#a599f7b4ad2c5b2a5bf383c8345bad592">init</a>)(<span class="keyword">struct </span><a class="code" href="group__gmodules__private.html#structnt__module__data">nt_module_data</a> *module);    </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group__gsafety__private.html#a55b0cc63f42794dfed9126a5eca421e3">   46</a></span>&#160;    int32_t (*<a class="code" href="group__gsafety__private.html#a55b0cc63f42794dfed9126a5eca421e3">process</a>)(<span class="keyword">struct </span><a class="code" href="group__gmodules__private.html#structnt__module__data">nt_module_data</a> *module); </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group__gsafety__private.html#a154c3760a893de53520df84d97f72cc6">   47</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__gsafety__private.html#a154c3760a893de53520df84d97f72cc6">name</a>;           </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="group__gsafety__private.html#aceb50e51ce01059b8c523402a5523735">   48</a></span>&#160;    <span class="keyword">const</span> uint32_t <a class="code" href="group__gsafety__private.html#aceb50e51ce01059b8c523402a5523735">params_size</a>; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;int32_t <a class="code" href="group__gsafety__private.html#ga6e0c26660631eb8e1071d8f706ff2d08">_nt_module_safety_init</a>(<span class="keyword">struct</span> <a class="code" href="group__gmodules__private.html#structnt__module__data">nt_module_data</a> *module);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;int32_t <a class="code" href="group__gsafety__private.html#ga3385c50498ef41784d0eeebf1f2db974">_nt_module_safety_process</a>(<span class="keyword">struct</span> <a class="code" href="group__gmodules__private.html#structnt__module__data">nt_module_data</a> *module);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor"></span> <span class="comment">/* end of gsafety_private group */</span> <span class="comment">/* end of safety_private group */</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _NT_SAFETY_PRV_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="group__gsafety__private_html_a599f7b4ad2c5b2a5bf383c8345bad592"><div class="ttname"><a href="group__gsafety__private.html#a599f7b4ad2c5b2a5bf383c8345bad592">nt_module_safety_interface::init</a></div><div class="ttdeci">int32_t(* init)(struct nt_module_data *module)</div><div class="ttdef"><b>Definition:</b> nt_safety_prv.h:45</div></div>
-<div class="ttc" id="group__gsafety__private_html_a154c3760a893de53520df84d97f72cc6"><div class="ttname"><a href="group__gsafety__private.html#a154c3760a893de53520df84d97f72cc6">nt_module_safety_interface::name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> nt_safety_prv.h:47</div></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2016-2021, 2024 NXP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * NXP Proprietary. This software is owned or controlled by NXP and may</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * only be used strictly in accordance with the applicable license terms. </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * By expressly accepting such terms or by downloading, installing,</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * activating and/or otherwise using the software, you are agreeing that</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * you have read, and that you agree to comply with and are bound by,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * such license terms.  If you do not agree to be bound by the applicable</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * license terms, then you may not retain, install, activate or otherwise</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * use the software.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _NT_SAFETY_PRV_H_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _NT_SAFETY_PRV_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;nt_types.h&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="group__gsafety__private.html">   49</a></span>&#160;<span class="keyword">struct </span><a class="code" href="group__gsafety__private.html#structnt__module__safety__interface">nt_module_safety_interface</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="group__gsafety__private.html#a599f7b4ad2c5b2a5bf383c8345bad592">   51</a></span>&#160;    int32_t (*<a class="code" href="group__gsafety__private.html#a599f7b4ad2c5b2a5bf383c8345bad592">init</a>)(<span class="keyword">struct </span><a class="code" href="group__gmodules__private.html#structnt__module__data">nt_module_data</a> *module);    </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="group__gsafety__private.html#a55b0cc63f42794dfed9126a5eca421e3">   52</a></span>&#160;    int32_t (*<a class="code" href="group__gsafety__private.html#a55b0cc63f42794dfed9126a5eca421e3">process</a>)(<span class="keyword">struct </span><a class="code" href="group__gmodules__private.html#structnt__module__data">nt_module_data</a> *module); </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group__gsafety__private.html#a154c3760a893de53520df84d97f72cc6">   53</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code" href="group__gsafety__private.html#a154c3760a893de53520df84d97f72cc6">name</a>;           </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group__gsafety__private.html#aceb50e51ce01059b8c523402a5523735">   54</a></span>&#160;    <span class="keyword">const</span> uint32_t <a class="code" href="group__gsafety__private.html#aceb50e51ce01059b8c523402a5523735">params_size</a>; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;int32_t <a class="code" href="group__gsafety__private.html#ga6e0c26660631eb8e1071d8f706ff2d08">_nt_module_safety_init</a>(<span class="keyword">struct</span> <a class="code" href="group__gmodules__private.html#structnt__module__data">nt_module_data</a> *module);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;int32_t <a class="code" href="group__gsafety__private.html#ga3385c50498ef41784d0eeebf1f2db974">_nt_module_safety_process</a>(<span class="keyword">struct</span> <a class="code" href="group__gmodules__private.html#structnt__module__data">nt_module_data</a> *module);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor"></span> <span class="comment">/* end of gsafety_private group */</span> <span class="comment">/* end of safety_private group */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _NT_SAFETY_PRV_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group__gsafety__private_html_a599f7b4ad2c5b2a5bf383c8345bad592"><div class="ttname"><a href="group__gsafety__private.html#a599f7b4ad2c5b2a5bf383c8345bad592">nt_module_safety_interface::init</a></div><div class="ttdeci">int32_t(* init)(struct nt_module_data *module)</div><div class="ttdef"><b>Definition:</b> nt_safety_prv.h:51</div></div>
+<div class="ttc" id="group__gsafety__private_html_a154c3760a893de53520df84d97f72cc6"><div class="ttname"><a href="group__gsafety__private.html#a154c3760a893de53520df84d97f72cc6">nt_module_safety_interface::name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition:</b> nt_safety_prv.h:53</div></div>
 <div class="ttc" id="group__gsafety__private_html_ga6e0c26660631eb8e1071d8f706ff2d08"><div class="ttname"><a href="group__gsafety__private.html#ga6e0c26660631eb8e1071d8f706ff2d08">_nt_module_safety_init</a></div><div class="ttdeci">int32_t _nt_module_safety_init(struct nt_module_data *module)</div><div class="ttdoc">Init the safety functions for the module. </div></div>
-<div class="ttc" id="group__gsafety__private_html_aceb50e51ce01059b8c523402a5523735"><div class="ttname"><a href="group__gsafety__private.html#aceb50e51ce01059b8c523402a5523735">nt_module_safety_interface::params_size</a></div><div class="ttdeci">const uint32_t params_size</div><div class="ttdef"><b>Definition:</b> nt_safety_prv.h:48</div></div>
-<div class="ttc" id="group__gmodules__private_html_structnt__module__data"><div class="ttname"><a href="group__gmodules__private.html#structnt__module__data">nt_module_data</a></div><div class="ttdef"><b>Definition:</b> nt_modules_prv.h:59</div></div>
-<div class="ttc" id="group__gsafety__private_html_a55b0cc63f42794dfed9126a5eca421e3"><div class="ttname"><a href="group__gsafety__private.html#a55b0cc63f42794dfed9126a5eca421e3">nt_module_safety_interface::process</a></div><div class="ttdeci">int32_t(* process)(struct nt_module_data *module)</div><div class="ttdef"><b>Definition:</b> nt_safety_prv.h:46</div></div>
-<div class="ttc" id="group__gsafety__private_html_structnt__module__safety__interface"><div class="ttname"><a href="group__gsafety__private.html#structnt__module__safety__interface">nt_module_safety_interface</a></div><div class="ttdef"><b>Definition:</b> nt_safety_prv.h:43</div></div>
+<div class="ttc" id="group__gsafety__private_html_aceb50e51ce01059b8c523402a5523735"><div class="ttname"><a href="group__gsafety__private.html#aceb50e51ce01059b8c523402a5523735">nt_module_safety_interface::params_size</a></div><div class="ttdeci">const uint32_t params_size</div><div class="ttdef"><b>Definition:</b> nt_safety_prv.h:54</div></div>
+<div class="ttc" id="group__gmodules__private_html_structnt__module__data"><div class="ttname"><a href="group__gmodules__private.html#structnt__module__data">nt_module_data</a></div><div class="ttdef"><b>Definition:</b> nt_modules_prv.h:65</div></div>
+<div class="ttc" id="group__gsafety__private_html_a55b0cc63f42794dfed9126a5eca421e3"><div class="ttname"><a href="group__gsafety__private.html#a55b0cc63f42794dfed9126a5eca421e3">nt_module_safety_interface::process</a></div><div class="ttdeci">int32_t(* process)(struct nt_module_data *module)</div><div class="ttdef"><b>Definition:</b> nt_safety_prv.h:52</div></div>
+<div class="ttc" id="group__gsafety__private_html_structnt__module__safety__interface"><div class="ttname"><a href="group__gsafety__private.html#structnt__module__safety__interface">nt_module_safety_interface</a></div><div class="ttdef"><b>Definition:</b> nt_safety_prv.h:49</div></div>
 <div class="ttc" id="group__gsafety__private_html_ga3385c50498ef41784d0eeebf1f2db974"><div class="ttname"><a href="group__gsafety__private.html#ga3385c50498ef41784d0eeebf1f2db974">_nt_module_safety_process</a></div><div class="ttdeci">int32_t _nt_module_safety_process(struct nt_module_data *module)</div><div class="ttdoc">Process the safety on the module. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -149,7 +155,7 @@ $(document).ready(function(){initNavTree('nt__safety__prv_8h_source.html','');})
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_2eecd27e108deb48a88e7e9847f192f6.html">nt</a></li><li class="navelem"><a class="el" href="dir_fce88f3aef8e5232c617e90480b9aa4b.html">source</a></li><li class="navelem"><a class="el" href="dir_d58b22b54926307d91999cc88319298b.html">safety</a></li><li class="navelem"><b>nt_safety_prv.h</b></li>
-    <li class="footer">Generated on Fri Aug 2 2024 08:33:26 for NXP Touch Library Reference Manual by
+    <li class="footer">Generated on Mon Dec 2 2024 13:42:31 for NXP Touch Library Reference Manual by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

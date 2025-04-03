@@ -103,40 +103,47 @@ $(document).ready(function(){initNavTree('nt__system__frmstr__prv_8h_source.html
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright 2013 - 2016, Freescale Semiconductor, Inc.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2016-2021 NXP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * All rights reserved.</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef _NT_FRMSTR_PRV_H_</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _NT_FRMSTR_PRV_H_</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;nt_types.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;int32_t <a class="code" href="group__freemaster__api__private.html#ga8f7ceeb8e5090eb34b0fb655d0b64c39">_nt_freemaster_init</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;int32_t <a class="code" href="group__freemaster__api__private.html#ga10a5c589685e2b8e3d673db45aa43ec6">_nt_freemaster_add_variable</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keyword">const</span> <span class="keywordtype">char</span> *type_name, <span class="keyword">const</span> <span class="keywordtype">void</span> *address, uint32_t size);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span> <span class="comment">/* end of freemaster_api_private group */</span> <span class="comment">/* end of freemaster_private group */</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2016-2021, 2024 NXP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * NXP Proprietary. This software is owned or controlled by NXP and may</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * only be used strictly in accordance with the applicable license terms. </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * By expressly accepting such terms or by downloading, installing,</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * activating and/or otherwise using the software, you are agreeing that</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * you have read, and that you agree to comply with and are bound by,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * such license terms.  If you do not agree to be bound by the applicable</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * license terms, then you may not retain, install, activate or otherwise</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * use the software.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#ifndef _NT_FRMSTR_PRV_H_</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _NT_FRMSTR_PRV_H_</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;nt_types.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;int32_t <a class="code" href="group__freemaster__api__private.html#ga8f7ceeb8e5090eb34b0fb655d0b64c39">_nt_freemaster_init</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;int32_t <a class="code" href="group__freemaster__api__private.html#ga10a5c589685e2b8e3d673db45aa43ec6">_nt_freemaster_add_variable</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *name, <span class="keyword">const</span> <span class="keywordtype">char</span> *type_name, <span class="keyword">const</span> <span class="keywordtype">void</span> *address, uint32_t size);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NT_FRMSTR_PRV_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor"></span> <span class="comment">/* end of freemaster_api_private group */</span> <span class="comment">/* end of freemaster_private group */</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NT_FRMSTR_PRV_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="group__freemaster__api__private_html_ga10a5c589685e2b8e3d673db45aa43ec6"><div class="ttname"><a href="group__freemaster__api__private.html#ga10a5c589685e2b8e3d673db45aa43ec6">_nt_freemaster_add_variable</a></div><div class="ttdeci">int32_t _nt_freemaster_add_variable(const char *name, const char *type_name, const void *address, uint32_t size)</div><div class="ttdoc">This function adds a dynamic variable into the FreeMASTER TSA table. </div></div>
-<div class="ttc" id="group__freemaster__api__private_html_ga8f7ceeb8e5090eb34b0fb655d0b64c39"><div class="ttname"><a href="group__freemaster__api__private.html#ga8f7ceeb8e5090eb34b0fb655d0b64c39">_nt_freemaster_init</a></div><div class="ttdeci">int32_t _nt_freemaster_init(void)</div><div class="ttdoc">Initialized the NXP touch FreeMASTER support system. </div><div class="ttdef"><b>Definition:</b> nt_system_frmstr.c:618</div></div>
+<div class="ttc" id="group__freemaster__api__private_html_ga8f7ceeb8e5090eb34b0fb655d0b64c39"><div class="ttname"><a href="group__freemaster__api__private.html#ga8f7ceeb8e5090eb34b0fb655d0b64c39">_nt_freemaster_init</a></div><div class="ttdeci">int32_t _nt_freemaster_init(void)</div><div class="ttdoc">Initialized the NXP touch FreeMASTER support system. </div><div class="ttdef"><b>Definition:</b> nt_system_frmstr.c:625</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_2eecd27e108deb48a88e7e9847f192f6.html">nt</a></li><li class="navelem"><a class="el" href="dir_fce88f3aef8e5232c617e90480b9aa4b.html">source</a></li><li class="navelem"><a class="el" href="dir_1286b1df11550e606dc961a487e942a9.html">system</a></li><li class="navelem"><b>nt_system_frmstr_prv.h</b></li>
-    <li class="footer">Generated on Fri Aug 2 2024 08:33:26 for NXP Touch Library Reference Manual by
+    <li class="footer">Generated on Mon Dec 2 2024 13:42:32 for NXP Touch Library Reference Manual by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

@@ -103,127 +103,133 @@ $(document).ready(function(){initNavTree('nt__safety_8h_source.html','');});
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright 2013 - 2016, Freescale Semiconductor, Inc.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2016-2021 NXP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * All rights reserved.</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _NT_SAFETY_H_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _NT_SAFETY_H_</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;nt_types.h&quot;</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;nt_filters.h&quot;</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;nt_electrodes.h&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;../source/safety/nt_safety_crc.h&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#if (FSL_FEATURE_TSI_VERSION == 5)</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;fsl_ftm.h&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">extern</span> FGPIO_Type *g_gpioBaseAddr[];</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">extern</span> PORT_Type *g_portBaseAddr[];</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">extern</span> FTM_Type *g_ftmBaseAddr[];</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="group__safety.html#ga0598e09f8a488ded8b1c1e9429a1c36f">   32</a></span>&#160;<span class="preprocessor">#define NT_MODULE_SAFETY_NAME &quot;nt_module_safety_interface&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;uint32_t <a class="code" href="group__safety.html#ga93c59fa48bc63342e5b4172a31f4cc21">timer_get_overrun</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gadaa3a4b597c87a8e1395fb1804dcbf23">stop_timer</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#ga44f970d17544b1dbaded6f109580ee46">init_timer</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#ga5488e8015100f4efb5d0ac94e97cfaec">set_pin_ouput</a>(uint32_t port, uint32_t pin);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gac100716ba1b716e2032885dc8c268407">set_pin_low</a>(uint32_t port, uint32_t pin);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#ga38b6123f311c8153a451bbaa046d1886">set_pin_high</a>(uint32_t port, uint32_t pin);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;uint32_t <a class="code" href="group__safety.html#ga4f90e557408c56d709e5d36ab553dc07">get_pin_value</a>(uint32_t port, uint32_t pin);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gab9e06072375bb20625cf0a3f188b8831">set_pin_default_state</a>(uint32_t port, uint32_t pin);</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gaa9854f34aab8315190c2d5945e54b058">start_timer</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gabdbaf6e6c948f5214e2c1dc34bab34ac">timer_reset_counter</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;uint32_t <a class="code" href="group__safety.html#ga824b6dae24c4fdffbd0207669d1b806f">timer_get_counter</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#ga4c2e3c15cd3042d910a936d042b36f04">set_pin_pull_up</a>(uint32_t port, uint32_t pin);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gaddd63a799856c67de1624b8e725e71ab">set_pin_pull_down</a>(uint32_t port, uint32_t pin);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#ga876b3eea3a81e07585798cc0f4bd5757">dis_pin_pull</a>(uint32_t port, uint32_t pin);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#ga7d7af0f9cbc9ead97abc5afa6a1b08eb">set_pin_tsi_mode</a>(uint32_t port, uint32_t pin);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#ga05132c9abe0d7eab0aa89e645ab4546b">set_pin_gpio_mode</a>(uint32_t port, uint32_t pin);</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gacfce6c622f3c1b913706b4de24470f28">configure_gpio_touch_sensing_pins</a>(uint32_t instance);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gaaa55671749a0091a99a580a1917f216c">set_pin_input</a>(uint32_t port, uint32_t pin);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="comment">/* Forward declaration */</span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="keyword">struct </span><a class="code" href="group__gmodules.html#structnt__module">nt_module</a>;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;<span class="keyword">struct </span><a class="code" href="group__electrodes.html#structnt__electrode">nt_electrode</a>;</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keyword">struct </span><a class="code" href="group__gsafety__private.html#structnt__module__safety__interface">nt_module_safety_interface</a>;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2016-2021, 2024 NXP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * NXP Proprietary. This software is owned or controlled by NXP and may</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * only be used strictly in accordance with the applicable license terms. </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * By expressly accepting such terms or by downloading, installing,</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * activating and/or otherwise using the software, you are agreeing that</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * you have read, and that you agree to comply with and are bound by,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * such license terms.  If you do not agree to be bound by the applicable</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * license terms, then you may not retain, install, activate or otherwise</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * use the software.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _NT_SAFETY_H_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _NT_SAFETY_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;nt_types.h&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;nt_filters.h&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;nt_electrodes.h&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;../source/safety/nt_safety_crc.h&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#if (FSL_FEATURE_TSI_VERSION == 5)</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;fsl_ftm.h&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">extern</span> FGPIO_Type *g_gpioBaseAddr[];</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">extern</span> PORT_Type *g_portBaseAddr[];</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">extern</span> FTM_Type *g_ftmBaseAddr[];</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group__safety.html#ga0598e09f8a488ded8b1c1e9429a1c36f">   38</a></span>&#160;<span class="preprocessor">#define NT_MODULE_SAFETY_NAME &quot;nt_module_safety_interface&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;uint32_t <a class="code" href="group__safety.html#ga93c59fa48bc63342e5b4172a31f4cc21">timer_get_overrun</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gadaa3a4b597c87a8e1395fb1804dcbf23">stop_timer</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#ga44f970d17544b1dbaded6f109580ee46">init_timer</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#ga5488e8015100f4efb5d0ac94e97cfaec">set_pin_ouput</a>(uint32_t port, uint32_t pin);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gac100716ba1b716e2032885dc8c268407">set_pin_low</a>(uint32_t port, uint32_t pin);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#ga38b6123f311c8153a451bbaa046d1886">set_pin_high</a>(uint32_t port, uint32_t pin);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;uint32_t <a class="code" href="group__safety.html#ga4f90e557408c56d709e5d36ab553dc07">get_pin_value</a>(uint32_t port, uint32_t pin);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gab9e06072375bb20625cf0a3f188b8831">set_pin_default_state</a>(uint32_t port, uint32_t pin);</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gaa9854f34aab8315190c2d5945e54b058">start_timer</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gabdbaf6e6c948f5214e2c1dc34bab34ac">timer_reset_counter</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;uint32_t <a class="code" href="group__safety.html#ga824b6dae24c4fdffbd0207669d1b806f">timer_get_counter</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#ga4c2e3c15cd3042d910a936d042b36f04">set_pin_pull_up</a>(uint32_t port, uint32_t pin);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gaddd63a799856c67de1624b8e725e71ab">set_pin_pull_down</a>(uint32_t port, uint32_t pin);</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#ga876b3eea3a81e07585798cc0f4bd5757">dis_pin_pull</a>(uint32_t port, uint32_t pin);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#ga7d7af0f9cbc9ead97abc5afa6a1b08eb">set_pin_tsi_mode</a>(uint32_t port, uint32_t pin);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#ga05132c9abe0d7eab0aa89e645ab4546b">set_pin_gpio_mode</a>(uint32_t port, uint32_t pin);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gacfce6c622f3c1b913706b4de24470f28">configure_gpio_touch_sensing_pins</a>(uint32_t instance);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;<span class="keywordtype">void</span> <a class="code" href="group__safety.html#gaaa55671749a0091a99a580a1917f216c">set_pin_input</a>(uint32_t port, uint32_t pin);</div>
 <div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;</div>
-<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="group__safety.html">  308</a></span>&#160;<span class="keyword">struct </span><a class="code" href="group__safety.html#structnt__module__safety__gpio__params">nt_module_safety_gpio_params</a></div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;{</div>
-<div class="line"><a name="l00310"></a><span class="lineno"><a class="line" href="group__safety.html#a2743de0baa1f339ee90beb083bc004bf">  310</a></span>&#160;    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="group__gpio.html#structnt__module__gpio__user__interface">nt_module_gpio_user_interface</a> *<a class="code" href="group__safety.html#a2743de0baa1f339ee90beb083bc004bf">user_interface</a>;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    uint32_t</div>
-<div class="line"><a name="l00312"></a><span class="lineno"><a class="line" href="group__safety.html#a0012f9828897b3b7098dfc5984b7221b">  312</a></span>&#160;        <a class="code" href="group__safety.html#a0012f9828897b3b7098dfc5984b7221b">delay_interval</a>; </div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;};</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="group__gsafety__private.html#structnt__module__safety__interface">nt_module_safety_interface</a> <a class="code" href="group__gsafety.html#ga3b511f316fd2455c403fa202dee2e879">nt_safety_interface</a>; </div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="group__gpio.html#structnt__module__gpio__user__interface">nt_module_gpio_user_interface</a> <a class="code" href="group__gsafety.html#ga627716fa4369a43a1768135c37aa7d6a">gpio_interface</a>; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga326fdf0caa9d5830fcbe42ab5b069c52">nt_module_safety_gpio_check_data</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="group__gmodules__private.html#structnt__module__data">nt_module_data</a> *module);</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga9ca7c6bd6af57bdc5df6d1d70e42c46a">nt_module_safety_check_electrode_short_vdd_set</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="group__electrodes.html#structnt__electrode">nt_electrode</a> *elec);</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga3a3337035e045b81c4c72f0492f92794">nt_module_safety_check_baseline_low</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="group__electrodes.html#structnt__electrode">nt_electrode</a> *elec);</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;</div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga74a4642d8de616e894e17fca2eadb83e">nt_module_safety_check_baseline_high</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="group__electrodes.html#structnt__electrode">nt_electrode</a> *elec);</div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga02d9c3d09e4fd60bdbd0fc012611a69a">nt_module_safety_check_electrodes</a>(<span class="keyword">struct</span> <a class="code" href="group__gmodules__private.html#structnt__module__data">nt_module_data</a> *module);</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga5e535bdf1bcbb68e7d62a59a528d973e">_nt_module_safety_switch_electrode_gpio</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="group__electrodes.html#structnt__electrode">nt_electrode</a> *elec);</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga378a580f67169505ce29e731335a5bed">_nt_module_safety_switch_electrode_gpio_output_set_low</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="group__electrodes.html#structnt__electrode">nt_electrode</a> *elec);</div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;</div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga887970eaf337f7ab0178a05f45994bce">_nt_module_safety_switch_electrode_tsi</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="group__electrodes.html#structnt__electrode">nt_electrode</a> *elec);</div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;<span class="comment">/* Forward declaration */</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="keyword">struct </span><a class="code" href="group__gmodules.html#structnt__module">nt_module</a>;</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="keyword">struct </span><a class="code" href="group__electrodes.html#structnt__electrode">nt_electrode</a>;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="keyword">struct </span><a class="code" href="group__gsafety__private.html#structnt__module__safety__interface">nt_module_safety_interface</a>;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;</div>
+<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="group__safety.html">  314</a></span>&#160;<span class="keyword">struct </span><a class="code" href="group__safety.html#structnt__module__safety__gpio__params">nt_module_safety_gpio_params</a></div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;{</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="group__safety.html#a2743de0baa1f339ee90beb083bc004bf">  316</a></span>&#160;    <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="group__gpio.html#structnt__module__gpio__user__interface">nt_module_gpio_user_interface</a> *<a class="code" href="group__safety.html#a2743de0baa1f339ee90beb083bc004bf">user_interface</a>;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    uint32_t</div>
+<div class="line"><a name="l00318"></a><span class="lineno"><a class="line" href="group__safety.html#a0012f9828897b3b7098dfc5984b7221b">  318</a></span>&#160;        <a class="code" href="group__safety.html#a0012f9828897b3b7098dfc5984b7221b">delay_interval</a>; </div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;};</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="group__gsafety__private.html#structnt__module__safety__interface">nt_module_safety_interface</a> <a class="code" href="group__gsafety.html#ga3b511f316fd2455c403fa202dee2e879">nt_safety_interface</a>; </div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="group__gpio.html#structnt__module__gpio__user__interface">nt_module_gpio_user_interface</a> <a class="code" href="group__gsafety.html#ga627716fa4369a43a1768135c37aa7d6a">gpio_interface</a>; </div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga326fdf0caa9d5830fcbe42ab5b069c52">nt_module_safety_gpio_check_data</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="group__gmodules__private.html#structnt__module__data">nt_module_data</a> *module);</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga9ca7c6bd6af57bdc5df6d1d70e42c46a">nt_module_safety_check_electrode_short_vdd_set</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="group__electrodes.html#structnt__electrode">nt_electrode</a> *elec);</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga3a3337035e045b81c4c72f0492f92794">nt_module_safety_check_baseline_low</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="group__electrodes.html#structnt__electrode">nt_electrode</a> *elec);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga74a4642d8de616e894e17fca2eadb83e">nt_module_safety_check_baseline_high</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="group__electrodes.html#structnt__electrode">nt_electrode</a> *elec);</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga02d9c3d09e4fd60bdbd0fc012611a69a">nt_module_safety_check_electrodes</a>(<span class="keyword">struct</span> <a class="code" href="group__gmodules__private.html#structnt__module__data">nt_module_data</a> *module);</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga5e535bdf1bcbb68e7d62a59a528d973e">_nt_module_safety_switch_electrode_gpio</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="group__electrodes.html#structnt__electrode">nt_electrode</a> *elec);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga378a580f67169505ce29e731335a5bed">_nt_module_safety_switch_electrode_gpio_output_set_low</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="group__electrodes.html#structnt__electrode">nt_electrode</a> *elec);</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;int32_t <a class="code" href="group__gsafety.html#ga887970eaf337f7ab0178a05f45994bce">_nt_module_safety_switch_electrode_tsi</a>(<span class="keyword">const</span> <span class="keyword">struct</span> <a class="code" href="group__electrodes.html#structnt__electrode">nt_electrode</a> *elec);</div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="group__gsafety_html_ga326fdf0caa9d5830fcbe42ab5b069c52"><div class="ttname"><a href="group__gsafety.html#ga326fdf0caa9d5830fcbe42ab5b069c52">nt_module_safety_gpio_check_data</a></div><div class="ttdeci">int32_t nt_module_safety_gpio_check_data(const struct nt_module_data *module)</div><div class="ttdoc">Check the safety interface. </div></div>
 <div class="ttc" id="group__gsafety_html_ga3a3337035e045b81c4c72f0492f92794"><div class="ttname"><a href="group__gsafety.html#ga3a3337035e045b81c4c72f0492f92794">nt_module_safety_check_baseline_low</a></div><div class="ttdeci">int32_t nt_module_safety_check_baseline_low(const struct nt_electrode *elec)</div><div class="ttdoc">Electrode baseline too low level test. </div></div>
 <div class="ttc" id="group__safety_html_gadaa3a4b597c87a8e1395fb1804dcbf23"><div class="ttname"><a href="group__safety.html#gadaa3a4b597c87a8e1395fb1804dcbf23">stop_timer</a></div><div class="ttdeci">void stop_timer(void)</div><div class="ttdoc">Stop the FlexTimer. </div></div>
 <div class="ttc" id="group__safety_html_gac100716ba1b716e2032885dc8c268407"><div class="ttname"><a href="group__safety.html#gac100716ba1b716e2032885dc8c268407">set_pin_low</a></div><div class="ttdeci">void set_pin_low(uint32_t port, uint32_t pin)</div><div class="ttdoc">Configure pin value as logic 0. </div></div>
-<div class="ttc" id="group__safety_html_structnt__module__safety__gpio__params"><div class="ttname"><a href="group__safety.html#structnt__module__safety__gpio__params">nt_module_safety_gpio_params</a></div><div class="ttdef"><b>Definition:</b> nt_safety.h:308</div></div>
+<div class="ttc" id="group__safety_html_structnt__module__safety__gpio__params"><div class="ttname"><a href="group__safety.html#structnt__module__safety__gpio__params">nt_module_safety_gpio_params</a></div><div class="ttdef"><b>Definition:</b> nt_safety.h:314</div></div>
 <div class="ttc" id="group__safety_html_gaddd63a799856c67de1624b8e725e71ab"><div class="ttname"><a href="group__safety.html#gaddd63a799856c67de1624b8e725e71ab">set_pin_pull_down</a></div><div class="ttdeci">void set_pin_pull_down(uint32_t port, uint32_t pin)</div><div class="ttdoc">Configures pin to have pull down resistor. </div></div>
 <div class="ttc" id="group__gsafety_html_ga02d9c3d09e4fd60bdbd0fc012611a69a"><div class="ttname"><a href="group__gsafety.html#ga02d9c3d09e4fd60bdbd0fc012611a69a">nt_module_safety_check_electrodes</a></div><div class="ttdeci">int32_t nt_module_safety_check_electrodes(struct nt_module_data *module)</div><div class="ttdoc">Execute all safety tests. </div></div>
 <div class="ttc" id="group__safety_html_ga4c2e3c15cd3042d910a936d042b36f04"><div class="ttname"><a href="group__safety.html#ga4c2e3c15cd3042d910a936d042b36f04">set_pin_pull_up</a></div><div class="ttdeci">void set_pin_pull_up(uint32_t port, uint32_t pin)</div><div class="ttdoc">Configures pin to have pull up resistor. </div></div>
-<div class="ttc" id="group__gmodules_html_structnt__module"><div class="ttname"><a href="group__gmodules.html#structnt__module">nt_module</a></div><div class="ttdef"><b>Definition:</b> nt_modules.h:99</div></div>
-<div class="ttc" id="group__safety_html_a2743de0baa1f339ee90beb083bc004bf"><div class="ttname"><a href="group__safety.html#a2743de0baa1f339ee90beb083bc004bf">nt_module_safety_gpio_params::user_interface</a></div><div class="ttdeci">struct nt_module_gpio_user_interface * user_interface</div><div class="ttdef"><b>Definition:</b> nt_safety.h:310</div></div>
+<div class="ttc" id="group__gmodules_html_structnt__module"><div class="ttname"><a href="group__gmodules.html#structnt__module">nt_module</a></div><div class="ttdef"><b>Definition:</b> nt_modules.h:105</div></div>
+<div class="ttc" id="group__safety_html_a2743de0baa1f339ee90beb083bc004bf"><div class="ttname"><a href="group__safety.html#a2743de0baa1f339ee90beb083bc004bf">nt_module_safety_gpio_params::user_interface</a></div><div class="ttdeci">struct nt_module_gpio_user_interface * user_interface</div><div class="ttdef"><b>Definition:</b> nt_safety.h:316</div></div>
 <div class="ttc" id="group__safety_html_ga4f90e557408c56d709e5d36ab553dc07"><div class="ttname"><a href="group__safety.html#ga4f90e557408c56d709e5d36ab553dc07">get_pin_value</a></div><div class="ttdeci">uint32_t get_pin_value(uint32_t port, uint32_t pin)</div><div class="ttdoc">Reads the pin value. </div></div>
 <div class="ttc" id="group__safety_html_gaa9854f34aab8315190c2d5945e54b058"><div class="ttname"><a href="group__safety.html#gaa9854f34aab8315190c2d5945e54b058">start_timer</a></div><div class="ttdeci">void start_timer(void)</div><div class="ttdoc">Start the FlexTimer. </div></div>
 <div class="ttc" id="group__gsafety_html_ga627716fa4369a43a1768135c37aa7d6a"><div class="ttname"><a href="group__gsafety.html#ga627716fa4369a43a1768135c37aa7d6a">gpio_interface</a></div><div class="ttdeci">struct nt_module_gpio_user_interface gpio_interface</div></div>
 <div class="ttc" id="group__safety_html_ga93c59fa48bc63342e5b4172a31f4cc21"><div class="ttname"><a href="group__safety.html#ga93c59fa48bc63342e5b4172a31f4cc21">timer_get_overrun</a></div><div class="ttdeci">uint32_t timer_get_overrun(void)</div><div class="ttdoc">Reads FlexTimer overflow. </div></div>
-<div class="ttc" id="group__safety_html_a0012f9828897b3b7098dfc5984b7221b"><div class="ttname"><a href="group__safety.html#a0012f9828897b3b7098dfc5984b7221b">nt_module_safety_gpio_params::delay_interval</a></div><div class="ttdeci">uint32_t delay_interval</div><div class="ttdef"><b>Definition:</b> nt_safety.h:312</div></div>
-<div class="ttc" id="group__electrodes_html_structnt__electrode"><div class="ttname"><a href="group__electrodes.html#structnt__electrode">nt_electrode</a></div><div class="ttdef"><b>Definition:</b> nt_electrodes.h:111</div></div>
+<div class="ttc" id="group__safety_html_a0012f9828897b3b7098dfc5984b7221b"><div class="ttname"><a href="group__safety.html#a0012f9828897b3b7098dfc5984b7221b">nt_module_safety_gpio_params::delay_interval</a></div><div class="ttdeci">uint32_t delay_interval</div><div class="ttdef"><b>Definition:</b> nt_safety.h:318</div></div>
+<div class="ttc" id="group__electrodes_html_structnt__electrode"><div class="ttname"><a href="group__electrodes.html#structnt__electrode">nt_electrode</a></div><div class="ttdef"><b>Definition:</b> nt_electrodes.h:117</div></div>
 <div class="ttc" id="group__gsafety_html_ga74a4642d8de616e894e17fca2eadb83e"><div class="ttname"><a href="group__gsafety.html#ga74a4642d8de616e894e17fca2eadb83e">nt_module_safety_check_baseline_high</a></div><div class="ttdeci">int32_t nt_module_safety_check_baseline_high(const struct nt_electrode *elec)</div><div class="ttdoc">Electrode baseline too high level test. </div></div>
 <div class="ttc" id="group__gsafety_html_ga5e535bdf1bcbb68e7d62a59a528d973e"><div class="ttname"><a href="group__gsafety.html#ga5e535bdf1bcbb68e7d62a59a528d973e">_nt_module_safety_switch_electrode_gpio</a></div><div class="ttdeci">int32_t _nt_module_safety_switch_electrode_gpio(const struct nt_electrode *elec)</div><div class="ttdoc">Function change electrode pin mode from TSI to GPIO. </div></div>
-<div class="ttc" id="group__gmodules__private_html_structnt__module__data"><div class="ttname"><a href="group__gmodules__private.html#structnt__module__data">nt_module_data</a></div><div class="ttdef"><b>Definition:</b> nt_modules_prv.h:59</div></div>
-<div class="ttc" id="group__gpio_html_structnt__module__gpio__user__interface"><div class="ttname"><a href="group__gpio.html#structnt__module__gpio__user__interface">nt_module_gpio_user_interface</a></div><div class="ttdef"><b>Definition:</b> nt_module_gpio.h:33</div></div>
+<div class="ttc" id="group__gmodules__private_html_structnt__module__data"><div class="ttname"><a href="group__gmodules__private.html#structnt__module__data">nt_module_data</a></div><div class="ttdef"><b>Definition:</b> nt_modules_prv.h:65</div></div>
+<div class="ttc" id="group__gpio_html_structnt__module__gpio__user__interface"><div class="ttname"><a href="group__gpio.html#structnt__module__gpio__user__interface">nt_module_gpio_user_interface</a></div><div class="ttdef"><b>Definition:</b> nt_module_gpio.h:39</div></div>
 <div class="ttc" id="group__safety_html_ga824b6dae24c4fdffbd0207669d1b806f"><div class="ttname"><a href="group__safety.html#ga824b6dae24c4fdffbd0207669d1b806f">timer_get_counter</a></div><div class="ttdeci">uint32_t timer_get_counter(void)</div><div class="ttdoc">Reads FlexTimer counted value. </div></div>
-<div class="ttc" id="group__gsafety__private_html_structnt__module__safety__interface"><div class="ttname"><a href="group__gsafety__private.html#structnt__module__safety__interface">nt_module_safety_interface</a></div><div class="ttdef"><b>Definition:</b> nt_safety_prv.h:43</div></div>
+<div class="ttc" id="group__gsafety__private_html_structnt__module__safety__interface"><div class="ttname"><a href="group__gsafety__private.html#structnt__module__safety__interface">nt_module_safety_interface</a></div><div class="ttdef"><b>Definition:</b> nt_safety_prv.h:49</div></div>
 <div class="ttc" id="group__gsafety_html_ga378a580f67169505ce29e731335a5bed"><div class="ttname"><a href="group__gsafety.html#ga378a580f67169505ce29e731335a5bed">_nt_module_safety_switch_electrode_gpio_output_set_low</a></div><div class="ttdeci">int32_t _nt_module_safety_switch_electrode_gpio_output_set_low(const struct nt_electrode *elec)</div><div class="ttdoc">Function change electrode pin mode from TSI to GPIO and set pin level to low. </div></div>
 <div class="ttc" id="group__safety_html_gabdbaf6e6c948f5214e2c1dc34bab34ac"><div class="ttname"><a href="group__safety.html#gabdbaf6e6c948f5214e2c1dc34bab34ac">timer_reset_counter</a></div><div class="ttdeci">void timer_reset_counter(void)</div><div class="ttdoc">Reset the FlexTimer. </div></div>
 <div class="ttc" id="group__safety_html_gaaa55671749a0091a99a580a1917f216c"><div class="ttname"><a href="group__safety.html#gaaa55671749a0091a99a580a1917f216c">set_pin_input</a></div><div class="ttdeci">void set_pin_input(uint32_t port, uint32_t pin)</div><div class="ttdoc">Configure pin as gpio input. </div></div>
@@ -244,7 +250,7 @@ $(document).ready(function(){initNavTree('nt__safety_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_2eecd27e108deb48a88e7e9847f192f6.html">nt</a></li><li class="navelem"><a class="el" href="dir_f8f7eb6648096ea28ce07b140e49a95b.html">include</a></li><li class="navelem"><b>nt_safety.h</b></li>
-    <li class="footer">Generated on Fri Aug 2 2024 08:33:26 for NXP Touch Library Reference Manual by
+    <li class="footer">Generated on Mon Dec 2 2024 13:42:31 for NXP Touch Library Reference Manual by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

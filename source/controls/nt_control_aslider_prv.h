@@ -67,6 +67,7 @@ enum nt_control_aslider_flags
 struct nt_control_aslider_data
 {
     nt_control_aslider_callback callback; /*!< Analog Slider callback handler. */
+    int32_t delta_max;                    /*!< Max. delta for position calculation, reset in release state. */
     uint8_t position;                     /*!< Position. */
 };
 

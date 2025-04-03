@@ -390,9 +390,7 @@ static void _nt_keydetector_safa_unlock_baseline(struct nt_electrode_data *elect
     }
     else
     {
-        uint32_t temp                = rom->deadband_cnt << 1;
-        ram->recovery_cnt            = (int32_t)temp;
-        ram->base_avrg_init.n2_order = rom->base_avrg.n2_order / 2;
+        ram->base_avrg_init.n2_order = rom->base_avrg.n2_order;
     }
 
     (void)(int32_t) _nt_filter_moving_average_init(&ram->base_avrg_init, &ram->base_avrg, electrode->baseline);

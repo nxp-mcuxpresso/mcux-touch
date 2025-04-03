@@ -147,7 +147,7 @@ FRDM touch-haptic demo for FRDM-KE15Z</h1>
 </li>
 </ul>
 <p>Mode changing is made by continuously holding a given button, which sets the next audio or vibration mode. The modes are changed in the loop of three audio or two vibration modes. The new mode is signalized by triggering feedback with the newly set mode.</p>
-<p>The four arrow electrodes of the keypad are placed on the FRDM-TOUCH to trigger haptic feedback. Their electrodes use mutual sensing capacity. All these six electrodes can create touch/release/autorepeat/multi-touch events. The rotary controls trigger haptic feedback when moving the finger and its electrodes use self-capacitance measurement. The slider controls trigger haptic feedback when moving the finger and changing the haptic feedback force depending on finger position (only for the slider). The rotary and the slider can create initial touch/movement/release events. When a movement event is recognized, the variables "rotaryPosInsens" or "sliderPosInsens" from the ui_control.h file defines the minimal position change to trigger haptic feedback. The FreeMASTER GUI in the "Controls" tab monitors the slider, rotary, keypad state, position, and movement direction.</p>
+<p>The four arrow electrodes of the keypad are placed on the FRDM-TOUCH to trigger haptic feedback. Their electrodes use mutual sensing capacity. All these six electrodes can create touch/release/autorepeat/multi-touch events. The rotary controls trigger haptic feedback when moving the finger and its electrodes use self-capacitance measurement. The slider controls trigger haptic feedback when moving the finger and changing the haptic feedback force depending on finger position (only for the slider). The rotary and the slider can create initial touch/movement/release events. When a movement event is recognized, the variables "rotaryPosInsens" or "sliderPosInsens" from the ui_control.h file defines the minimal position change to trigger haptic feedback. The FreeMASTER Touch Viewer in the "Controls" tab monitors the slider, rotary, keypad state, position, and movement direction.</p>
 <p>FRDM-HAPTIC board contains SW1 switch with 6 positions for configuration: </p>
 <div class="fragment"><div class="line">SW #    Selection   Description</div>
 <div class="line">1,2     0,0         RESERVED, no signal</div>
@@ -173,7 +173,7 @@ FRDM-TOUCH + FRDM-HAPTIC + FRDM-KE15Z examle app</div></div>
 <h1><a class="anchor" id="frdm_touch_app"></a>
 FRDM touch-sensing demo for FRDM-KE15Z, FRDM-KE16Z, FRDM-KE17Z or FRDM-KE17Z512</h1>
 <p>This demo is intended for the FRDM-KE15Z, FRDM-KE16Z, FRDM-KE17Z or FRDM-KE17Z512 baseboards combined with the FRDM-TOUCH plug-in board. This application can work without the FRDM-TOUCH board (two electrodes only), which requires adding the definition "#define NT_FRDM_TOUCH_SUPPORT 0" into the main.h file. The two touch electrodes (placed directly on the FRDM-KE15Z or FRDM-KE16Z boards) are used to set the LED to purple or azure colors.</p>
-<p>There is an RGB LED controlled by controls from the FRDM-TOUCH board or the FRDM-KE15Z (FRDM-KE16Z, FRDM-KE17Z or FRDM-KE17Z512) board (four plus two-button keypad, rotary, and slider). The rotary controls the hue (color) of the LED and its electrodes use self-capacitance measurement. The slider controls the brightness of the LED and its electrodes use self-capacitance measurement. The buttons set the LED to the red/green/blue/white colors with full brightness and their electrodes use mutual capacity sensing. The FreeMASTER GUI in the "Controls" tab monitors the slider, rotary, button state, position, and movement direction.</p>
+<p>There is an RGB LED controlled by controls from the FRDM-TOUCH board or the FRDM-KE15Z (FRDM-KE16Z, FRDM-KE17Z or FRDM-KE17Z512) board (four plus two-button keypad, rotary, and slider). The rotary controls the hue (color) of the LED and its electrodes use self-capacitance measurement. The slider controls the brightness of the LED and its electrodes use self-capacitance measurement. The buttons set the LED to the red/green/blue/white colors with full brightness and their electrodes use mutual capacity sensing. The FreeMASTER Touch Viewer in the "Controls" tab monitors the slider, rotary, button state, position, and movement direction.</p>
 <div class="image">
 <img src="frdm_touch_app.png" alt="frdm_touch_app.png"/>
 <div class="caption">
@@ -220,7 +220,7 @@ DK touch sensing demo for QN908xCDK</h1>
 <div class="line">                    SW3:  1-OFF, 2-OFF, 3-ON,  4-ON</div>
 <div class="line">                    SW4:  1-OFF, 2-OFF, 3-ON,  4-ON</div>
 <div class="line">                    SW5:  1-OFF, 2-OFF, 3-ON,  4-ON</div>
-</div><!-- fragment --><p>All the electrodes in the Capacitive Sense module use self-capacitance measurement. The FreeMASTER GUI application monitors the slider, rotary, button state, position, and movement direction in the "Controls" tab.</p>
+</div><!-- fragment --><p>All the electrodes in the Capacitive Sense module use self-capacitance measurement. The FreeMASTER Touch Viewr application monitors the slider, rotary, button state, position, and movement direction in the "Controls" tab.</p>
 <div class="image">
 <img src="DK_QN9080.png" alt="DK_QN9080.png"/>
 <div class="caption">
@@ -230,7 +230,7 @@ Dk-QN9080 + FRDM-TOUCH example app</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Aug 2 2024 08:33:26 for NXP Touch Library Reference Manual by
+    <li class="footer">Generated on Mon Dec 2 2024 13:42:32 for NXP Touch Library Reference Manual by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

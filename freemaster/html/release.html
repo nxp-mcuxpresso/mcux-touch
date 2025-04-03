@@ -101,7 +101,7 @@ $(document).ready(function(){initNavTree('release.html','');});
 <div class="title">notes page Release Notes </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1>NXP Touch v2.12 </h1>
+<div class="textblock"><h1>NXP Touch v2.13 </h1>
 <h2>Overview </h2>
 <p>The release notes in this document are for the last NXP Touch software (NT) version. This is a full-function library to handle touch events measured by the NXP TSI, CS module, or GPIO methods. It also represents the measured results for various controls, such as a keypad, rotary, slider, analog slider, analog rotary, proxi, or matrix.</p>
 <h1><a class="anchor" id="new_section"></a>
@@ -139,10 +139,9 @@ What is new</h1>
 Development tools</h1>
 <p>NXP Touch has been compiled and tested using development tools:</p>
 <ul>
-<li>IAR Embedded Workbench for Arm version 9.50.1</li>
-<li>MDK-Arm Microcontroller Development Kit (Keil)® 5.38a</li>
+<li>IAR Embedded Workbench for Arm version 9.60.2</li>
+<li>MDK-Arm Microcontroller Development Kit (Keil)® 5.40</li>
 <li>MCUXpresso IDE 11.9.0</li>
-<li>armgcc - 12.3</li>
 </ul>
 <h1><a class="anchor" id="development_section"></a>
 Supported development systems</h1>
@@ -164,15 +163,15 @@ NXP Touch release overview</h1>
 <ul>
 <li>Documentation - Reference manual</li>
 <li>Example application for the supported board</li>
-<li>FreeMASTER application for NT with Touch GUI tool</li>
+<li>FreeMASTER application for NT with Touch Viewer</li>
 <li>NT library source code</li>
 </ul>
 <h2>Documentation </h2>
 <p>This release contains the generated documentation that describes the whole library with block schemes and the whole API is described either as public or all-private internal API. The documentation is provided in the html format.</p>
 <h2>Example application for supported boards </h2>
 <p>There are a couple of example applications that run on standard NXP development boards and show all aspects of NT capabilities. All applications are suitable for all supported development tools.</p>
-<h2>NXP Touch GUI Tool in FreeMASTER </h2>
-<p>The NXP Touch GUI Tool (<a class="el" href="_n_t_tool.html">Touch GUI Tool</a>) and the FreeMASTER application are provided for better understanding and tuning of the final configuration values. The FreeMASTER automatically generates the HTML pages for visualization touch quantities in real time according to the current configuration of the embedded application using TSA tables. </p>
+<h2>NXP Touch Viewer in FreeMASTER </h2>
+<p>The NXP Touch Viewer is the FreeMASTER application provided for better understanding and visualization the signals and variables. The FreeMASTER automatically generates the HTML pages for visualization touch quantities in real time according to the current configuration of the embedded application using TSA tables. </p>
 <div class="image">
 <img src="freeMASTER.png" alt="freeMASTER.png"/>
 <div class="caption">
@@ -211,11 +210,11 @@ Revision history</h1>
 <tr>
 <td align="center">Rev 2.5 </td><td align="center">06/2020 </td><td align="center">Added TSIv5 feature to support specific HW configuration for each electrode and more HW configurations for same TSI channel, updated FreeMASTER to 3.0 </td></tr>
 <tr>
-<td align="center">Rev 2.6 </td><td align="center">06/2021 </td><td align="center">FRDM-KE17Z example supporting with 2x TSI v5 </td></tr>
+<td align="center">Rev 2.6 </td><td align="center">06/2021 </td><td align="center">FRDM-KE17Z example supporting with 2x TSI v5. </td></tr>
 <tr>
-<td align="center">Rev 2.7 </td><td align="center">01/2022 </td><td align="center">NXP Touch tool updated to Chromium engine + bug fixes </td></tr>
+<td align="center">Rev 2.7 </td><td align="center">01/2022 </td><td align="center">NXP Touch tool updated to Chromium engine + bug fixes. </td></tr>
 <tr>
-<td align="center">Rev 2.8 </td><td align="center">01/2023 </td><td align="center">New Minimum Baseline Window key detector and crosstalk feature </td></tr>
+<td align="center">Rev 2.8 </td><td align="center">01/2023 </td><td align="center">New Minimum Baseline Window key detector and crosstalk feature. </td></tr>
 <tr>
 <td align="center">Rev 2.9 </td><td align="center">07/2023 </td><td align="center">The MBW key detector update, the crosstalk, more electrodes extension, and new signal calculation (self-capacitance) method. The haptic example (frdmke15z) added. </td></tr>
 <tr>
@@ -224,13 +223,15 @@ Revision history</h1>
 <td align="center">Rev 2.11 </td><td align="center">07/2024 </td><td align="center">The MBW keydetector improved, added new electrode parameters for signal and delta adaptation and better tunning. </td></tr>
 <tr>
 <td align="center">Rev 2.12 </td><td align="center">08/2024 </td><td align="center">License changed. </td></tr>
+<tr>
+<td align="center">Rev 2.13 </td><td align="center">01/2025 </td><td align="center">Fixed analog slider and analog rotary position calculation. Removed configuration part from FreeMASTER GUI tool to be Touch Viewer. </td></tr>
 </table>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Fri Aug 2 2024 08:33:26 for NXP Touch Library Reference Manual by
+    <li class="footer">Generated on Mon Dec 2 2024 13:42:32 for NXP Touch Library Reference Manual by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>

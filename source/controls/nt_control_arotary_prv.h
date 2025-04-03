@@ -76,6 +76,7 @@ struct nt_control_arotary_temp_data
 struct nt_control_arotary_data
 {
     nt_control_arotary_callback callback; /*!< Analog Rotary callback handler. */
+    int32_t delta_max; /*!< Max. delta for position calculation, reset in release state. */
     uint8_t position;                     /*!< Position. */
 };
 

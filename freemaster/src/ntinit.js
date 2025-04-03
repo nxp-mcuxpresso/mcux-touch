@@ -1,17 +1,16 @@
 /*
- * Copyright 2013 - 2016, Freescale Semiconductor, Inc.
- * Copyright 2016-2021, 2024 NXP
- *
- * NXP Proprietary. This software is owned or controlled by NXP and may
- * only be used strictly in accordance with the applicable license terms. 
- * By expressly accepting such terms or by downloading, installing,
- * activating and/or otherwise using the software, you are agreeing that
- * you have read, and that you agree to comply with and are bound by,
- * such license terms.  If you do not agree to be bound by the applicable
- * license terms, then you may not retain, install, activate or otherwise
- * use the software.
- */
- 
+* Copyright 2013-2016, Freescale Semiconductor, Inc.
+* Copyright 2016-2024 NXP
+*
+* NXP Proprietary. This software is owned or controlled by NXP and may
+* only be used strictly in accordance with the applicable license terms. 
+* By expressly accepting such terms or by downloading, installing,
+* activating and/or otherwise using the software, you are agreeing that
+* you have read, and that you agree to comply with and are bound by,
+* such license terms.  If you do not agree to be bound by the applicable
+* license terms, then you may not retain, install, activate or otherwise
+* use the software.
+*/
 
 var pcm = 0; // the main FreeMASTER communication object
 var nt_good = false;
@@ -39,8 +38,6 @@ function StartGUI()
   pcm.OnServerError = on_error;
   pcm.OnSocketError = on_error;
 }
-
-
 
 /* Desktop FreeMASTER listens on port 41000 by default, unless this is
 * overridden on command line using /rpcs option. FreeMASTER Lite
@@ -102,43 +99,6 @@ async function OnControlInit(id)
 
 async function nt_static_cfg_init()
 {
-  //var paramFile = pcm.LocalFileOpen("src/news.xml","r");
-  var config_string = "";
-  try {
-    var file_st = await pcm.LocalFileOpen("FMSTR_PACKDIR_PATH/test1.xml","r");
-    debug_print("load web cfg xml", true);
-    if(file_st.success == false)
-    {
-      debug_print("Failed load web cfg xml", true);
-      return;
-    }
-  
-    var st = await pcm.LocalFileReadString(file_st.data);
-    
-    var file_close_st = await pcm.LocalFileClose(file_st.data);
-    
-    if((st.success == false)||(st.xtra.retval<=0))
-    {
-      debug_print("Failed load web cfg xml", true);
-      return;
-    }
-    config_string = st.data;
-    if(file_close_st.success == false)
-    {
-      debug_print("Failed close web cfg xml", true);
-      return;
-    }
-
-  }
-  catch(err) {
-    debug_print("Failed access to GUI configuration: "+err.msg, true);
-  }
-  if(config_string == "")
-    return;
-  try {
-    //parse the xml configuration
-    document.data = XmlStrToDataObj(config_string);
-
     st = await pcm.GetAppVersion();
     if(st.xtra.retval<0x01040400)
     {
@@ -150,7 +110,7 @@ async function nt_static_cfg_init()
       return;
     }
 
-    Build_WebContent();
+
     SetCurrenPageIndex(ActivePage);
 
     st = await pcm.IsBoardDetected();
@@ -166,16 +126,7 @@ async function nt_static_cfg_init()
     pcm.EnableEvents(true);
     // detect NT objects
     nt_symbols_init(OnModuleInit, OnControlInit, OnElectrodeInit);
-    const n = document.data["nt_crosstalk"]["current"];
-    n.fillValues();
-    n.variables();
-  }
-  catch(err) {
-    debug_print("Failed to load GUI: "+err.msg, true);
-  }
 }
-
-
 
 
 var timer_i=0;

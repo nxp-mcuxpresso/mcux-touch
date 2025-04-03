@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['touch_20gui_20tool',['Touch GUI Tool',['../_n_t_tool.html',1,'']]],
   ['tau_5fsmooth_5fbaseline',['tau_smooth_baseline',['../group__mbw.html#af5b0a38d84cc4745597b864f131536be',1,'nt_keydetector_mbw']]],
   ['tau_5fsmooth_5fsignal',['tau_smooth_signal',['../group__mbw.html#aa214bd265ef2e6ef6851042228e3a2b0',1,'nt_keydetector_mbw']]],
+  ['tausmooth',['tauSmooth',['../group__usafambw.html#a4e8d12566c7394fe7ae5a4d09d70335a',1,'nt_keydetector_usafambw']]],
+  ['tausmoothfix',['tauSmoothFix',['../group__usafambw.html#ad2a0ab12240dbb82ed2caf8badbd9ca8',1,'nt_keydetector_usafambw']]],
   ['tf_5ftsi_5ftotal_5fchannel_5fcount',['TF_TSI_TOTAL_CHANNEL_COUNT',['../group__tsi__drivers.html#gadd3e971e1254c9c629c1fbeef55ec080',1,'nt_drv_tsi_driver.h']]],
   ['thresh',['thresh',['../namespace_3global_scope_4.html#a99d6622a939887d4f2c7f0a8d504c06e',1,'tsi_config_t']]],
   ['threshold',['threshold',['../group__proxi.html#a8e457d7fd7d399553bc61a77ac15a361',1,'nt_control_proxi']]],

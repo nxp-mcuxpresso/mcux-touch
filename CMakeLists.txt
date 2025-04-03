@@ -1,6 +1,6 @@
 # touch
 if (CONFIG_MCUX_COMPONENT_middleware.touch)
-	mcux_component_version(2.12)
+	mcux_component_version(2.13)
     mcux_add_include(
         INCLUDES
             source/controls
@@ -90,7 +90,7 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
             include/nt_xtalk.h
 			doc/*.txt
 			doc/*.pdf
-			freemaster/html/_n_t_tool.html
+			freemaster/html
 			freemaster/html/afid_traces.png
 			freemaster/html/app_guide.html
 			freemaster/html/arotary.png
@@ -1142,12 +1142,6 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/html/group__xtalk__private.map
 			freemaster/html/group__xtalk__private.md5
 			freemaster/html/group__xtalk__private.png
-			freemaster/html/GUI_Control.png
-			freemaster/html/GUI_crosstalk.png
-			freemaster/html/GUI_Electrode.png
-			freemaster/html/GUI_intro.png
-			freemaster/html/GUI_modules_bookmark.png
-			freemaster/html/GUI_scope.png
 			freemaster/html/include.png
 			freemaster/html/index.html
 			freemaster/html/jquery.js
@@ -1473,7 +1467,6 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/html/tabs.css
 			freemaster/html/Touch_lib.png
 			freemaster/html/tsi_v5.png
-			freemaster/html/tsi_v6.png
 			freemaster/html/unionnt__control__params__coll__graph.map
 			freemaster/html/unionnt__control__params__coll__graph.md5
 			freemaster/html/unionnt__control__params__coll__graph.png
@@ -1494,7 +1487,7 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/html/unionnt__module__special__data__coll__graph.png
 			freemaster/html/unionnt__system__event__context__coll__graph.map
 			freemaster/html/unionnt__system__event__context__coll__graph.md5
-			freemaster/html/unionnt__system__event__context__coll__graph.png
+			freemaster/html/unionnt__system__event__context__coll__graph.png	
 			freemaster/html/search/all_5f.html
 			freemaster/html/search/all_5f.js
 			freemaster/html/search/all_6b.html
@@ -1618,8 +1611,6 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/html/search/pages_65.js
 			freemaster/html/search/pages_69.html
 			freemaster/html/search/pages_69.js
-			freemaster/html/search/pages_74.html
-			freemaster/html/search/pages_74.js
 			freemaster/html/search/search.css
 			freemaster/html/search/search.js
 			freemaster/html/search/search_l.png
@@ -1672,49 +1663,23 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/html/search/variables_78.html
 			freemaster/html/search/variables_78.js
 			freemaster/html/search/variables_79.html
-			freemaster/html/search/variables_79.js
+			freemaster/html/search/variables_79.js	
 			freemaster/src/img/arotary.png
 			freemaster/src/img/aslider.png
-			freemaster/src/img/Blank.png
 			freemaster/src/img/bodyl.png
 			freemaster/src/img/bottoml.png
 			freemaster/src/img/checboxlines.gif
-			freemaster/src/img/clock.png
-			freemaster/src/img/clock-active.png
-			freemaster/src/img/comparator.png
-			freemaster/src/img/comparator-active.png
-			freemaster/src/img/control.png
 			freemaster/src/img/control-active.png
-			freemaster/src/img/cs_clk.png
 			freemaster/src/img/cs_clk.svg
-			freemaster/src/img/cs_clk-active.png
-			freemaster/src/img/cs_controller.png
 			freemaster/src/img/cs_controller.svg
-			freemaster/src/img/cs_controller-active.png
-			freemaster/src/img/cs_counter.png
 			freemaster/src/img/cs_counter.svg
-			freemaster/src/img/cs_counter-active.png
-			freemaster/src/img/cs_fifo.png
 			freemaster/src/img/cs_fifo.svg
-			freemaster/src/img/cs_fifo-active.png
-			freemaster/src/img/cs_int.png
 			freemaster/src/img/cs_int.svg
-			freemaster/src/img/cs_int-active.png
-			freemaster/src/img/cs_oscilator.png
 			freemaster/src/img/cs_oscilator.svg
-			freemaster/src/img/cs_oscilator-active.png
-			freemaster/src/img/cs_register.png
 			freemaster/src/img/cs_register.svg
-			freemaster/src/img/cs_register-active.png
-			freemaster/src/img/cs_switch.png
 			freemaster/src/img/cs_switch.svg
-			freemaster/src/img/cs_switch-active.png
-			freemaster/src/img/cs_switch-small.png
 			freemaster/src/img/cs_switch-small.svg
-			freemaster/src/img/cs_switch-small-active.png
 			freemaster/src/img/detected.svg
-			freemaster/src/img/dvolt.png
-			freemaster/src/img/dvolt-active.png
 			freemaster/src/img/el_release.png
 			freemaster/src/img/el_touch.png
 			freemaster/src/img/fscs.png
@@ -1747,8 +1712,6 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/src/img/menu-item-right.jpg
 			freemaster/src/img/menu-item-right-selected.jpg
 			freemaster/src/img/movement.svg
-			freemaster/src/img/m-star.png
-			freemaster/src/img/m-star-active.png
 			freemaster/src/img/popup-load.svg
 			freemaster/src/img/proxi.png
 			freemaster/src/img/proxi.svg
@@ -1756,15 +1719,8 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/src/img/rotate.svg
 			freemaster/src/img/select-dropdown-grey.ai
 			freemaster/src/img/select-dropdown-grey.svg
-			freemaster/src/img/SINC.png
-			freemaster/src/img/SINC-active.png
 			freemaster/src/img/slider.png
 			freemaster/src/img/slider.svg
-			freemaster/src/img/SSC.png
-			freemaster/src/img/SSC-active.png
-			freemaster/src/img/s-star.png
-			freemaster/src/img/s-star-active.png
-			freemaster/src/img/theme-all.png
 			freemaster/src/img/theme-all.svg
 			freemaster/src/img/theme-all-cs.svg
 			freemaster/src/img/theme-all-csi.svg
@@ -1774,45 +1730,30 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/src/img/undetected-full.svg
 			freemaster/src/js/animations.js
 			freemaster/src/js/jquery.min.js
-			freemaster/src/js/jquery-ui.min.js
-			freemaster/src/cmdhandler.js
-			freemaster/src/freemaster-client.js
-			freemaster/src/gui.js
-			freemaster/src/html_templates.js
-			freemaster/NXPTouch.pmpx
-			freemaster/frdm_ke15z.xml
-			freemaster/frdm_ke16z.xml
-			freemaster/frdm_ke17z.xml
-			licenses/MIT_LICENSE.txt
-			freemaster/src/mustache.js
-			freemaster/src/nt_average_matrix.js
-			freemaster/src/nt_control.js
-			freemaster/src/nt_control_arotary.js
-			freemaster/src/nt_control_aslider.js
-			freemaster/src/nt_control_keypad.js
-			freemaster/src/nt_control_matrix.js
-			freemaster/src/nt_control_proxi.js
-			freemaster/src/nt_control_rotary.js
-			freemaster/src/nt_control_slider.js
-			freemaster/src/nt_crosstalk.js
-			freemaster/src/nt_crosstalk_matrix.js
-			freemaster/src/nt_electrode.js
-			freemaster/src/nt_electrode_afid.js
-			freemaster/src/nt_electrode_safa.js
-			freemaster/src/nt_electrode_usafa.js
-			freemaster/src/nt_electrode_mbw.js
-			freemaster/src/nt_Gui.html
-			freemaster/src/nt_module.js
-			freemaster/src/nt_static_cfg.js
-			freemaster/src/ntinit.js
-			freemaster/src/simple-jsonrpc-js.js
-			freemaster/src/static_cfg_engine.js
-			freemaster/src/style.css
-			freemaster/src/test1.xml
-			freemaster/src/touch.scss
-			freemaster/src/touch.min.css
-			freemaster/src/xml_converter.js
-			freemaster/values.txt
+		    freemaster/src/freemaster-client.js
+		    freemaster/src/gui.js
+		    freemaster/src/nt_control.js
+		    freemaster/src/nt_control_arotary.js
+		    freemaster/src/nt_control_aslider.js
+		    freemaster/src/nt_control_keypad.js
+		    freemaster/src/nt_control_matrix.js
+		    freemaster/src/nt_control_proxi.js
+		    freemaster/src/nt_control_rotary.js
+		    freemaster/src/nt_control_slider.js
+		    freemaster/src/nt_electrode.js
+		    freemaster/src/nt_electrode_afid.js
+		    freemaster/src/nt_electrode_mbw.js
+		    freemaster/src/nt_electrode_safa.js
+		    freemaster/src/nt_electrode_usafa.js
+		    freemaster/src/nt_Gui.html
+		    freemaster/src/nt_module.js
+		    freemaster/src/nt_static_cfg.js
+		    freemaster/src/ntinit.js
+		    freemaster/src/simple-jsonrpc-js.js
+		    freemaster/src/style.css
+		    freemaster/src/touch.scss
+			freemaster/TouchViewer.pmpx			
+			licenses/MIT_LICENSE.txt		
     )
 endif()
 

@@ -51,7 +51,7 @@
 * NXP TOUCH version
 *******************************************************************************/
 /* NXP TOUCH  version */
-#define TOUCH_VERSION 2.12
+#define TOUCH_VERSION 2.13
 
 /**
  * \defgroup ntapi NXP Touch User API

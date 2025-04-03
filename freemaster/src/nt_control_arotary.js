@@ -1,16 +1,17 @@
 /*
- * Copyright 2013 - 2016, Freescale Semiconductor, Inc.
- * Copyright 2016-2021, 2024 NXP
- *
- * NXP Proprietary. This software is owned or controlled by NXP and may
- * only be used strictly in accordance with the applicable license terms. 
- * By expressly accepting such terms or by downloading, installing,
- * activating and/or otherwise using the software, you are agreeing that
- * you have read, and that you agree to comply with and are bound by,
- * such license terms.  If you do not agree to be bound by the applicable
- * license terms, then you may not retain, install, activate or otherwise
- * use the software.
- */
+* Copyright 2013-2016, Freescale Semiconductor, Inc.
+* Copyright 2016-2024 NXP
+*
+* NXP Proprietary. This software is owned or controlled by NXP and may
+* only be used strictly in accordance with the applicable license terms. 
+* By expressly accepting such terms or by downloading, installing,
+* activating and/or otherwise using the software, you are agreeing that
+* you have read, and that you agree to comply with and are bound by,
+* such license terms.  If you do not agree to be bound by the applicable
+* license terms, then you may not retain, install, activate or otherwise
+* use the software.
+*/
+
  
  /* NTControl_arotary class */
 
@@ -164,27 +165,15 @@ NTControl_arotary.prototype.OnLinkClicked = function()
         {"variable":pname, "visible":true, "color":3026413, "y_block":0 } 
     ]; 
 
-    var fname = this._name + "->flags_direction";
-    var fdef = { "variable":fname, "visible":true, "color":4688896, "y_block":2 };
-    vars.push(fdef);
-
-    fname = this._name + "->flags_movement";
-    fdef = { "variable":fname, "visible":true, "color":11098392, "y_block":2 };
-    vars.push(fdef);
-
-    fname = this._name + "->flags_touch";
-    fdef = { "variable":fname, "visible":true, "color":2260467, "y_block":2 };
-    vars.push(fdef);
-
-    // up to 4 electrode signals
+    // up to 8 electrode deltas
     var el_count = callbackclass._electrodes.length;
     if(el_count > 8)
         el_count = 8;
     var defArr = new Array();
     for(var e=0; e<el_count; e++)
     {
-        var ename = callbackclass._name + "_electrode" + e + "_signal";
-        defArr[e] = callbackclass._electrodes[e].DefineSignalVariable(ename);
+        var ename = callbackclass._name + "_electrode" + e + "_delta";
+        defArr[e] = callbackclass._electrodes[e].DefineDeltaVariable(ename);
         
         var edef = { "variable":ename, "visible":true, "color":9055202*e, "y_block":1 }; 
         vars.push(edef);
@@ -192,8 +181,8 @@ NTControl_arotary.prototype.OnLinkClicked = function()
     Promise.all(defArr).then((res) => {
       // scope Y-blocks
       var yblocks = [
-        { "laxis_label":"key state", "join_class":0, "laxis_min":0, "laxis_min_auto":false, "laxis_max_auto":true },
-        { "laxis_label":"signal", "join_class":1, "laxis_min_auto":true, "laxis_max_auto":true },
+        { "laxis_label":"position", "join_class":0, "laxis_min":0, "laxis_min_auto":false, "laxis_max_auto":true },
+        { "laxis_label":"deltas", "join_class":1, "laxis_min":0, "laxis_min_auto":false, "laxis_max_auto":true },
       ];
 
       // scope definition

@@ -32,9 +32,6 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Directory Structure", "directory.html", null ],
-    [ "Touch GUI Tool", "_n_t_tool.html", [
-      [ "Touch GUI Tool", "_n_t_tool.html#NT_tool_1", null ]
-    ] ],
     [ "Configuring the Library", "nt_config.html", [
       [ "Configuration Example", "nt_config.html#nt_config_1", [
         [ "Key Detectors", "nt_config.html#s_keydetectors", null ],
@@ -73,11 +70,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_n_t_tool.html",
-"group__electrodes__api__private.html#ga286107f3ae1c3b1054e081ae4dd63b59",
-"group__gpio.html#a95883b373649e9ecf0dda20c0848ab45",
-"group__memory__api__private.html#gad206b2f391fe512bb5b37e3298d89140",
-"group__system__private.html#ga0cbe18021335ca53e86c0ed4c659ede1"
+"app_guide.html",
+"group__electrodes__api__private.html#ga3f001f2f8f52ae4838d0c6743ae9faaa",
+"group__gpio.html#a9e68a1889952c8e61c7907cf4ecc3358",
+"group__memory__private.html#a98b8fd56cc06d0b5f9ca9cc4239973cf",
+"group__system__private.html#ga5c4bbd97efaa670e198fad62038ba771"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

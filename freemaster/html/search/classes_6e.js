@@ -50,6 +50,7 @@ var searchData=
   ['nt_5fkeydetector_5fsafa_5fdata',['nt_keydetector_safa_data',['../group__safa__prv.html#structnt__keydetector__safa__data',1,'']]],
   ['nt_5fkeydetector_5fusafa',['nt_keydetector_usafa',['../group__usafa.html#structnt__keydetector__usafa',1,'']]],
   ['nt_5fkeydetector_5fusafa_5fdata',['nt_keydetector_usafa_data',['../group__usafa__prv.html#structnt__keydetector__usafa__data',1,'']]],
+  ['nt_5fkeydetector_5fusafambw',['nt_keydetector_usafambw',['../group__usafambw.html#structnt__keydetector__usafambw',1,'']]],
   ['nt_5fmem',['nt_mem',['../group__memory__private.html#structnt__mem',1,'']]],
   ['nt_5fmodule',['nt_module',['../group__gmodules.html#structnt__module',1,'']]],
   ['nt_5fmodule_5fcs_5fdata',['nt_module_cs_data',['../group__cs__private.html#structnt__module__cs__data',1,'']]],

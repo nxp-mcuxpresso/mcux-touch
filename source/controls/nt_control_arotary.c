@@ -149,6 +149,9 @@ static int32_t _nt_control_arotary_get_base_data(struct nt_control_data *control
     {
         delta = _nt_electrode_get_delta(control->electrodes[elec_counter]);
 
+        if (delta > control->data.arotary->delta_max)
+            control->data.arotary->delta_max = delta;
+        
         if (delta < 0)
         {
             return (int32_t)NT_INVALID_RESULT;
@@ -201,8 +204,7 @@ static int32_t _nt_control_arotary_get_base_data(struct nt_control_data *control
         temp_data->first_delta  = (uint32_t)delta1;
     }
 
-    /* This constant ensure the rotary linearization and has been obtain from experiences and measurement*/
-    temp_data->range = ((uint32_t)delta1 + (uint32_t)delta2) * 7UL / 12UL;
+    temp_data->range = ((uint32_t)control->data.arotary->delta_max);
 
     _nt_control_clear_flag(control, (int32_t)NT_AROTARY_INVALID_POSITION_FLAG);
 
@@ -222,15 +224,8 @@ static uint32_t _nt_control_arotary_calculate_position(const struct nt_control_d
 
     real_position += (temp_range * temp_data->first_delta) / temp_data->range;
     /* This constant ensure the rotary linearization and has been obtain from experiences and measurement*/
-    if (real_position >= (uint32_t)6553)
-    {
-        real_position -= (uint32_t)6553;
-    }
-    else
-    {
-        real_position = (uint32_t)0;
-    }
-    return ((real_position * arotary_desc->range) / 0xffffU);
+
+    return ((real_position * arotary_desc->range) >> 16U);
 }
 
 static void __nt_control_arotary_process_all_released(struct nt_control_data *control)
@@ -255,14 +250,6 @@ static int32_t _nt_control_arotary_init(struct nt_control_data *control)
     NT_ASSERT(control->rom->interface == &nt_control_arotary_interface);
     NT_ASSERT(control->rom->control_params.arotary != NULL);
 
-#if (NT_DEBUG == 0)
-    uint32_t elec_cnt = control->electrodes_size;
-    while ((bool)(elec_cnt--))
-    {
-        NT_ASSERT(control->electrodes[elec_cnt]->rom->keydetector_interface == &nt_keydetector_safa_interface);
-    }
-#endif
-
     const struct nt_control_arotary *arotary = control->rom->control_params.arotary;
 
     if (arotary->range == 0U)
@@ -281,7 +268,9 @@ static int32_t _nt_control_arotary_init(struct nt_control_data *control)
     {
         return (int32_t)NT_FAILURE;
     }
-
+    /* max. delta initialization */
+    control->data.arotary->delta_max = 1;
+    
     return (int32_t)NT_SUCCESS;
 }
 
@@ -353,6 +342,10 @@ static int32_t _nt_control_arotary_process(struct nt_control_data *control)
         {
             _nt_control_clear_flag(control, (int32_t)NT_AROTARY_MOVEMENT_FLAG);
         }
+    }
+    else /* reset delta_max in case of release */
+    {
+        control->data.arotary->delta_max = 1;
     }
     /* if arotary is touched for the first time */
     if (!(bool)_nt_control_get_flag(control, (int32_t)NT_AROTARY_TOUCH_FLAG))

@@ -148,7 +148,10 @@ static int32_t _nt_control_aslider_get_base_data(struct nt_control_data *control
     while ((bool)(elec_counter--))
     {
         delta = _nt_electrode_get_delta(control->electrodes[elec_counter]);
-
+        
+        if (delta > control->data.aslider->delta_max)
+            control->data.aslider->delta_max = delta;
+        
         if (delta > delta1)
         {
             max_second = max_first;
@@ -165,19 +168,13 @@ static int32_t _nt_control_aslider_get_base_data(struct nt_control_data *control
         { /* no command to avoid Misra issue */
         }
     }
-    /* Check if the measured results has at least +- good scale */
-    if ((delta1 / delta2) < 1)
-    {
-        return (int32_t)NT_INVALID_RESULT;
-    }
 
     if ((bool)_nt_control_check_neighbours_electrodes(control, max_first, max_second, 0) != (bool)NT_SUCCESS)
     {
         _nt_control_set_flag(control, (int32_t)NT_ASLIDER_INVALID_POSITION_FLAG);
         return (int32_t)NT_INVALID_RESULT;
     }
-
-    temp_data->range = (uint32_t)delta1 + (uint32_t)delta2;
+    temp_data->range = ((uint32_t)control->data.aslider->delta_max);
 
     if (max_first < max_second)
     {
@@ -189,7 +186,6 @@ static int32_t _nt_control_aslider_get_base_data(struct nt_control_data *control
         temp_data->active_el_ix = max_second;
         temp_data->first_delta  = (uint32_t)delta1;
     }
-
     _nt_control_clear_flag(control, (int32_t)NT_ASLIDER_INVALID_POSITION_FLAG);
 
     return (int32_t)NT_SUCCESS;
@@ -207,8 +203,8 @@ static uint32_t _nt_control_aslider_calculate_position(const struct nt_control_d
     const struct nt_control_aslider *aslider_desc = control->rom->control_params.aslider;
 
     real_position += (temp_range * temp_data->first_delta) / temp_data->range;
-
-    return (real_position * aslider_desc->range) / 0xffffU;
+    
+    return ((real_position * aslider_desc->range) >> 16U);
 }
 
 static void _nt_control_aslider_process_all_released(struct nt_control_data *control)
@@ -232,14 +228,6 @@ static int32_t _nt_control_aslider_init(struct nt_control_data *control)
     NT_ASSERT(control->rom->interface == &nt_control_aslider_interface);
     NT_ASSERT(control->rom->control_params.aslider != NULL);
 
-#if (NT_DEBUG == 0)
-    uint32_t elec_cnt = control->electrodes_size;
-    while (elec_cnt--)
-    {
-        NT_ASSERT(control->electrodes[elec_cnt]->rom->keydetector_interface == &nt_keydetector_safa_interface);
-    }
-#endif
-
     const struct nt_control_aslider *aslider = control->rom->control_params.aslider;
 
     if (aslider->range == 0U)
@@ -258,7 +246,9 @@ static int32_t _nt_control_aslider_init(struct nt_control_data *control)
     {
         return (int32_t)NT_FAILURE;
     }
-
+    /* max. delta initialization */
+    control->data.aslider->delta_max = 1;
+    
     return (int32_t)NT_SUCCESS;
 }
 
@@ -314,6 +304,10 @@ static int32_t _nt_control_aslider_process(struct nt_control_data *control)
         {
             _nt_control_clear_flag(control, (int32_t)NT_ASLIDER_MOVEMENT_FLAG);
         }
+    }
+    else /* reset delta_max in case of release */
+    {
+        control->data.aslider->delta_max = 1;
     }
 
     /* aslider is touched for the first time */

@@ -103,48 +103,54 @@ $(document).ready(function(){initNavTree('nt__keydetector__prv_8h_source.html','
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright 2013 - 2016, Freescale Semiconductor, Inc.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2016-2021 NXP</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * All rights reserved.</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * SPDX-License-Identifier: BSD-3-Clause</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef _NT_KEYDETECTOR_PRV_H_</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _NT_KEYDETECTOR_PRV_H_</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="group__detectors__private.html">   28</a></span>&#160;<span class="keyword">union </span><a class="code" href="group__detectors__private.html#unionnt__keydetector__data">nt_keydetector_data</a></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="group__detectors__private.html#a2474180d07a12ccdd9eb1bf448be063d">   30</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="group__afid__private.html#structnt__keydetector__afid__data">nt_keydetector_afid_data</a> *<a class="code" href="group__detectors__private.html#a2474180d07a12ccdd9eb1bf448be063d">afid</a>;   </div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="group__detectors__private.html#a1cf2e3d63c6609c33d9f3bd783f63caf">   31</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="group__safa__prv.html#structnt__keydetector__safa__data">nt_keydetector_safa_data</a> *<a class="code" href="group__detectors__private.html#a1cf2e3d63c6609c33d9f3bd783f63caf">safa</a>;   </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="group__detectors__private.html#a52fff00ae1c9b0aeeb26cee0a28a1ea8">   32</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="group__usafa__prv.html#structnt__keydetector__usafa__data">nt_keydetector_usafa_data</a> *<a class="code" href="group__detectors__private.html#a52fff00ae1c9b0aeeb26cee0a28a1ea8">usafa</a>; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="group__detectors__private.html#a42c40cdf5e0dc1286bf94f7d8c7206d6">   33</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="group__mbw__prv.html#structnt__keydetector__mbw__data">nt_keydetector_mbw_data</a> *<a class="code" href="group__detectors__private.html#a42c40cdf5e0dc1286bf94f7d8c7206d6">mbw</a>;     </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span> <span class="comment">/* end of detectors_private group */</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _NT_KEYDETECTOR_PRV_H_*/</span><span class="preprocessor"></span></div>
-<div class="ttc" id="group__detectors__private_html_a52fff00ae1c9b0aeeb26cee0a28a1ea8"><div class="ttname"><a href="group__detectors__private.html#a52fff00ae1c9b0aeeb26cee0a28a1ea8">nt_keydetector_data::usafa</a></div><div class="ttdeci">struct nt_keydetector_usafa_data * usafa</div><div class="ttdef"><b>Definition:</b> nt_keydetector_prv.h:32</div></div>
-<div class="ttc" id="group__detectors__private_html_unionnt__keydetector__data"><div class="ttname"><a href="group__detectors__private.html#unionnt__keydetector__data">nt_keydetector_data</a></div><div class="ttdef"><b>Definition:</b> nt_keydetector_prv.h:28</div></div>
-<div class="ttc" id="group__safa__prv_html_structnt__keydetector__safa__data"><div class="ttname"><a href="group__safa__prv.html#structnt__keydetector__safa__data">nt_keydetector_safa_data</a></div><div class="ttdef"><b>Definition:</b> nt_keydetector_safa_prv.h:38</div></div>
-<div class="ttc" id="group__usafa__prv_html_structnt__keydetector__usafa__data"><div class="ttname"><a href="group__usafa__prv.html#structnt__keydetector__usafa__data">nt_keydetector_usafa_data</a></div><div class="ttdef"><b>Definition:</b> nt_keydetector_usafa_prv.h:39</div></div>
-<div class="ttc" id="group__afid__private_html_structnt__keydetector__afid__data"><div class="ttname"><a href="group__afid__private.html#structnt__keydetector__afid__data">nt_keydetector_afid_data</a></div><div class="ttdef"><b>Definition:</b> nt_keydetector_afid_prv.h:64</div></div>
-<div class="ttc" id="group__detectors__private_html_a2474180d07a12ccdd9eb1bf448be063d"><div class="ttname"><a href="group__detectors__private.html#a2474180d07a12ccdd9eb1bf448be063d">nt_keydetector_data::afid</a></div><div class="ttdeci">struct nt_keydetector_afid_data * afid</div><div class="ttdef"><b>Definition:</b> nt_keydetector_prv.h:30</div></div>
-<div class="ttc" id="group__mbw__prv_html_structnt__keydetector__mbw__data"><div class="ttname"><a href="group__mbw__prv.html#structnt__keydetector__mbw__data">nt_keydetector_mbw_data</a></div><div class="ttdef"><b>Definition:</b> nt_keydetector_mbw_prv.h:39</div></div>
-<div class="ttc" id="group__detectors__private_html_a42c40cdf5e0dc1286bf94f7d8c7206d6"><div class="ttname"><a href="group__detectors__private.html#a42c40cdf5e0dc1286bf94f7d8c7206d6">nt_keydetector_data::mbw</a></div><div class="ttdeci">struct nt_keydetector_mbw_data * mbw</div><div class="ttdef"><b>Definition:</b> nt_keydetector_prv.h:33</div></div>
-<div class="ttc" id="group__detectors__private_html_a1cf2e3d63c6609c33d9f3bd783f63caf"><div class="ttname"><a href="group__detectors__private.html#a1cf2e3d63c6609c33d9f3bd783f63caf">nt_keydetector_data::safa</a></div><div class="ttdeci">struct nt_keydetector_safa_data * safa</div><div class="ttdef"><b>Definition:</b> nt_keydetector_prv.h:31</div></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * Copyright 2016-2021, 2024 NXP</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * NXP Proprietary. This software is owned or controlled by NXP and may</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * only be used strictly in accordance with the applicable license terms. </span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * By expressly accepting such terms or by downloading, installing,</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * activating and/or otherwise using the software, you are agreeing that</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * you have read, and that you agree to comply with and are bound by,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * such license terms.  If you do not agree to be bound by the applicable</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * license terms, then you may not retain, install, activate or otherwise</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * use the software.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef _NT_KEYDETECTOR_PRV_H_</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _NT_KEYDETECTOR_PRV_H_</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="group__detectors__private.html">   34</a></span>&#160;<span class="keyword">union </span><a class="code" href="group__detectors__private.html#unionnt__keydetector__data">nt_keydetector_data</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="group__detectors__private.html#a2474180d07a12ccdd9eb1bf448be063d">   36</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="group__afid__private.html#structnt__keydetector__afid__data">nt_keydetector_afid_data</a> *<a class="code" href="group__detectors__private.html#a2474180d07a12ccdd9eb1bf448be063d">afid</a>;   </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="group__detectors__private.html#a1cf2e3d63c6609c33d9f3bd783f63caf">   37</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="group__safa__prv.html#structnt__keydetector__safa__data">nt_keydetector_safa_data</a> *<a class="code" href="group__detectors__private.html#a1cf2e3d63c6609c33d9f3bd783f63caf">safa</a>;   </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="group__detectors__private.html#a52fff00ae1c9b0aeeb26cee0a28a1ea8">   38</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="group__usafa__prv.html#structnt__keydetector__usafa__data">nt_keydetector_usafa_data</a> *<a class="code" href="group__detectors__private.html#a52fff00ae1c9b0aeeb26cee0a28a1ea8">usafa</a>; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="group__detectors__private.html#a42c40cdf5e0dc1286bf94f7d8c7206d6">   39</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="group__mbw__prv.html#structnt__keydetector__mbw__data">nt_keydetector_mbw_data</a> *<a class="code" href="group__detectors__private.html#a42c40cdf5e0dc1286bf94f7d8c7206d6">mbw</a>;     </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span> <span class="comment">/* end of detectors_private group */</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _NT_KEYDETECTOR_PRV_H_*/</span><span class="preprocessor"></span></div>
+<div class="ttc" id="group__detectors__private_html_a52fff00ae1c9b0aeeb26cee0a28a1ea8"><div class="ttname"><a href="group__detectors__private.html#a52fff00ae1c9b0aeeb26cee0a28a1ea8">nt_keydetector_data::usafa</a></div><div class="ttdeci">struct nt_keydetector_usafa_data * usafa</div><div class="ttdef"><b>Definition:</b> nt_keydetector_prv.h:38</div></div>
+<div class="ttc" id="group__detectors__private_html_unionnt__keydetector__data"><div class="ttname"><a href="group__detectors__private.html#unionnt__keydetector__data">nt_keydetector_data</a></div><div class="ttdef"><b>Definition:</b> nt_keydetector_prv.h:34</div></div>
+<div class="ttc" id="group__safa__prv_html_structnt__keydetector__safa__data"><div class="ttname"><a href="group__safa__prv.html#structnt__keydetector__safa__data">nt_keydetector_safa_data</a></div><div class="ttdef"><b>Definition:</b> nt_keydetector_safa_prv.h:44</div></div>
+<div class="ttc" id="group__usafa__prv_html_structnt__keydetector__usafa__data"><div class="ttname"><a href="group__usafa__prv.html#structnt__keydetector__usafa__data">nt_keydetector_usafa_data</a></div><div class="ttdef"><b>Definition:</b> nt_keydetector_usafa_prv.h:45</div></div>
+<div class="ttc" id="group__afid__private_html_structnt__keydetector__afid__data"><div class="ttname"><a href="group__afid__private.html#structnt__keydetector__afid__data">nt_keydetector_afid_data</a></div><div class="ttdef"><b>Definition:</b> nt_keydetector_afid_prv.h:70</div></div>
+<div class="ttc" id="group__detectors__private_html_a2474180d07a12ccdd9eb1bf448be063d"><div class="ttname"><a href="group__detectors__private.html#a2474180d07a12ccdd9eb1bf448be063d">nt_keydetector_data::afid</a></div><div class="ttdeci">struct nt_keydetector_afid_data * afid</div><div class="ttdef"><b>Definition:</b> nt_keydetector_prv.h:36</div></div>
+<div class="ttc" id="group__mbw__prv_html_structnt__keydetector__mbw__data"><div class="ttname"><a href="group__mbw__prv.html#structnt__keydetector__mbw__data">nt_keydetector_mbw_data</a></div><div class="ttdef"><b>Definition:</b> nt_keydetector_mbw_prv.h:45</div></div>
+<div class="ttc" id="group__detectors__private_html_a42c40cdf5e0dc1286bf94f7d8c7206d6"><div class="ttname"><a href="group__detectors__private.html#a42c40cdf5e0dc1286bf94f7d8c7206d6">nt_keydetector_data::mbw</a></div><div class="ttdeci">struct nt_keydetector_mbw_data * mbw</div><div class="ttdef"><b>Definition:</b> nt_keydetector_prv.h:39</div></div>
+<div class="ttc" id="group__detectors__private_html_a1cf2e3d63c6609c33d9f3bd783f63caf"><div class="ttname"><a href="group__detectors__private.html#a1cf2e3d63c6609c33d9f3bd783f63caf">nt_keydetector_data::safa</a></div><div class="ttdeci">struct nt_keydetector_safa_data * safa</div><div class="ttdef"><b>Definition:</b> nt_keydetector_prv.h:37</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_01fcd3835fb4e7d9331b722d86291b65.html">sw</a></li><li class="navelem"><a class="el" href="dir_2eecd27e108deb48a88e7e9847f192f6.html">nt</a></li><li class="navelem"><a class="el" href="dir_fce88f3aef8e5232c617e90480b9aa4b.html">source</a></li><li class="navelem"><a class="el" href="dir_8f8ef63dbb6a1f9963e6ccb3dd270f10.html">keydetectors</a></li><li class="navelem"><b>nt_keydetector_prv.h</b></li>
-    <li class="footer">Generated on Fri Aug 2 2024 08:33:26 for NXP Touch Library Reference Manual by
+    <li class="footer">Generated on Mon Dec 2 2024 13:42:31 for NXP Touch Library Reference Manual by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.5 </li>
   </ul>
