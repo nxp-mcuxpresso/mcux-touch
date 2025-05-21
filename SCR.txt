@@ -8,7 +8,11 @@ Type of content: source code
 Description and comments:
 	  NXP Touch Library
 	  jQuery javaScript file for TouchViewer Tool graphics
+	  simple-jsonrpc-js FreeMASTER RPC support for TouchViewer Tool graphics
+	  OpenCASCADE-6.9.1 HTML documentation support
 Release Location: https://github.com/nxp-mcuxpresso/mcux-touch
 Origin:
       NXP (Proprietary)
 	  jQuery Foundation (MIT) - https://jquery.org/
+	  simple-jsonrpc-js (MIT) - https://www.jsonrpc.org/
+	  OpenCASCADE-6.9.1 (LGPL-2.1-only) - https://dev.opencascade.org/release/open-cascade-technology-730
