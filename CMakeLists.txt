@@ -167,7 +167,6 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/html/DK_QN9080.png
 			freemaster/html/doxygen.css
 			freemaster/html/doxygen.png
-			freemaster/html/dynsections.js
 			freemaster/html/examplespage.html
 			freemaster/html/frdm_touch_app.png
 			freemaster/html/frdm_touch_app_MCX.png
@@ -1144,7 +1143,6 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/html/group__xtalk__private.png
 			freemaster/html/include.png
 			freemaster/html/index.html
-			freemaster/html/jquery.js
 			freemaster/html/keypad.png
 			freemaster/html/linker_k32l2a4s.png
 			freemaster/html/linker_ke15.png
@@ -1160,7 +1158,6 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/html/nav_g.png
 			freemaster/html/nav_h.png
 			freemaster/html/navtree.css
-			freemaster/html/navtree.js
 			freemaster/html/navtreeindex0.js
 			freemaster/html/navtreeindex1.js
 			freemaster/html/navtreeindex2.js
@@ -1234,7 +1231,6 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/html/proxi.png
 			freemaster/html/random_elec_order.png
 			freemaster/html/release.html
-			freemaster/html/resize.js
 			freemaster/html/rotary.png
 			freemaster/html/safa_signal.png
 			freemaster/html/slider.png
@@ -1610,7 +1606,6 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/html/search/pages_65.html
 			freemaster/html/search/pages_65.js
 			freemaster/html/search/pages_69.html
-			freemaster/html/search/pages_69.js
 			freemaster/html/search/search.css
 			freemaster/html/search/search.js
 			freemaster/html/search/search_l.png
@@ -1628,7 +1623,6 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/html/search/variables_6c.js
 			freemaster/html/search/variables_6d.html
 			freemaster/html/search/variables_6d.js
-			freemaster/html/search/variables_6e.html
 			freemaster/html/search/variables_6e.js
 			freemaster/html/search/variables_6f.html
 			freemaster/html/search/variables_6f.js
@@ -1640,15 +1634,11 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/html/search/variables_63.js
 			freemaster/html/search/variables_64.html
 			freemaster/html/search/variables_64.js
-			freemaster/html/search/variables_65.html
 			freemaster/html/search/variables_65.js
-			freemaster/html/search/variables_66.html
 			freemaster/html/search/variables_66.js
-			freemaster/html/search/variables_67.html
 			freemaster/html/search/variables_67.js
 			freemaster/html/search/variables_69.html
 			freemaster/html/search/variables_69.js
-			freemaster/html/search/variables_70.html
 			freemaster/html/search/variables_70.js
 			freemaster/html/search/variables_72.html
 			freemaster/html/search/variables_72.js
@@ -1656,9 +1646,7 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
 			freemaster/html/search/variables_73.js
 			freemaster/html/search/variables_74.html
 			freemaster/html/search/variables_74.js
-			freemaster/html/search/variables_75.html
 			freemaster/html/search/variables_75.js
-			freemaster/html/search/variables_77.html
 			freemaster/html/search/variables_77.js
 			freemaster/html/search/variables_78.html
 			freemaster/html/search/variables_78.js
