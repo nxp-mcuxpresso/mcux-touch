@@ -90,7 +90,6 @@ if (CONFIG_MCUX_COMPONENT_middleware.touch)
             include/nt_xtalk.h
 			doc/*.txt
 			doc/*.pdf
-			freemaster/html
 			freemaster/html/afid_traces.png
 			freemaster/html/app_guide.html
 			freemaster/html/arotary.png
