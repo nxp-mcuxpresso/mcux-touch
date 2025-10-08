@@ -1,0 +1,42 @@
+# Copyright 2025 NXP
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+# Lib_nxp_touch Zephyr west manifest
+#
+# Description:
+#   Used for setting up freestanding nxp-touch module and only necessary Zephyr components.
+#
+# How to set up:
+#   nxp_touch module initialization
+#     1. west init -m <nxp_touch_repository_URL> [--mr <nxp_touch_revision_or_branch>] <folder_name>
+#     2. cd <folder_name>
+#     3. west update
+#
+# For more information, see zephyr/README.rst
+#
+
+manifest:
+  self:
+    path: modules/lib/nxp_touch
+
+  remotes:
+    - name: zephyrproject-rtos
+      url-base: https://github.com/zephyrproject-rtos
+    - name: nxp-mcuxpresso
+      url-base: https://github.com/nxp-mcuxpresso       
+
+  projects:
+    - name: zephyr
+      remote: zephyrproject-rtos
+      revision: main
+      import:
+        name-allowlist:
+          - cmsis_6    # required by the ARM port for Cortex-M
+          - hal_nxp    # required by NXP boards
+
+#    - name: freemaster
+#      remote: nxp-mcuxpresso
+#      repo-path: mcux-freemaster
+#      revision: main
+#      path: ./modules/lib/freemaster

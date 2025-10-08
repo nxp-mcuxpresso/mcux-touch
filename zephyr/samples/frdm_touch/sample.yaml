@@ -1,0 +1,11 @@
+sample:
+  name: Touch nxp_touch Sample
+tests:
+  sample.nxp_touch:
+    tags:
+      - touch
+    integration_platforms:
+      - frdm_ke15z
+      - frdm_ke17z
+      - frdm_ke17z512
+      

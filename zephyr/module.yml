@@ -1,0 +1,6 @@
+name: nxp_touch
+build:
+  cmake: ./zephyr/
+  kconfig: ./zephyr/Kconfig
+samples:
+  - ./zephyr/samples
