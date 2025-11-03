@@ -32,7 +32,7 @@
 #define THREAD_STACKSIZE	  512
 #define THREAD_PRIORITY_TOUCH	1	/* Touch Sensor thread highest priority */
 
-#define TSI_DEV_PRIO  2       /* device uses interrupt priority 2 */
+#define TSI_DEV_PRIO  0       /* device uses interrupt priority 0 (highest) */
 #define TSI_IRQ_FLAGS 0       /* IRQ flags */
 
 #define NUM_STEPS	50U       /* for PWM */
@@ -191,15 +191,15 @@ int main(void)
     k_timer_init(&my_timer, nt_trigger_handler, NULL);
 
     // Set NXP touch trigger period according to the HW scan time needed
-    k_timer_start(&my_timer, K_MSEC(50), K_MSEC(50));
+    k_timer_start(&my_timer, K_MSEC(10), K_MSEC(10));
 
 #if DT_NODE_EXISTS(DT_NODELABEL(tsi0))
-    IRQ_CONNECT(DT_IRQN(DT_NODELABEL(tsi0)), TSI_DEV_PRIO, TSI0_IRQHandler, NULL, TSI_IRQ_FLAGS);
+    IRQ_DIRECT_CONNECT(DT_IRQN(DT_NODELABEL(tsi0)), TSI_DEV_PRIO, TSI0_IRQHandler, TSI_IRQ_FLAGS);    
     irq_enable(DT_IRQN(DT_NODELABEL(tsi0)));
 #endif
 
 #if DT_NODE_EXISTS(DT_NODELABEL(tsi1))
-    IRQ_CONNECT(DT_IRQN(DT_NODELABEL(tsi1)), TSI_DEV_PRIO, TSI1_IRQHandler, NULL, TSI_IRQ_FLAGS);
+    IRQ_DIRECT_CONNECT(DT_IRQN(DT_NODELABEL(tsi1)), TSI_DEV_PRIO, TSI1_IRQHandler, TSI_IRQ_FLAGS);
     irq_enable(DT_IRQN(DT_NODELABEL(tsi1)));
 #endif
 //---------------------------------------------------------------------------------
