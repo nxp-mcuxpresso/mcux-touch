@@ -121,7 +121,7 @@ uint32_t _nt_electrode_shielding_process(struct nt_electrode_data *electrode, ui
         sh_sens      = electrode->rom->shield_sens;
         sh_attn      = electrode->rom->shield_attn;
 
-        if ((sh_threshold == 0U))
+        if (sh_threshold == 0U)
         {
             sh_threshold = NT_ELECTRODE_SHIELD_THRESHOLD;
         }
