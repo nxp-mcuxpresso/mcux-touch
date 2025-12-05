@@ -2,13 +2,13 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-09-01T13:02:28Z",
+    "created": "2025-12-03T03:30:42Z",
     "creators": [
       "Organization: NXP"
     ],
-    "licenseListVersion": "3.20"
+    "licenseListVersion": "3.26"
   },
-  "name": "mcux-touch-v25.09.00",
+  "name": "mcux-touch-v25.12.00",
   "dataLicense": "CC0-1.0",
   "hasExtractedLicensingInfos": [
     {
@@ -17,20 +17,8 @@
       "name": "LA_OPT_Online Code Hosting NXP_Software_License - v1.4 May 2025"
     }
   ],
-  "documentNamespace": "https://nxp.com/spdx/870bbba6-aec7-4f2a-a1ca-6f8c5c341d97",
+  "documentNamespace": "https://nxp.com/spdx/9518571c-906d-4c69-83fa-12d5ec584307",
   "packages": [
-    {
-      "SPDXID": "SPDXRef-package-870bbba6-aec7-4f2a-a1ca-6f8c5c341d97",
-      "name": "mcux-touch",
-      "versionInfo": "v25.09.00",
-      "licenseConcluded": "(LicenseRef-babf777f-042b-42df-a5bf-638993427038)",
-      "licenseDeclared": "(LicenseRef-babf777f-042b-42df-a5bf-638993427038)",
-      "downloadLocation": "https://github.com/nxp-mcuxpresso/mcux-touch",
-      "originator": "Organization: NXP",
-      "supplier": "NOASSERTION",
-      "externalRefs": [],
-      "filesAnalyzed": false
-    },
     {
       "SPDXID": "SPDXRef-package-7566661d-5a0d-4b21-9f57-5fa8912e3e9f",
       "name": "jQuery",
@@ -81,12 +69,24 @@
       "filesAnalyzed": false
     },
     {
+      "SPDXID": "SPDXRef-package-9518571c-906d-4c69-83fa-12d5ec584307",
+      "name": "mcux-touch",
+      "versionInfo": "v25.12.00",
+      "licenseConcluded": "(LicenseRef-babf777f-042b-42df-a5bf-638993427038)",
+      "licenseDeclared": "(LicenseRef-babf777f-042b-42df-a5bf-638993427038)",
+      "downloadLocation": "https://github.com/nxp-mcuxpresso/mcux-touch",
+      "originator": "Organization: NXP",
+      "supplier": "NOASSERTION",
+      "externalRefs": [],
+      "filesAnalyzed": false
+    },
+    {
       "SPDXID": "SPDXRef-package-a1c5dff3-adc1-40c4-8b39-83c9be7c873e",
       "name": "simple-jsonrpc-js",
       "versionInfo": "1.0.0",
       "licenseConcluded": "MIT",
       "licenseDeclared": "MIT",
-      "downloadLocation": "https://www.jsonrpc.org/",
+      "downloadLocation": "https://www.npmjs.org/package/simple-jsonrpc-js#1.0.0",
       "originator": "Organization: simple-jsonrpc-js",
       "supplier": "NOASSERTION",
       "externalRefs": [],
@@ -95,19 +95,19 @@
   ],
   "relationships": [
     {
-      "spdxElementId": "SPDXRef-DOCUMENT",
-      "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-package-870bbba6-aec7-4f2a-a1ca-6f8c5c341d97"
-    },
-    {
-      "spdxElementId": "SPDXRef-package-870bbba6-aec7-4f2a-a1ca-6f8c5c341d97",
-      "relationshipType": "CONTAINS",
-      "relatedSpdxElement": "SPDXRef-package-a1c5dff3-adc1-40c4-8b39-83c9be7c873e"
-    },
-    {
-      "spdxElementId": "SPDXRef-package-870bbba6-aec7-4f2a-a1ca-6f8c5c341d97",
+      "spdxElementId": "SPDXRef-package-9518571c-906d-4c69-83fa-12d5ec584307",
       "relationshipType": "CONTAINS",
       "relatedSpdxElement": "SPDXRef-package-7566661d-5a0d-4b21-9f57-5fa8912e3e9f"
+    },
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-package-9518571c-906d-4c69-83fa-12d5ec584307"
+    },
+    {
+      "spdxElementId": "SPDXRef-package-9518571c-906d-4c69-83fa-12d5ec584307",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-package-a1c5dff3-adc1-40c4-8b39-83c9be7c873e"
     }
   ]
 }
