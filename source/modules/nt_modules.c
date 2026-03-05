@@ -113,13 +113,14 @@ static int32_t _nt_module_init_electrode(struct nt_module_data *module, uint32_t
         return (int32_t)NT_OUT_OF_MEMORY;
     } /* Initialization keydetectors data */
 
+#if (NT_FREEMASTER_SUPPORT == 1)  
     if (_nt_freemaster_add_variable(elec->rom->keydetector_interface->name, "nt_keydetector_interface",
                                     (const void *)elec->rom->keydetector_interface,
                                     sizeof(struct nt_keydetector_interface)) != (int32_t)NT_SUCCESS)
     {
         return (int32_t)NT_OUT_OF_MEMORY;
     }
-
+#endif
     return (int32_t)NT_SUCCESS;
 }
 
@@ -226,12 +227,14 @@ struct nt_module_data *_nt_module_init(const struct nt_module *module)
         }
     }
 
+#if (NT_FREEMASTER_SUPPORT == 1)  
     if (_nt_freemaster_add_variable(module->interface->name, "nt_module_interface",
                                     (const struct nt_module_interface *)module->interface,
                                     sizeof(struct nt_module_interface)) != (int32_t)NT_SUCCESS)
     {
         return NULL;
     }
+#endif
     
     /* Initialization the safety functions */
     if ((bool)(module->safety_interface != NULL))

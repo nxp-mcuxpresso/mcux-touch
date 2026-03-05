@@ -25,10 +25,12 @@ int32_t nt_init(const struct nt_system *system, uint8_t *pool, const uint32_t si
     {
         return (int32_t)NT_FAILURE;
     }
+#if (NT_FREEMASTER_SUPPORT == 1)  
     if (_nt_freemaster_init() < (int32_t)NT_SUCCESS)
     {
         return (int32_t)NT_FAILURE;
     }
+#endif
     result = _nt_system_init(system);
     if ((bool)(result < (int32_t)NT_SUCCESS))
     {

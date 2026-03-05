@@ -187,12 +187,14 @@ struct nt_control_data *_nt_control_init(const struct nt_control *control)
         return NULL;
     }
 
+#if (NT_FREEMASTER_SUPPORT == 1)    
     if ((bool)_nt_freemaster_add_variable(control->interface->name, "nt_control_interface",
                                           (const void *)control->interface,
                                           sizeof(struct nt_control_interface)) != (bool)NT_SUCCESS)
     {
         return NULL;
     }
+#endif
 
     return _this;
 }
