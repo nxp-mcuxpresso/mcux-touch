@@ -87,8 +87,8 @@ static int32_t _nt_keydetector_mbw_init(struct nt_electrode_data *electrode)
 
     const struct nt_keydetector_mbw *rom = electrode->rom->keydetector_params.mbw;
 
-    NT_ASSERT(rom->debounce_length < 16U)
-    NT_ASSERT(rom->baseline_debounce_length < 200U)
+    NT_ASSERT(rom->debounce_length < 16U);
+    NT_ASSERT(rom->baseline_debounce_length < 200U);
 
 
     if (_nt_keydetector_mbw_rom_check(rom) != (int32_t)NT_SUCCESS)

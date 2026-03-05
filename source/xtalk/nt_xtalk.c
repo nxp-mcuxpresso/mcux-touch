@@ -37,15 +37,15 @@ const struct nt_system_xtalk_interface nt_system_xtalk_interface = {
 /* Init the cross-talk functions for the system. */
 int32_t _nt_system_xtalk_init(struct nt_kernel *system)
 {
-    NT_ASSERT(system != NULL)
-    NT_ASSERT(system->rom->xtalk_interface != NULL)
-    NT_ASSERT(system->rom->xtalk_interface->process != NULL)
-    NT_ASSERT(system->rom->xtalk_electrodes != NULL)
-    NT_ASSERT(system->rom->xtalk_params != NULL)
-    NT_ASSERT(system->rom->xtalk_params->actMat != NULL)     
-    NT_ASSERT(system->rom->xtalk_params->nt_xtalk_neighbours <= 4)  /* Number of sensors used for cross-talk reduction */
-    NT_ASSERT(system->rom->xtalk_params->nt_xtalk_neighbours >= 1)  /* Code supports only neighbours K = 1, 2, 3, 4 */
-    NT_ASSERT(NT_XTALK_NSENSORS_TRACE_MAX >= NT_XTALK_NSENSORS)
+    NT_ASSERT(system != NULL);
+    NT_ASSERT(system->rom->xtalk_interface != NULL);
+    NT_ASSERT(system->rom->xtalk_interface->process != NULL);
+    NT_ASSERT(system->rom->xtalk_electrodes != NULL);
+    NT_ASSERT(system->rom->xtalk_params != NULL);
+    NT_ASSERT(system->rom->xtalk_params->actMat != NULL);     
+    NT_ASSERT(system->rom->xtalk_params->nt_xtalk_neighbours <= 4);  /* Number of sensors used for cross-talk reduction */
+    NT_ASSERT(system->rom->xtalk_params->nt_xtalk_neighbours >= 1);  /* Code supports only neighbours K = 1, 2, 3, 4 */
+    NT_ASSERT(NT_XTALK_NSENSORS_TRACE_MAX >= NT_XTALK_NSENSORS);
    
     /* Allocation the array for cross-talk reduction depend on the cross-talk electrod number */
     uint32_t elec_xtalk_cnt = system->xtalk_electrodes_cnt;
