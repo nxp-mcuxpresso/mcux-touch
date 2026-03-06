@@ -61,7 +61,7 @@ enum nt_result
  *  NT_FREEMASTER_SUPPORT is enabled by default.
  */
 #ifndef NT_FREEMASTER_SUPPORT
-#define NT_FREEMASTER_SUPPORT 0
+#define NT_FREEMASTER_SUPPORT 1
 #endif
 
 /**
@@ -70,7 +70,7 @@ enum nt_result
  *  NT_SAFETY_SUPPORT is enabled by default.
  */
 #ifndef NT_SAFETY_SUPPORT
-#define NT_SAFETY_SUPPORT 0
+#define NT_SAFETY_SUPPORT 1
 #endif
 
 /**
@@ -79,7 +79,7 @@ enum nt_result
  *  NT_DEBUG is enabled by default, which enables the NT ASSERTS.
  */
 #ifndef NT_DEBUG
-#define NT_DEBUG 0
+#define NT_DEBUG 1
 #endif
 
 #if (NT_DEBUG == 0)
