@@ -69,8 +69,8 @@ struct nt_keydetector_safa {
     uint32_t                                entry_event_cnt;    	/*!< Sample count for the touch event. This means that this count of samples must meet the touch condition to trigger a real touch event. */
     uint32_t                                deadband_cnt;       	/*!< Sample count for the deadband filter. This field specifies the number of samples that cannot proceed to the next event.
                                                                              For Example: after the touch event, a release event with "deadband_cnt" samples can follow. */
-    uint32_t                                signal_to_noise_ratio;      /*!< Signal-to-noise ratio – it is used for counting the minimum size of the signal that is ignored. */
-    uint32_t                                min_noise_limit;    	/*!< Minimum noise value. Used for predicted signal calculation and delta signal filter limits */
+    uint16_t                                signal_to_noise_ratio;      /*!< Signal-to-noise ratio – it is used for counting the minimum size of the signal that is ignored. */
+    uint16_t                                min_noise_limit;    	/*!< Minimum noise value. Used for predicted signal calculation and delta signal filter limits */
 };
 
 /**

@@ -75,12 +75,12 @@ struct nt_keydetector_mbw {
     struct nt_filter_moving_average non_activity_avrg;           /**< Settings of the moving average filter for the signals in the inactivity state of an electrode. (for example baseline in a touch state). */
     uint32_t                        entry_event_cnt;             /**< Sample count for the touch event. This means that this count of samples must meet the touch condition to trigger a real touch event. */
     uint32_t                        deadband_cnt;                /**< Sample count for the deadband filter. This field specifies the number of samples that cannot proceed to the next event. For Example: after the touch event, a release event with "deadband_cnt" samples can follow. */
-    uint32_t                        signal_to_noise_ratio;       /**< Signal-to-noise ratio – it is used to count the minimum size of the signal that is ignored. */
-    uint32_t                        min_noise_limit;             /**< Minimum noise value. */
     uint16_t                        baseline_track_window;       /**< Baseline tracking window length in ms (for example the value 2000 represent 2s window for 50Hz or 20ms time period). Cannot be zero. */
     uint16_t                        baseline_track_window_touch; /**< Baseline tracking window length for touch event in ms (for example the value 2000 represent 2s window for 50Hz or 20ms time period). Zero will freeze baseline durring touch. */
     uint16_t                        touch_limit;                 /**< Maximum number of touches before making baseline adaptation quicker (too many touches are probably accidental) if no or low touch event normal baseline adaptation used. */
     uint16_t                        baseline_debounce_length;    /**< Length of the initial baseline glitch filter (0 = no_debounce). */
+    uint16_t                        signal_to_noise_ratio;       /**< Signal-to-noise ratio – it is used to count the minimum size of the signal that is ignored. */
+    uint16_t                        min_noise_limit;             /**< Minimum noise value. */
     int16_t                         tau_smooth_signal;           /**< Smoothing time constant in ms for initial fixed smoothing of signals. */
     int16_t                         tau_smooth_baseline;         /**< Smoothing time constant in ms for baseline tracking. */
     uint8_t                         debounce_length;             /**< Number of measured bounced deltas (peaks) to be filtered (0 = no_debounce). */

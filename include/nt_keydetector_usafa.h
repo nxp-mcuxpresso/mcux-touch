@@ -73,11 +73,11 @@ struct nt_keydetector_usafa {
     uint32_t                                entry_event_cnt;    	/**< Sample count for the touch event. This means that this count of samples must meet the touch condition to trigger a real touch event. */
     uint32_t                                deadband_cnt;       	/**< Sample count for the deadband filter. This field specifies the number of samples that cannot proceed to the next event.
                                                                          For Example: after the touch event, a release event with "deadband_cnt" samples can follow. */
-    uint32_t                                signal_to_noise_ratio;  /**< Signal-to-noise ratio – it is used to count the minimum size of the signal that is ignored. */
-    uint32_t                                min_noise_limit;    	/**< Minimum noise value. */
     uint32_t                                dc_track_enabled;       /**< Enable or disable DC track feature to avoid negative signal drop below the baseline - used to debounce the short glitches.
                                                                          If enabled and the signal is under baseline longer then defined in dc_track_cnt value the usafa keydetector will be reset.*/
     uint32_t                                dc_track_cnt;           /**< Define minimum number of cycles when signal must fall down below tha baseline to reset the usafa keydetector if DC track functionality is enabled. */
+    uint16_t                                signal_to_noise_ratio;  /**< Signal-to-noise ratio – it is used to count the minimum size of the signal that is ignored. */
+    uint16_t                                min_noise_limit;    	/**< Minimum noise value. */
 };
 
 /**

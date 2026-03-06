@@ -428,7 +428,7 @@ static void _nt_keydetector_usafa_unlock_baseline(struct nt_electrode_data *elec
     else
     {
         ram->base_avrg_init.n2_order = (int32_t)rom->base_avrg.n2_order;
-    }
+    }   
 
     (void)(int32_t) _nt_filter_moving_average_init(&ram->base_avrg_init, &ram->base_avrg, electrode->baseline);
 
