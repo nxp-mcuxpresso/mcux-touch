@@ -44,7 +44,6 @@
  */
 struct nt_keydetector_mbw_data
 {
-    enum nt_filter_state filter_state;                 /**< Input filter state. */
     struct nt_filter_moving_average_data base_avrg;    /**< Baseline moving average filter data. */
     struct nt_filter_moving_average_data noise_avrg;   /**< Noise signal moving average filter data. */
     struct nt_filter_moving_average_data f_noise_avrg; /**< Fast Noise signal moving average filter data. */
@@ -56,7 +55,6 @@ struct nt_keydetector_mbw_data
     struct nt_filter_asym_smooth base_smooth;          /**< Baseline Asym Smooth filter */
     struct nt_filter_smooth base_smooth_release;       /**< Baseline Smooth filter After Release (faster) */
     struct nt_filter_smooth base_smooth_fix;           /**< Baseline 4x times faster filter for decrease (Asymetric smooth). */
-    uint16_t *signal_buffer;                           /**< Shift register for raw signals (for min filtering) */
     uint32_t noise;                                    /**< Noise value. */
     uint32_t f_noise;                                  /**< Fast Noise value. */
     uint32_t predicted_signal;                         /**< Predicted signal value. */
@@ -64,6 +62,8 @@ struct nt_keydetector_mbw_data
     int32_t  deadband_cnt;                             /**< Deadband event counter. */
     int32_t  recovery_cnt;                             /**< Recovery counter. */
     uint32_t deadband_h;                               /**< Deadband high watermark */
+    uint32_t smooth_baseline_accu;                     /**< Baseline asymetric smooth counter */
+    uint16_t *signal_buffer;                           /**< Shift register for raw signals (for min filtering) */
     uint16_t baseline_cnt;                             /**< Counter for baseline tracking measure the baseline window */
     uint16_t baseline_cnt_max;                         /**< Maximum value of the baseline tracking counter calculated by baseline_track_window * system_time_period */
     uint16_t smooth_baseline_min;                      /**< Minimum value from actual baseline window used for next baseline window */
@@ -71,14 +71,15 @@ struct nt_keydetector_mbw_data
     uint16_t smooth_signal_min;                        /**< Minimum value of smoothed signal in baseline window */
     uint16_t smooth_signal;                            /**< Signal filtered by the signal Smooth filter used as actual signal */
     uint16_t smooth_baseline;                          /**< Raw signal filtered by the baseline Smooth filter used for baseline */
-    uint32_t smooth_baseline_accu;                     /**< Baseline asymetric smooth counter */
     uint16_t smooth_baseline_accu_count;               /**< Baseline asymetric smooth tau parameter */
     uint16_t baseline_add_no_touch;                    /**< Add to counter when no touch or number of touches > touch_limit, higher number will slowdown the baseline (by factor baseline_add_no_touch / baseline_add_touch) if no touch event */
     uint16_t baseline_add_touch;                       /**< Add to counter when touch, when touched, baseline tracker slows down by factor, (baseline_add_no_touch / baseline_add_touch) */
     int16_t  prev_delta;                               /**< Previous signed delta used for debouncing */
     uint8_t  shist;                                    /**< signal history counter*/
     uint8_t  debounce_cnt;                             /**< Counter of measured deltas bounced higher then delta limitation */
+    enum nt_filter_state filter_state;                 /**< Input filter state. */
 };
+
 
 #ifdef __cplusplus
 extern "C" {

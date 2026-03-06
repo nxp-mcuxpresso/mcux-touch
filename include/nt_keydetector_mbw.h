@@ -71,7 +71,6 @@ extern const struct nt_keydetector_mbw nt_keydetector_mbw_default;
  * the module. This structure can be allocated in ROM.
  */
 struct nt_keydetector_mbw {
-    struct nt_filter_iir            signal_filter;               /**< Coefficient of the input IIR signal filter, used to suppress high-frequency noise. */
     struct nt_filter_moving_average base_avrg;                   /**< Settings of the moving average filter for the baseline in the release state of an electrode. */
     struct nt_filter_moving_average non_activity_avrg;           /**< Settings of the moving average filter for the signals in the inactivity state of an electrode. (for example baseline in a touch state). */
     uint32_t                        entry_event_cnt;             /**< Sample count for the touch event. This means that this count of samples must meet the touch condition to trigger a real touch event. */
@@ -81,10 +80,11 @@ struct nt_keydetector_mbw {
     uint16_t                        baseline_track_window;       /**< Baseline tracking window length in ms (for example the value 2000 represent 2s window for 50Hz or 20ms time period). Cannot be zero. */
     uint16_t                        baseline_track_window_touch; /**< Baseline tracking window length for touch event in ms (for example the value 2000 represent 2s window for 50Hz or 20ms time period). Zero will freeze baseline durring touch. */
     uint16_t                        touch_limit;                 /**< Maximum number of touches before making baseline adaptation quicker (too many touches are probably accidental) if no or low touch event normal baseline adaptation used. */
+    uint16_t                        baseline_debounce_length;    /**< Length of the initial baseline glitch filter (0 = no_debounce). */
     int16_t                         tau_smooth_signal;           /**< Smoothing time constant in ms for initial fixed smoothing of signals. */
     int16_t                         tau_smooth_baseline;         /**< Smoothing time constant in ms for baseline tracking. */
-    uint16_t                        baseline_debounce_length;    /**< Length of the initial baseline glitch filter (0 = no_debounce). */
     uint8_t                         debounce_length;             /**< Number of measured bounced deltas (peaks) to be filtered (0 = no_debounce). */
+    struct nt_filter_iir            signal_filter;               /**< Coefficient of the input IIR signal filter, used to suppress high-frequency noise. */
 };
 
 /**

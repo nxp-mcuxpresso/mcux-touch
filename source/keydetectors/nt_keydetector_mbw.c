@@ -147,7 +147,7 @@ static int32_t _nt_keydetector_mbw_init(struct nt_electrode_data *electrode)
     int16_t ts = (int32_t)_nt_system_get_time_period();
     /* Smooth filters initializations */
      /* 4x times faster filter used for baseline level decrease, i.e. Asymetric smooth */
-    _nt_asym_smooth_init(rom->tau_smooth_baseline, rom->tau_smooth_baseline / 4, ts * baseline_accu_max_count, &electrode->keydetector_data.mbw->base_smooth);
+    _nt_asym_smooth_init(rom->tau_smooth_baseline, rom->tau_smooth_baseline >> 2U, ts * baseline_accu_max_count, &electrode->keydetector_data.mbw->base_smooth);
     _nt_smooth_init(rom->tau_smooth_signal, ts, &electrode->keydetector_data.mbw->base_smooth_fix);
     
     /* Calculate baseline counter maximum value to establish next baseline window periode */
@@ -639,8 +639,8 @@ static void _nt_keydetector_mbw_process(struct nt_electrode_data *electrode)
             break;
         case (int32_t)NT_ELECTRODE_STATE_TOUCH:
             if ((delta < (int32_t)_nt_filter_pos(
-                             (int32_t)((int32_t)ram->predicted_signal - (int32_t)electrode->baseline) * 4 / 5) &&
-                 (ram->deadband_cnt == 0))) /* 80% release thresh */
+                             (int32_t)((int32_t)ram->predicted_signal - (int32_t)electrode->baseline) * (13U >> 4U)) &&
+                 (ram->deadband_cnt == 0))) /* 81.25% release thresh */
             {
                 ram->entry_event_cnt = 0;
                 ram->deadband_cnt    = (int16_t)(rom->deadband_cnt);

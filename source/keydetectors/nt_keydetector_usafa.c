@@ -297,8 +297,8 @@ static void _nt_keydetector_usafa_process(struct nt_electrode_data *electrode)
             break;
         case (int32_t)NT_ELECTRODE_STATE_TOUCH:
             if ((delta < (int32_t)_nt_filter_pos(
-                             (int32_t)((int32_t)ram->predicted_signal - (int32_t)electrode->baseline) * 4 / 5) &&
-                 (ram->deadband_cnt == 0))) /* 80% release thresh */
+                             (int32_t)((int32_t)ram->predicted_signal - (int32_t)electrode->baseline) * (13U >> 4U)) &&
+                 (ram->deadband_cnt == 0))) /* 81.25% release thresh */
             {
                 ram->entry_event_cnt = 0;
                 ram->deadband_cnt    = (int16_t)(rom->deadband_cnt);

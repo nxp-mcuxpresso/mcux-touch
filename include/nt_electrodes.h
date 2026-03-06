@@ -116,29 +116,29 @@ struct gpio_inputs
  */
 struct nt_electrode
 {
+    struct gpio_inputs gpio_input; /*!< corresponding GPIO input pins */
     const struct nt_electrode *shielding_electrode; /*!< Shielding electrode. */
+    const struct nt_keydetector_interface *keydetector_interface; /*!< Pointer to Key Detector interface. */
+    const union nt_keydetector_params keydetector_params;         /*!< Pointer to Key Detector params. */
+    uint32_t pin_input;                             /*!< Input pin. */
+    #if defined(FSL_FEATURE_TSI_HAS_SHIELD_REGISTER) && FSL_FEATURE_TSI_HAS_SHIELD_REGISTER 
+    uint32_t shield_mask;                           /*!< Configures which channels are shield channels. Each bit corresponds to each TSI channel. */
+    #endif
+    uint16_t offset;                                /*!< Offset to subtract from measurement. */
+    uint16_t delta_limit;                           /*!< Limitation for delta signal */
+    uint16_t baseline_level;                        /*!< typical Baseline level value used for safety failure detection */
+    uint16_t shield_sens;                           /*!< SH Sensitivity for shielding limitation */
+    #if (FSL_FEATURE_TSI_VERSION == 5 || FSL_FEATURE_TSI_VERSION == 6)
+    tsi_config_t *tsi_hw_config;                    /*!< Const pointer to TSI(HW) configuration params. */
+    #endif
     uint8_t multiplier;                             /*!< Multiplier. */
     uint8_t divider;                                /*!< Divider. */
-    uint16_t offset;                                /*!< Offset to subtract from measurement. */
     uint8_t tsicnt_shift;                           /*!< Optional: TSCICNT binary shift for newCalc method and selfCap */ 
     uint8_t delta_multiplier;                       /*!< Multiplier for delta signal. */
     uint8_t delta_divider;                          /*!< Divider for delta signal */
-    uint16_t delta_limit;                           /*!< Limitation for delta signal */
     uint8_t shield_threshold;                       /*!< SH Threshold for shield activating */
     uint8_t shield_gain;                            /*!< SH Gain for shielding el. signal */
     uint8_t shield_attn;                            /*!< SH Attenuate for shielding el. signal */
-    uint16_t shield_sens;                           /*!< SH Sensitivity for shielding limitation */
-    uint16_t baseline_level;                        /*!< typical Baseline level value used for safety failure detection */
-    uint32_t pin_input;                             /*!< Input pin. */
-#if defined(FSL_FEATURE_TSI_HAS_SHIELD_REGISTER) && FSL_FEATURE_TSI_HAS_SHIELD_REGISTER 
-    uint32_t shield_mask;                           /*!< Configures which channels are shield channels. Each bit corresponds to each TSI channel. */
-#endif
-    struct gpio_inputs gpio_input; /*!< corresponding GPIO input pins */
-    const struct nt_keydetector_interface *keydetector_interface; /*!< Pointer to Key Detector interface. */
-    const union nt_keydetector_params keydetector_params;         /*!< Pointer to Key Detector params. */
-#if (FSL_FEATURE_TSI_VERSION == 5 || FSL_FEATURE_TSI_VERSION == 6)
-    tsi_config_t *tsi_hw_config; /*!< Const pointer to TSI(HW) configuration params. */
-#endif
 };
 
 /**
