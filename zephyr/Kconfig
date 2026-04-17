@@ -1,0 +1,17 @@
+# Copyright 2025 NXP
+# SPDX-License-Identifier: Apache-2.0
+
+menuconfig NXP_TOUCH
+    bool "NXP Touch library support"
+    help
+      This option enables the NXP touch library test
+
+if NXP_TOUCH
+
+    config NXP_TOUCH_LIB_ENABLED
+        bool "Enables NXP touch library demo"
+        default y
+
+
+endif # NXP_TOUCH
+
