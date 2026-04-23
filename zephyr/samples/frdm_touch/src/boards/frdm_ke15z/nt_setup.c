@@ -317,8 +317,8 @@ const struct nt_system_xtalk_params my_xtalk_params= {
     .nt_xtalk_adapt_touch_time = 25,
 };
 
-const struct nt_electrode *const Keypad_1_controls[]         = {&El_1, &El_2, NULL};
-// const struct nt_electrode *const Keypad_1_controls[]         = {&El_1, &El_2, &El_3, &El_4, &El_5, &El_6, NULL};
+// const struct nt_electrode *const Keypad_1_controls[]         = {&El_1, &El_2, NULL};
+const struct nt_electrode *const Keypad_1_controls[]         = {&El_1, &El_2, &El_3, &El_4, &El_5, &El_6, NULL};
 const struct nt_electrode *const ASlider_2_controls[]        = {&El_7, &El_8, NULL};
 const struct nt_electrode *const ARotary_3_controls[]        = {&El_9, &El_10, &El_11, &El_12, NULL};
 const struct nt_control_arotary nt_control_arotary_ARotary_3 = {
@@ -369,7 +369,7 @@ const struct nt_module nt_tsi_module                        = {
 const struct nt_control *const System_0_controls[] = {&Keypad_1, &ASlider_2, &ARotary_3, NULL};
 const struct nt_module *const System_0_modules[]   = {&nt_tsi_module, NULL};
 const struct nt_system System_0                    = {
-    .time_period            = 40,
+    .time_period            = 100,
     .init_time              = 400,
     .safety_period_multiple = 0,
     .safety_crc_hw          = true,
@@ -381,23 +381,22 @@ const struct nt_system System_0                    = {
 };
 void nt_enable(void)
 {
-    // nt_electrode_enable(&El_1, 0);
-    // nt_electrode_enable(&El_2, 0);
-
+    nt_electrode_enable(&El_1, 0);
+    nt_electrode_enable(&El_2, 0);
     nt_electrode_enable(&El_3, 0);
-    // nt_electrode_enable(&El_4, 0);
-    // nt_electrode_enable(&El_5, 0);
-    // nt_electrode_enable(&El_6, 0);
+    nt_electrode_enable(&El_4, 0);
+    nt_electrode_enable(&El_5, 0);
+    nt_electrode_enable(&El_6, 0);
 
-    // nt_electrode_enable(&El_7, 0);
-    // nt_electrode_enable(&El_8, 0);
-    // nt_electrode_enable(&El_9, 0);
-    // nt_electrode_enable(&El_10, 0);
-    // nt_electrode_enable(&El_11, 0);
-    // nt_electrode_enable(&El_12, 0);
-    // nt_control_enable(&Keypad_1);
-    // nt_control_enable(&ASlider_2);
-    // nt_control_enable(&ARotary_3);
+    nt_electrode_enable(&El_7, 0);
+    nt_electrode_enable(&El_8, 0);
+    nt_electrode_enable(&El_9, 0);
+    nt_electrode_enable(&El_10, 0);
+    nt_electrode_enable(&El_11, 0);
+    nt_electrode_enable(&El_12, 0);
+    nt_control_enable(&Keypad_1);
+    nt_control_enable(&ASlider_2);
+    nt_control_enable(&ARotary_3);
 }
 
 // Following functions are generate, copy them to your application and implement there behaviour of events

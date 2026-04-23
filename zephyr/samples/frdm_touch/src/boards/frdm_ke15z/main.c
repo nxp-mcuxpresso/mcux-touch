@@ -6,7 +6,7 @@
 
 #include <zephyr/device.h>
 #include <zephyr/devicetree.h>
-// #include <zephyr/drivers/gpio.h>
+#include <zephyr/drivers/gpio.h>
 #include <zephyr/kernel.h>
 #include <zephyr/drivers/pwm.h>
 #include <stdio.h>
@@ -53,8 +53,8 @@ uint32_t __data_end__ = 0;
 
 struct k_timer my_timer;
 
-// static const struct gpio_dt_spec led0 = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
-// static const struct gpio_dt_spec led1 = GPIO_DT_SPEC_GET(LED1_NODE, gpios);
+static const struct gpio_dt_spec led0 = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
+static const struct gpio_dt_spec led1 = GPIO_DT_SPEC_GET(LED1_NODE, gpios);
 
 // NXP touch static pool
 uint8_t nt_memory_pool[5000] __attribute__((aligned(4))); /* GCC compiler */
@@ -103,10 +103,12 @@ void nt_trigger_handler(struct k_timer *dummy)
     //     led_on = !led_on;
     // }
 
-    // nt_trigger();
-    ((TSI_Type*)(0x40045000))->DATA |= (0x400000U);
+    nt_trigger();
+    // ((TSI_Type*)(0x40045000))->DATA |= (0x400000U);
 }
 
+#define LED_NODE DT_ALIAS(led2)
+static const struct gpio_dt_spec led = GPIO_DT_SPEC_GET(LED_NODE, gpios);
 
 int main(void)
 {
@@ -118,10 +120,26 @@ int main(void)
 	printk("Touch sensing Demo\r\n");
 
 
-//    if (!gpio_is_ready_dt(&led1)) {
-//      return 0;
-//    }
+   if (!gpio_is_ready_dt(&led0)) {
+     return 0;
+   }
+   if (!gpio_is_ready_dt(&led1)) {
+     return 0;
+   }
+    if (!gpio_is_ready_dt(&led)) {
+        return 0;
+    }
+    ret = gpio_pin_configure_dt(&led, GPIO_OUTPUT_ACTIVE);
+    if (ret < 0) {
+        return 0;
+    }
+    ret = gpio_pin_set_dt(&led, false);
+    if (ret < 0) {
+        return 0;
+    }
 
+    // ret = gpio_pin_configure_dt(&led0, GPIO_OUTPUT_LOW);
+    // ret = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_LOW);
 
 //----------------- NXP Touch lib init goes here --------------------------------------------
     if ((result = nt_init(&System_0, nt_memory_pool, sizeof(nt_memory_pool))) != NT_SUCCESS)
@@ -171,17 +189,17 @@ int main(void)
 #endif
 
     /* Keypad electrodes*/
-    // nt_control_keypad_set_autorepeat_rate(&Keypad_1, 100, 1000);
-    // nt_control_keypad_register_callback(&Keypad_1, &keypad_callback);
+    nt_control_keypad_set_autorepeat_rate(&Keypad_1, 100, 1000);
+    nt_control_keypad_register_callback(&Keypad_1, &keypad_callback);
 
     /* Slider electrodes */
-    // nt_control_aslider_register_callback(&ASlider_2, &aslider_callback);
+    nt_control_aslider_register_callback(&ASlider_2, &aslider_callback);
 
     /* Rotary electrodes */
-    // nt_control_arotary_register_callback(&ARotary_3, &arotary_callback);
+    nt_control_arotary_register_callback(&ARotary_3, &arotary_callback);
 
     /* System TSI overflow warning callback */
-    // nt_system_register_callback(&system_callback);
+    nt_system_register_callback(&system_callback);
 
     // if (one_key_only)
         // nt_control_keypad_only_one_key_valid(&Keypad_1, true);
@@ -192,7 +210,7 @@ int main(void)
     k_timer_init(&my_timer, nt_trigger_handler, NULL);
 
     // Set NXP touch trigger period according to the HW scan time needed
-    k_timer_start(&my_timer, K_MSEC(10), K_MSEC(40));
+    k_timer_start(&my_timer, K_MSEC(10), K_MSEC(10));
     
 #if DT_NODE_EXISTS(DT_NODELABEL(tsi0))
     IRQ_DIRECT_CONNECT(DT_IRQN(DT_NODELABEL(tsi0)), TSI_DEV_PRIO, TSI0_IRQHandler, TSI_IRQ_FLAGS);    
@@ -230,21 +248,23 @@ static void keypad_callback(const struct nt_control *control, enum nt_control_ke
             {
                 case 0:
                 
-                // ret = gpio_pin_configure_dt(&led0, GPIO_OUTPUT_HIGH);
-                
+                ret = gpio_pin_configure_dt(&led0, GPIO_OUTPUT_HIGH);
                     break;
                 case 1:
                 
-                // ret = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_HIGH);
-                
+                ret = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_HIGH);
                     break;
                 case 2:
+                ret = gpio_pin_configure_dt(&led0, GPIO_OUTPUT_HIGH);
                     break;
                 case 3:
+                ret = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_HIGH);
                     break;
                 case 4:
+                ret = gpio_pin_configure_dt(&led0, GPIO_OUTPUT_HIGH);
                     break;
                 case 5:
+                ret = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_HIGH);
                     break;
                 default:
                     break;
@@ -257,7 +277,7 @@ static void keypad_callback(const struct nt_control *control, enum nt_control_ke
                 case 0:
                     /* YELLOW on, full brightness */
                     
-                    // ret = gpio_pin_configure_dt(&led0, GPIO_OUTPUT_LOW);
+                    ret = gpio_pin_configure_dt(&led0, GPIO_OUTPUT_LOW);
                     
                     hue_angle_global  = 12;
                     brightness_global = 120;
@@ -265,7 +285,7 @@ static void keypad_callback(const struct nt_control *control, enum nt_control_ke
                     break;
                 case 1:
                 
-                    // ret = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_LOW);
+                    ret = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_LOW);
                     
                     /* CYAN on, full brightness */
                     hue_angle_global  = 36;
@@ -273,24 +293,28 @@ static void keypad_callback(const struct nt_control *control, enum nt_control_ke
                     SetHueBrightness(hue_angle_global, brightness_global);
                     break;
                 case 2:
-                    /* CYAN on, full brightness */
-                    hue_angle_global  = 36;
+                    ret = gpio_pin_configure_dt(&led0, GPIO_OUTPUT_LOW);
+                    /* RED on, full brightness */
+                    hue_angle_global  = 0;
                     brightness_global = 120;
                     SetHueBrightness(hue_angle_global, brightness_global);
                     break;
                 case 3:
+                    ret = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_LOW);
                     /* GREEN on, full brightness */
                     hue_angle_global  = 24;
                     brightness_global = 120;
                     SetHueBrightness(hue_angle_global, brightness_global);
                     break;
                 case 4:
+                    ret = gpio_pin_configure_dt(&led0, GPIO_OUTPUT_LOW);
                     /* BLUE on, full brightness */
                     hue_angle_global  = 48;
                     brightness_global = 120;
                     SetHueBrightness(hue_angle_global, brightness_global);
                     break;
                 case 5:
+                    ret = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_LOW);
                     /* WHITE on, full brightness */
                     hue_angle_global  = 73;
                     brightness_global = 120;
@@ -353,13 +377,17 @@ static void keypad_callback(const struct nt_control *control, enum nt_control_ke
 
 static void aslider_callback(const struct nt_control *control, enum nt_control_aslider_event event, uint32_t position)
 {
+    int32_t ret;
     switch (event)
     {
         case NT_ASLIDER_INITIAL_TOUCH:
+                // ret = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_LOW);
             break;
         case NT_ASLIDER_MOVEMENT:
+                ret = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_LOW);
             break;
         case NT_ASLIDER_ALL_RELEASE:
+                ret = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_HIGH);
             break;
         default:
             break;
@@ -372,11 +400,14 @@ static void aslider_callback(const struct nt_control *control, enum nt_control_a
 
 static void arotary_callback(const struct nt_control *control, enum nt_control_arotary_event event, uint32_t position)
 {
+    int32_t ret;
     switch (event)
     {
         case NT_AROTARY_MOVEMENT:
+                ret = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_LOW);
             break;
         case NT_AROTARY_ALL_RELEASE:
+                ret = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_HIGH);
             break;
         case NT_AROTARY_INITIAL_TOUCH:
             break;
@@ -466,6 +497,13 @@ static void SetHueBrightness(uint32_t hue_angle, uint32_t brightness)
 
     /* Slider never returns position < 60 */
     brightness = brightness < 60 ? 0 : (brightness - 60);
+
+#ifdef PWM_LEDS
+    /* Set Hue multiplied by Brightness */
+    pwm_set_pulse_dt(&pwm_led0, (duty_cycle_blue * brightness));
+    pwm_set_pulse_dt(&pwm_led1, (duty_cycle_green * brightness));
+    pwm_set_pulse_dt(&pwm_led2, (duty_cycle_green * brightness));
+#endif
 }
 
 void TSI0_IRQHandler(void)
