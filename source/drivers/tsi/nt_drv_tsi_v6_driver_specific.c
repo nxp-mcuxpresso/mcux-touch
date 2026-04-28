@@ -54,7 +54,9 @@ uint32_t flash_end;
  * Variables
  ******************************************************************************/
 volatile tsi_lpwr_status_flags_t tsi_lpwr_status;
-
+#if (defined(FSL_FEATURE_TSI_HAS_NO_SETCLK) && FSL_FEATURE_TSI_HAS_NO_SETCLK)
+volatile uint8_t firstRun = 0;
+#endif
 /******************************************************************************
  * Code
  ******************************************************************************/
@@ -169,7 +171,16 @@ tsi_status_t NT_TSI_DRV_Measure(uint32_t instance)
 
         return tsiState->status;
     }
-
+#if (defined(FSL_FEATURE_TSI_HAS_NO_SETCLK) && FSL_FEATURE_TSI_HAS_NO_SETCLK)
+    if (firstRun == 0)
+    {
+        (void)EnableIRQ(TSI_END_OF_SCAN_IRQn);
+        (void)EnableIRQ(TSI_OUT_OF_SCAN_IRQn);
+        CLOCK_SetClockDiv(kCLOCK_DivTSI0, 10);
+        CLOCK_AttachClk(kFRO_HF_DIV_to_TSI0);
+        firstRun = 1;   
+    }       
+#endif
     /* Check if at least one electrode is enabled. */
     while ((bool)(electrode_last--))
     {
@@ -426,8 +437,13 @@ void TSI_DRV_IRQHandler(uint32_t instance)
     {
         if ((bool)(tsiState->opSatus != tsi_OpStatusSuspend))
         {                                          /* Save TSICNT value */
-        uint16_t nstep1 = ( uint32_t )TSI_GetCounter( base );  
+        uint16_t nstep1 = ( uint32_t )TSI_GetCounter( base );
+#if (defined(FSL_FEATURE_TSI_HAS_NO_SETCLK) && FSL_FEATURE_TSI_HAS_NO_SETCLK)
+        if ((bool)(electrodes[electrode_last]->pin_input < TF_TSI_SELF_CAP_CHANNEL_COUNT))
+#else        
         if (!(bool)(TSI_GetSensingMode(base))) /* self-cap electrode was measured */
+#endif
+            
         {
           if(module->electrodes[electrode_last]->tsi_hw_config->newCalc == true)
           {
@@ -483,10 +499,17 @@ void TSI_DRV_IRQHandler(uint32_t instance)
                 else /* If this electrode is a mutual-cap mdde electrode, initialize mutual-cap sensing */
                 {
                     /*Parse electrode number into rx, tx components*/
+#if defined(FSL_FEATURE_TSI_HAS_MUTUAL_RX_SEL) && FSL_FEATURE_TSI_HAS_MUTUAL_RX_SEL
+                    mutual_tx = (electrodes[electrode_last]->pin_input - TF_TSI_SELF_CAP_CHANNEL_COUNT) /
+                                TF_TSI_MUTUAL_CAP_TX_CHANNEL_COUNT;
+                    mutual_rx = (electrodes[electrode_last]->pin_input - TF_TSI_SELF_CAP_CHANNEL_COUNT) %
+                                TF_TSI_MUTUAL_CAP_TX_CHANNEL_COUNT;
+#else 
                     mutual_tx = (electrodes[electrode_last]->pin_input - TF_TSI_SELF_CAP_CHANNEL_COUNT) /
                                 TF_TSI_MUTUAL_CAP_RX_CHANNEL_COUNT;
                     mutual_rx = (electrodes[electrode_last]->pin_input - TF_TSI_SELF_CAP_CHANNEL_COUNT) %
-                                TF_TSI_MUTUAL_CAP_RX_CHANNEL_COUNT;
+                                TF_TSI_MUTUAL_CAP_RX_CHANNEL_COUNT;              
+#endif                    
                     /* Init mutual-cap sensing */
                     TSI_InitMutualCapMode(base, &module->electrodes[electrode_last]->tsi_hw_config->configMutual);
                     TSI_SetMutualCapTxChannel(base, (tsi_mutual_tx_channel_t)mutual_tx);

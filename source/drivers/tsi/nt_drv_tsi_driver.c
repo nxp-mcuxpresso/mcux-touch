@@ -107,8 +107,10 @@ tsi_status_t NT_TSI_DRV_Init(uint32_t instance, nt_tsi_state_t *tsiState, const 
     INTMUX_Init(INTMUX0);
     INTMUX_EnableInterrupt(INTMUX0, 0, TSI0_IRQn);
 #elif (FSL_FEATURE_TSI_VERSION == 6)
+#if !(defined(FSL_FEATURE_TSI_HAS_NO_SETCLK) && FSL_FEATURE_TSI_HAS_NO_SETCLK)
     (void)EnableIRQ(TSI_END_OF_SCAN_IRQn);
     (void)EnableIRQ(TSI_OUT_OF_SCAN_IRQn);
+#endif
 #else
     (void)EnableIRQ(s_TsiIRQ[instance]);
 #endif

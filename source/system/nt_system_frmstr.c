@@ -131,15 +131,23 @@ FMSTR_TSA_MEMBER(struct nt_mem, free_pointer, FMSTR_TSA_POINTER)
 #if (FSL_FEATURE_TSI_VERSION == 6)
 FMSTR_TSA_STRUCT(tsi_selfCap_config_t)
 FMSTR_TSA_MEMBER(tsi_selfCap_config_t, enableSensitivity, FMSTR_TSA_UINT8)
+#if defined(FSL_FEATURE_TSI_HAS_SHIELD_SEL) && FSL_FEATURE_TSI_HAS_SHIELD_SEL
+FMSTR_TSA_MEMBER(tsi_selfCap_config_t, shieldChannelMask, FMSTR_TSA_USERTYPE(tsi_channel_mask_t))
+#else
 FMSTR_TSA_MEMBER(tsi_selfCap_config_t, enableShield, FMSTR_TSA_UINT8)
+#endif 
 FMSTR_TSA_MEMBER(tsi_selfCap_config_t, commonConfig, FMSTR_TSA_USERTYPE(tsi_common_config_t))
 FMSTR_TSA_MEMBER(tsi_selfCap_config_t, xdn, FMSTR_TSA_USERTYPE(tsi_sensitivity_xdn_option_t))
+#if !(defined(FSL_FEATURE_TSI_HAS_NO_S_CTRIM) && FSL_FEATURE_TSI_HAS_NO_S_CTRIM)
 FMSTR_TSA_MEMBER(tsi_selfCap_config_t, ctrim, FMSTR_TSA_USERTYPE(tsi_sensitivity_ctrim_option_t))
+#endif
 FMSTR_TSA_MEMBER(tsi_selfCap_config_t, inputCurrent, FMSTR_TSA_USERTYPE(tsi_current_multiple_input_t))
 FMSTR_TSA_MEMBER(tsi_selfCap_config_t, chargeCurrent, FMSTR_TSA_USERTYPE(tsi_current_multiple_input_t))
 
 FMSTR_TSA_STRUCT(tsi_common_config_t)
+#if !(defined(FSL_FEATURE_TSI_HAS_NO_SETCLK) && FSL_FEATURE_TSI_HAS_NO_SETCLK)
 FMSTR_TSA_MEMBER(tsi_common_config_t, mainClock, FMSTR_TSA_USERTYPE(tsi_main_clock_selection_t))
+#endif
 FMSTR_TSA_MEMBER(tsi_common_config_t, mode, FMSTR_TSA_USERTYPE(tsi_sensing_mode_selection_t))
 FMSTR_TSA_MEMBER(tsi_common_config_t, dvolt, FMSTR_TSA_USERTYPE(tsi_dvolt_option_t))
 FMSTR_TSA_MEMBER(tsi_common_config_t, cutoff, FMSTR_TSA_USERTYPE(tsi_sinc_cutoff_div_t))
