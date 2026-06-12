@@ -40,15 +40,15 @@ int16_t actMat[] = {
 const struct nt_keydetector_mbw nt_keydetector_mbw_El_1 = {
     DEFAULTMBW,
     .tau_smooth_signal = 0,
-    .min_noise_limit = 7,
-    .signal_to_noise_ratio = 114
+    .min_noise_limit = 5,
+    .signal_to_noise_ratio = 50
 };
 
 const struct nt_keydetector_mbw nt_keydetector_mbw_El_2 = {
     DEFAULTMBW,
     .tau_smooth_signal = 0,
-    .min_noise_limit = 9,
-    .signal_to_noise_ratio = 89
+    .min_noise_limit = 5,
+    .signal_to_noise_ratio = 50
 };
 
 const struct nt_keydetector_mbw nt_keydetector_mbw_El_3 = {

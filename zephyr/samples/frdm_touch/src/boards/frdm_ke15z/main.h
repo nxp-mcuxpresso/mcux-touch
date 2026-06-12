@@ -18,7 +18,7 @@
  *  When it is disabled, the demo will use only two electrodes from FRDM-KE15Z board.
  */
 #ifndef NT_FRDM_TOUCH_SUPPORT
-#define NT_FRDM_TOUCH_SUPPORT 1
+#define NT_FRDM_TOUCH_SUPPORT 0
 #endif
 
 #endif
