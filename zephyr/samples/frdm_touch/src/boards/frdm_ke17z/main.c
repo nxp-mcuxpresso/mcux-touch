@@ -182,7 +182,7 @@ int main(void)
     k_timer_init(&my_timer, nt_trigger_handler, NULL);
 
     // Set NXP touch trigger period according to the HW scan time needed
-    k_timer_start(&my_timer, K_MSEC(10), K_MSEC(10));
+    k_timer_start(&my_timer, K_MSEC(40), K_MSEC(40));
 
 #if DT_NODE_EXISTS(DT_NODELABEL(tsi0))
     IRQ_DIRECT_CONNECT(DT_IRQN(DT_NODELABEL(tsi0)), TSI_DEV_PRIO, TSI0_IRQHandler, TSI_IRQ_FLAGS);
