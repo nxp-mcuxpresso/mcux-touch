@@ -294,10 +294,10 @@ const struct nt_electrode *const Keypad_1_controls[]         = {&El_1, &El_2, &E
 const struct nt_electrode *const ASlider_2_controls[]        = {&El_7, &El_8, NULL};
 const struct nt_electrode *const ARotary_3_controls[]        = {&El_9, &El_10, &El_11, &El_12, NULL};
 const struct nt_control_arotary nt_control_arotary_ARotary_3 = {
-    .range = 72,
+    .range = 60,
 };
 const struct nt_control_aslider nt_control_aslider_ASlider_2 = {
-    .range         = 160,
+    .range         = 60,
     .insensitivity = 2,
 };
 const struct nt_control_keypad nt_control_keypad_Keypad_1 = {
