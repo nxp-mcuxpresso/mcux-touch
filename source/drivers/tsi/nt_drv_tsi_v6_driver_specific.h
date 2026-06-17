@@ -134,6 +134,10 @@ typedef struct _tsi_lpwr_status_flags
 #define TF_TSI_SELF_CAP_CHANNELS_MASK   0x0000000001FFFFFFULL
 #define TF_TSI_MUTUAL_CAP_CHANNELS_MASK 0x1FFFFFFFFE000000ULL
 
+#define TF_TSI_SELF_CAP_CHANNEL_COUNT 25U
+#define TF_TSI_MUTUAL_CHANNEL_COUNT   (TF_TSI_MUTUAL_CAP_RX_CHANNEL_COUNT * TF_TSI_MUTUAL_CAP_TX_CHANNEL_COUNT)
+#define TF_TSI_TOTAL_CHANNEL_COUNT    (TF_TSI_MUTUAL_CHANNEL_COUNT + TF_TSI_SELF_CAP_CHANNEL_COUNT)
+
 /* This macro transforms mutual RX, TX electrode numbers into a single electrode number */
 #define NT_TSI_TRANSFORM_MUTUAL(RX, TX)                                                                   \
     (((0ULL + (TF_TSI_MUTUAL_CAP_RX_CHANNEL_COUNT * (TX))) + ((RX)-TF_TSI_MUTUAL_CAP_TX_CHANNEL_COUNT)) + \
